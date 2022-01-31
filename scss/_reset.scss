@@ -21,12 +21,8 @@ a {
 	opacity: 0;
 }
 
-.wrap::after {
-	content: "";
-	display: block;
-	clear: both;
-}
-
-body {
-	background-image: linear-gradient(to top, #68254d, #8b416e);
-}
+// .wrapper::after {
+// 	content: "";
+// 	display: block;
+// 	clear: both;
+// }

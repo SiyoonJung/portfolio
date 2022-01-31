@@ -6,9 +6,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
     <script defer src="js/main.js"></script>
     <title>Main Page</title>
 </head>
@@ -21,7 +22,7 @@
             <nav class="menuWeb">
                 <ul id="gnb">
                     <li><a href="members.html"><i class="fas fa-user-friends"></i> MEMBERS</a></li>
-                    <li><a href="#"><i class="fas fa-clipboard"></i> BOARDS</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard"></i> BOARD</a></li>
                     <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
                     <li><a href="youtube.html"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
                     <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> LOCATION</a></li>
@@ -43,7 +44,7 @@
 
                 <ul id="gnbMo">
                     <li><a href="members.html"><i class="fas fa-user-friends"></i> MEMBERS</a></li>
-                    <li><a href="#"><i class="fas fa-clipboard"></i> BOARDS</a></li>
+                    <li><a href="#"><i class="fas fa-clipboard"></i> BOARD</a></li>
                     <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
                     <li><a href="youtube.html"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
                     <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> LOCATION</a></li>
@@ -53,124 +54,163 @@
     </header>
 
     <section id="visual">
-        <video src="img/main/bg.mp4" autoplay muted loop></video>
-        <div class="inner">
-            <img src="img/main/visual.png">
-            <h1>BEST TRENDY <br>JEWELRY SHOP </h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, provident voluptatem et nihil iusto dolorem ea odit tempore magnam officiis. </p>
-        </div>
-    </section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="text">
+                            <h2>Trendy & Luxury</h2>
+                            <h1>Best Jewelry Brand</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis odio autem ab
+                                fuga perferendis. Doloribus quia quae quos aut officia porro repudiandae et libero,
+                                accusantium ut esse dolor ipsum. </p>
 
-    <section id="bestseller">
-        <div class="inner">
-            <h1>Best Seller</h1>
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="img/main/best1.jpg" alt="신상품1 이미지">
-                        <!-- <div class="txt">
-                                <h2>New Item 1</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde illo doloremque
-                                    esse eligendi culpa nulla porro assumenda rem quidem? Perspiciatis beatae ex quo
-                                    excepturi quia voluptatum, similique tenetur incidunt dolores placeat provident impedit
-                                    quas possimus laboriosam eum officia veniam, alias aliquam distinctio minus cupiditate
-                                    nihil recusandae? Rem, temporibus. Aliquam. <br><br> REVIEW: 4.2/5 <br> PRICE: $22.4
-                                </p>
-                                <div class="link">
-                                    <a href="#"><i class="fas fa-hand-pointer"></i> BUY NOW! </a>
-                                </div>
-                            </div> -->
+                        </div>
+                        <div class="image">
+                            <img src="img/main/main1.png">
+                        </div>
                     </div>
-                    <div class="swiper-slide">
-                        <img src="img/main/best2.jpg" alt="신상품2 이미지">
-                        <!-- <div class="txt">
-                                <h2>New Item 2</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde illo doloremque
-                                    esse eligendi culpa nulla porro assumenda rem quidem? Perspiciatis beatae ex quo
-                                    excepturi quia voluptatum, similique tenetur incidunt dolores placeat provident impedit
-                                    quas possimus laboriosam eum officia veniam, alias aliquam distinctio minus cupiditate
-                                    nihil recusandae? Rem, temporibus. Aliquam. <br><br> REVIEW: 4.5/5 <br> PRICE: $33.9
-                                    (free shipping)
-                                </p>
-                                <div class="link">
-                                    <a href="#"><i class="fas fa-hand-pointer"></i> BUY NOW! </a>
-                                </div>
-                            </div> -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/main/best3.jpg" alt="신상품3 이미지">
-                        <!-- <div class="txt">
-                                <h2>New Item 3</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde illo doloremque
-                                    esse eligendi culpa nulla porro assumenda rem quidem? Perspiciatis beatae ex quo
-                                    excepturi quia voluptatum, similique tenetur incidunt dolores placeat provident impedit
-                                    quas possimus laboriosam eum officia veniam, alias aliquam distinctio minus cupiditate
-                                    nihil recusandae? Rem, temporibus. Aliquam. <br><br> REVIEW: 4.7/5 <br> PRICE: $52.4
-                                    (free shipping)
-                                </p>
-                                <div class="link">
-                                    <a href="#"><i class="fas fa-hand-pointer"></i> BUY NOW! </a>
-                                </div>
-                            </div> -->
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="img/main/best4.jpg" alt="신상품4 이미지">
-                        <!-- <div class="txt">
-                                <h2>New Item 4</h2>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia unde illo doloremque
-                                    esse eligendi culpa nulla porro assumenda rem quidem? Perspiciatis beatae ex quo
-                                    excepturi quia voluptatum, similique tenetur incidunt dolores placeat provident impedit
-                                    quas possimus laboriosam eum officia veniam, alias aliquam distinctio minus cupiditate
-                                    nihil recusandae? Rem, temporibus. Aliquam. <br><br> REVIEW: 4.6/5 <br> PRICE: $41.7
-                                    (free shipping)
-                                </p>
-                                <div class="link">
-                                    <a href="#"><i class="fas fa-hand-pointer"></i> BUY NOW! </a>
-                                </div>
-                            </div> -->
-                    </div>
-
-                    <div class="swiper-pagination"></div>
                 </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="text">
+                            <h2>Trendy & Luxury</h2>
+                            <h1>Best Jewelry Brand</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis odio autem ab
+                                fuga perferendis. Doloribus quia quae quos aut officia porro repudiandae et libero,
+                                accusantium ut esse dolor ipsum. </p>
+                        </div>
+                        <div class="image">
+                            <img src="img/main/main2.png">
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="inner">
+                        <div class="text">
+                            <h2>Trendy & Luxury</h2>
+                            <h1>Best Jewelry Brand</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe blanditiis odio autem ab
+                                fuga perferendis. Doloribus quia quae quos aut officia porro repudiandae et libero,
+                                accusantium ut esse dolor ipsum. </p>
+
+                        </div>
+                        <div class="image">
+                            <img src="img/main/main3.png">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-pagination"></div>
             </div>
         </div>
     </section>
 
-    <section id="recommend">
-        <div class="inner">
-            <h2>Recommendations</h2>
-            <div class="wrap">
-                <div class="left">
-                    <div class="pic">
-                        <img src="img/main/recom1.jpg">
-                    </div>
-                    <div class="txt">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut, amet unde eligendi. </p><br>
-                        <span>★★★★★</span>
-                    </div>
-                </div>
-                <div class="center">
-                    <div class="pic">
-                        <img src="img/main/recom2.jpg">
-                    </div>
-                    <div class="txt">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut, amet unde eligendi. </p><br>
-                        <span>★★★★☆</span>
-                    </div>
-                </div>
-                <div class="right">
-                    <div class="pic">
-                        <img src="img/main/recom3.jpg">
-                    </div>
-                    <div class="txt">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo aut, amet unde eligendi .</p><br>
-                        <span>★★★★★</span>
-                    </div>
-                </div>
+    <section id="features">
+        <div class="wrapper">
+            <div class="box">
+                <i class="fas fa-shipping-fast fa-3x"></i>
+                <h2>Free Shipping</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-thumbs-up fa-3x"></i>
+                <h2>Best Quality</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-calendar fa-3x"></i>
+                <h2>Monthly Discount</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+            <div class="box">
+                <i class="fas fa-gem fa-3x"></i>
+                <h2>Various Styles</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
             </div>
         </div>
     </section>
+
+    <section id="products">
+        <h1>Our Products</h1>
+			<ul class="menuProd">
+				<li class="on"><a href=".best" title="Best">best</a></li>
+				<li><a href=".new" title="New">new</a></li>
+			</ul>
+
+            <article class="best">
+				<div>
+					<img src="img/main/best1.jpg" alt="첫번째 베스트제품 이미지">
+					<div>
+						<h2>Luxury Best 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="best">
+				<div>
+					<img src="img/main/best2.jpg" alt="두번째 베스트제품 이미지">
+					<div>
+						<h2>Luxury Best 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="best">
+				<div>
+					<img src="img/main/best3.jpg" alt="첫번째 베스트제품 이미지">
+					<div>
+						<h2>Luxury Best 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="best">
+				<div>
+					<img src="img/main/best4.jpg" alt="첫번째 베스트제품 이미지">
+					<div>
+						<h2>Luxury Best 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="new">
+				<div>
+					<img src="img/main/new1.jpg" alt="첫번째 신제품 이미지">
+					<div>
+						<h2>Luxury New 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="new">
+				<div>
+					<img src="img/main/new2.jpg" alt="첫번째 신제품 이미지">
+					<div>
+						<h2>Luxury New 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="new">
+				<div>
+					<img src="img/main/new3.jpg" alt="첫번째 신제품 이미지">
+					<div>
+						<h2>Luxury New 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+            <article class="new">
+				<div>
+					<img src="img/main/new4.png" alt="첫번째 신제품 이미지">
+					<div>
+						<h2>Luxury New 1</h2>
+						<p>$45.13 (free shipping)</p>
+					</div>
+				</div>
+			</article>
+        </section>
 
 </body>
-
 </html>
