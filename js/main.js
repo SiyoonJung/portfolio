@@ -1,14 +1,14 @@
-var swiper = new Swiper(".swiper1", {
-  pagination: {
-    el: ".swiper-pagination",
-  },
-});
 
-var swiper = new Swiper(".swiper2", {
+var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
-    type: "fraction",
+    type: "bullets",
   },
+  autoplay : {  
+    delay : 2000,   
+    disableOnInteraction : false, 
+  },
+
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",

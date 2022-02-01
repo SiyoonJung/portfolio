@@ -22,7 +22,7 @@ $mobile: 539px;
 #header,
 #header_sub {
 	width: 100%;
-	border-bottom: 2px double #999;
+	border-bottom: 1px double #999;
 
 	.inner {
 		width: 1180px;
@@ -206,10 +206,6 @@ $mobile: 539px;
 	}
 }
 
-#header_sub {
-	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
-}
-
 #visual {
 	width: 100%;
 	position: relative;
@@ -344,10 +340,10 @@ $mobile: 539px;
 #products {
 	width: 100%;
 	position: relative;
+	margin-top: 50px;
 
 	h1 {
-		width: 100%;
-		margin-top: 50px;
+		margin: 0 auto;
 		text-align: center;
 		font: bold 45px/1.5 "Caveat";
 		letter-spacing: 2px;
@@ -638,9 +634,11 @@ $mobile: 539px;
 	}
 }
 
-#footer {
+#footer, 
+#footer_sub {
 	width: 100%;
 	margin-top: 50px;
+	border-top: 1px double #999;
 	padding: 100px 0;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
@@ -697,8 +695,54 @@ $mobile: 539px;
 		#sns {
 			margin-right: 10px;
 			float: right;
-			font: bold 20px/1 "Antic Slab";
 			text-align: center;
+		}
+	}
+}
+
+/* ----- Responsive Settings ----- */
+@media screen and (max-width: $tablet) {
+	#header {
+		.inner {
+			width: 100%;
+			height: 100px;
+
+			> h1 {
+				left: 20px;
+			}
+			.menuWeb {
+				display: none;
+			}
+			.btnCall {
+				display: block;
+			}
+			.menuMo {
+				display: block;
+			}
+		}
+	}
+
+	#footer {
+		padding: 80px 30px;
+
+		.inner {
+			width: 100%;
+		}
+	}
+}
+
+/* Responsive Mobile Verision*/
+@media screen and (max-width: $mobile) {
+
+	#footer {
+		.inner {
+			ul {
+				width: 100%;
+				li {
+					margin-left: 0;
+					margin: 5px;
+				}
+			}
 		}
 	}
 }

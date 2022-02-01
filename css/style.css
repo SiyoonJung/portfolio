@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -22,10 +24,281 @@ a {
   opacity: 0;
 }
 
+.board {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.board .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.board .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.board .inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px 50px;
+}
+.board .inner h1 {
+  font: normal 50px/1 "arial";
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.board .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.board .inner table {
+  width: 100%;
+  border-bottom: 2px solid #111;
+  border-collapse: collapse;
+  margin-bottom: 50px;
+}
+.board .inner table tr:nth-of-type(even) {
+  background: #eee;
+}
+.board .inner table tr:hover {
+  background: #f7d9f1;
+}
+.board .inner table tr th {
+  padding: 15px;
+  background: #444;
+  color: #fff;
+}
+.board .inner table tr th:nth-of-type(1) {
+  width: 10%;
+}
+.board .inner table tr th:nth-of-type(3) {
+  width: 15%;
+}
+.board .inner table tr th:nth-of-type(4) {
+  width: 15%;
+}
+.board .inner table tr td {
+  padding: 13px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+.board .inner table tr td:nth-of-type(2) {
+  text-align: left;
+}
+.board .inner table tr td:nth-of-type(3) {
+  font-family: "맑은 고딕";
+}
+.board .inner table tr td a {
+  color: #333;
+  font-family: "arial";
+  line-height: 1.4;
+}
+.board .inner .pagination {
+  width: 100%;
+  text-align: center;
+}
+.board .inner .pagination::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.board .inner .pagination .prev {
+  float: left;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #eee;
+  text-align: center;
+  background: #555;
+}
+.board .inner .pagination .next {
+  float: right;
+  display: block;
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  color: #eee;
+  text-align: center;
+  background: #555;
+}
+.board .inner .pagination .numbers {
+  display: inline-block;
+  text-align: center;
+  font-size: 0;
+}
+.board .inner .pagination .numbers a {
+  border: 1px solid #888;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  font: 11px/30px "arial";
+  color: #666;
+  margin: 0 5px;
+  transition: 0.5s;
+}
+.board .inner .pagination .numbers a:hover {
+  background: #f7d9f1;
+  color: #111;
+}
+
+/* ---- Responsive ----- */
+@media screen and (max-width: 1179px) {
+  .board .inner table tr th:nth-of-type(1) {
+    width: 14%;
+  }
+  .board .inner table tr th:nth-of-type(3) {
+    width: 17%;
+  }
+  .board .inner table tr th:nth-of-type(4) {
+    width: 0%;
+    display: none;
+  }
+  .board .inner table tr td:nth-of-type(4) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(6) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(7) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(8) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(9) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(10) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(n + 6) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(6) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(7) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(8) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(9) {
+    display: none;
+  }
+  .board .inner .pagination .numbers a:nth-of-type(10) {
+    display: none;
+  }
+}
+@media screen and (max-width: 539px) {
+  .board .inner table tr th {
+    font-size: 14px;
+  }
+  .board .inner table tr th:nth-of-type(1) {
+    width: 0%;
+    display: none;
+  }
+  .board .inner table tr th:nth-of-type(3) {
+    width: 29%;
+  }
+  .board .inner table tr td:nth-of-type(1) {
+    display: none;
+  }
+  .board .inner .pagination .numbers {
+    display: none;
+  }
+}
+.members {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.members .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.members .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.members .inner {
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.members .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.members .inner h1 {
+  font: normal 50px/1 "arial";
+  color: #d1b489;
+  margin-bottom: 50px;
+}
+.members .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.members .inner article {
+  box-sizing: border-box;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 10px 10px 20px rgba(218, 154, 248, 0.1);
+  width: 300px;
+  height: auto;
+  float: left;
+}
+.members .inner article img {
+  object-fit: cover;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  margin: 20px;
+}
+.members .inner article .name {
+  display: block;
+  font: bold 18px/1.5 "Antic Slab";
+  margin-top: 5px;
+}
+.members .inner article .department {
+  display: block;
+  font: normal 17px/1.5 "Antic Slab";
+  color: #777;
+  margin-top: 5px;
+}
+.members .inner article .email {
+  display: block;
+  font: normal 17px/1.5 "Antic Slab";
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.members .inner article a {
+  display: block;
+  width: 100px;
+  height: auto;
+  text-align: center;
+  margin: 0 auto;
+  padding: 5px;
+  font: bold 17px/1 "arial";
+  color: #fff;
+  background-color: #d1b489;
+  border-radius: 5px;
+}
+
 #header,
 #header_sub {
   width: 100%;
-  border-bottom: 2px double #999;
+  border-bottom: 1px double #999;
 }
 #header .inner,
 #header_sub .inner {
@@ -205,10 +478,6 @@ a {
   border-bottom: 1px solid #999;
 }
 
-#header_sub {
-  background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
-}
-
 #visual {
   width: 100%;
   position: relative;
@@ -326,10 +595,10 @@ a {
 #products {
   width: 100%;
   position: relative;
+  margin-top: 50px;
 }
 #products h1 {
-  width: 100%;
-  margin-top: 50px;
+  margin: 0 auto;
   text-align: center;
   font: bold 45px/1.5 "Caveat";
   letter-spacing: 2px;
@@ -584,41 +853,50 @@ a {
   width: 100%;
 }
 
-#footer {
+#footer,
+#footer_sub {
   width: 100%;
   margin-top: 50px;
+  border-top: 1px double #999;
   padding: 100px 0;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
-#footer .inner {
+#footer .inner,
+#footer_sub .inner {
   width: 1180px;
   margin: 0 auto;
 }
-#footer .inner::after {
+#footer .inner::after,
+#footer_sub .inner::after {
   content: "";
   display: block;
   clear: both;
 }
-#footer .inner h1 {
+#footer .inner h1,
+#footer_sub .inner h1 {
   font: bold 25px/1 "Antic Slab";
   letter-spacing: 1px;
   color: black;
   margin-bottom: 15px;
   float: left;
 }
-#footer .inner ul {
+#footer .inner ul,
+#footer_sub .inner ul {
   float: right;
 }
-#footer .inner ul li {
+#footer .inner ul li,
+#footer_sub .inner ul li {
   float: left;
   margin-left: 20px;
 }
-#footer .inner ul li a {
+#footer .inner ul li a,
+#footer_sub .inner ul li a {
   font: bold 15px/1.5 "Antic Slab";
   letter-spacing: 1px;
   color: black;
 }
-#footer .inner address {
+#footer .inner address,
+#footer_sub .inner address {
   float: left;
   width: 100%;
   font: 15px/1.5 "Antic Slab";
@@ -627,18 +905,56 @@ a {
   border-top: 2px solid #fff;
   margin-bottom: 15px;
 }
-#footer .inner p {
+#footer .inner p,
+#footer_sub .inner p {
   font: 15px/1 "Antic Slab";
   letter-spacing: 1px;
   color: black;
   width: 100%;
   float: left;
 }
-#footer .inner #sns {
+#footer .inner #sns,
+#footer_sub .inner #sns {
   margin-right: 10px;
   float: right;
-  font: bold 20px/1 "Antic Slab";
   text-align: center;
+}
+
+/* ----- Responsive Settings ----- */
+@media screen and (max-width: 1179px) {
+  #header .inner {
+    width: 100%;
+    height: 100px;
+  }
+  #header .inner > h1 {
+    left: 20px;
+  }
+  #header .inner .menuWeb {
+    display: none;
+  }
+  #header .inner .btnCall {
+    display: block;
+  }
+  #header .inner .menuMo {
+    display: block;
+  }
+
+  #footer {
+    padding: 80px 30px;
+  }
+  #footer .inner {
+    width: 100%;
+  }
+}
+/* Responsive Mobile Verision*/
+@media screen and (max-width: 539px) {
+  #footer .inner ul {
+    width: 100%;
+  }
+  #footer .inner ul li {
+    margin-left: 0;
+    margin: 5px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
