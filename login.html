@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/login.js"></script>
+    <script src="js/main.js"></script>
+    <title> LOG IN </title>
+</head>
+
+<body>
+
+    <header id="header_sub">
+        <div class="inner">
+            <h1><a href="main.html">JEWELRY</a></h1>
+
+            <nav class="menuWeb">
+                <ul id="gnb">
+                    <li><a href="members.html"><i class="fas fa-user-friends"></i> MEMBERS</a></li>
+                    <li><a href="board.html"><i class="fas fa-clipboard"></i> BOARD</a></li>
+                    <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
+                    <li><a href="youtube.html"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+                    <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> LOCATION</a></li>
+                </ul>
+
+                <ul id="util">
+                    <li><a href="join.html"><i class="fas fa-user-edit"></i></a></li>
+                    <li><a href="login.html"><i class="fas fa-user"></i></a></li>
+                </ul>
+
+            </nav>
+
+            <a href="#" class="btnCall">
+                <span>메뉴호출</span>
+            </a>
+
+            <nav class="menuMo">
+                <h1><a href="main.html">JEWELRY</a></h1>
+
+                <ul id="gnbMo">
+                    <li><a href="members.html"><i class="fas fa-user-friends"></i> MEMBERS</a></li>
+                    <li><a href="board.html"><i class="fas fa-clipboard"></i> BOARD</a></li>
+                    <li><a href="gallery.html"><i class="far fa-images"></i> GALLERY</a></li>
+                    <li><a href="youtube.html"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+                    <li><a href="location.html"><i class="fas fa-map-marker-alt"></i> LOCATION</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="login">
+        <div class="inner">
+            <form>
+                <div class="con">
+                    <header class="head-form">
+                        <h2>Log In</h2>
+                        <p>Login here using your useremail and password</p>
+                    </header>
+                    <br>
+                    <div class="field-set">
+                        <span class="input-item">
+                            <i class="fa fa-user-circle"></i>
+                        </span>
+                        <input class="form-input" id="txt-input" type="text" placeholder="@UserEmail" required>
+                        <br>
+                        <span class="input-item">
+                            <i class="fa fa-key"></i>
+                        </span>
+                        <input class="form-input" type="password" placeholder="Password" id="pwd" name="password"
+                            required>
+                        <span>
+                            <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
+                        </span>
+                        <br>
+                        <button class="log-in"> Log In </button>
+                    </div>
+                    <div class="other">
+                        <button class="btn submits frgt-pass">Forgot Password</button>
+                        <button class="btn submits sign-up" onclick="location.href='join.html' ">Sign Up
+                            
+                            <i class="fa fa-user-plus" aria-hidden="true"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer id="footer_sub">
+        <div class="inner">
+            <h1>JEWELRY</h1>
+
+            <ul>
+                <li><a href="#">Policy</a></li>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Customer</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+
+            <address>
+                address: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio, dolore.<br />
+                TEL : +82-2-2100-2114 FAX : +82-2-2100-7999
+            </address>
+
+            <p>Copyright &copy; 2022 Jung Siyoon ALL Right Reserved.</p>
+
+            <ul id="sns">
+                <li><a href="#"><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-twitter-square"></i></a></li>
+                <li><a href="#"><i class="fab fa-instagram-square"></i></a></li>
+                <li><a href="#"><i class="fas fa-envelope"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+
+</html>

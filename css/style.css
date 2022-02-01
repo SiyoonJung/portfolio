@@ -24,6 +24,175 @@ a {
   opacity: 0;
 }
 
+.gallery {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.gallery .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.gallery .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.gallery .inner {
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.gallery .inner h1 {
+  font: normal 50px/1 "arial";
+  color: black;
+  margin-bottom: 50px;
+}
+.gallery .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.gallery .inner #searchBox {
+  width: 100%;
+  padding: 50px;
+  overflow: hidden;
+  font-size: 0;
+}
+.gallery .inner #searchBox input[type=text] {
+  width: 200px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+}
+.gallery .inner #searchBox .btnSearch {
+  width: 80px;
+  height: 30px;
+  background: #333;
+  font: bold 12px/30px "arial";
+  text-align: center;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+  vertical-align: top;
+}
+.gallery .inner #wrap {
+  width: 100%;
+  padding: 50px;
+  overflow: hidden;
+}
+.gallery .inner #wrap .loading {
+  width: 100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 1s;
+}
+.gallery .inner #wrap .loading.off {
+  opacity: 0;
+}
+.gallery .inner #wrap #list {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 1s;
+}
+.gallery .inner #wrap #list::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.gallery .inner #wrap #list li {
+  width: 16.6666666667%;
+  float: left;
+  padding: 10px;
+}
+.gallery .inner #wrap #list li div {
+  width: 100%;
+  background: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+}
+.gallery .inner #wrap #list li div a img {
+  width: 100%;
+}
+.gallery .inner #wrap #list li div p {
+  font: 12px/1.2 "arial";
+  color: #777;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.gallery .inner #wrap #list li div span {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+.gallery .inner #wrap #list li div span img {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+.gallery .inner #wrap #list li div span strong {
+  font: 11px/1 "arial";
+  color: orange;
+}
+.gallery .inner #wrap #list.on {
+  opacity: 1;
+  transform: translateY(0px);
+}
+.gallery .inner aside {
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gallery .inner aside img {
+  height: 100%;
+}
+.gallery .inner aside span {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  color: #fff;
+}
+
+@media screen and (max-width: 1599px) {
+  #wrap #list li {
+    width: 20%;
+  }
+}
+@media screen and (max-width: 1399px) {
+  #wrap #list li {
+    width: 25%;
+  }
+}
+@media screen and (max-width: 999px) {
+  #wrap #list li {
+    width: 33.3333333333%;
+  }
+}
+@media screen and (max-width: 749px) {
+  #wrap #list li {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 439px) {
+  #wrap #list li {
+    width: 100%;
+  }
+}
 .board {
   width: 100%;
   height: 100%;
@@ -64,7 +233,7 @@ a {
   background: #eee;
 }
 .board .inner table tr:hover {
-  background: #f7d9f1;
+  background: #e5d8d0;
 }
 .board .inner table tr th {
   padding: 15px;
@@ -141,7 +310,7 @@ a {
   transition: 0.5s;
 }
 .board .inner .pagination .numbers a:hover {
-  background: #f7d9f1;
+  background: #e5d8d0;
   color: #111;
 }
 
@@ -242,7 +411,7 @@ a {
 }
 .members .inner h1 {
   font: normal 50px/1 "arial";
-  color: #d1b489;
+  color: black;
   margin-bottom: 50px;
 }
 .members .inner h1 span {
@@ -293,6 +462,420 @@ a {
   color: #fff;
   background-color: #d1b489;
   border-radius: 5px;
+}
+
+.youtube {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.youtube .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.youtube .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube .inner {
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.youtube .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.youtube .inner h1 {
+  font: normal 50px/1 "arial";
+  color: black;
+  margin-bottom: 50px;
+}
+.youtube .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.youtube .inner .vidList {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-start;
+}
+.youtube .inner .vidList article {
+  width: 48%;
+  height: 400px;
+  border: 1px solid #555;
+  margin-bottom: 40px;
+}
+.youtube .inner .vidList article .pic {
+  display: block;
+  width: 100%;
+  height: 60%;
+}
+.youtube .inner .vidList article .pic > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.youtube .inner .vidList article .con {
+  width: 100%;
+  height: 40%;
+  padding: 20px;
+}
+.youtube .inner .vidList article .con h2 {
+  font: bold 20px/1.2 "Antic Slab";
+  color: #444;
+  margin-bottom: 15px;
+}
+.youtube .inner .vidList article .con p {
+  font: 14px/1.4 "Antic Slab";
+  color: #666;
+  margin-bottom: 20px;
+}
+.youtube .inner .vidList article .con span {
+  font: bold 16px/1 "Antic Slab";
+  color: orange;
+}
+.youtube .inner figure.pop {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);
+  overflow: hidden;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.youtube .inner figure.pop .btnClose {
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.join {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.join .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.join .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.join .inner {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 100px;
+}
+.join .inner h1 {
+  font: normal 50px/1 "arial";
+  color: #000;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.join .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.join .inner h2 {
+  font: bold 18px/1 "arial";
+  color: #555;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.join .inner #terms {
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  resize: none;
+  font: 12px/1.3 "arial";
+  color: #888;
+  background: #eee;
+  margin-bottom: 10px;
+}
+.join .inner .agreement {
+  text-align: center;
+  margin-bottom: 70px;
+}
+.join .inner .agreement label[for=agree] {
+  font-size: 15px;
+}
+.join .inner fieldset {
+  padding: 30px;
+}
+.join .inner table {
+  width: 100%;
+  border-top: 2px solid #999;
+  border-bottom: 2px solid #999;
+}
+.join .inner table th {
+  width: 22%;
+  text-align: left;
+  font: bold 14px/1 "arial";
+  color: #666;
+  padding: 20px;
+  border-right: 1px solid #bbb;
+  border-bottom: 1px solid #bbb;
+  background: #eee;
+}
+.join .inner table th:last-child {
+  background: #fff;
+  text-align: center;
+  border-right: none;
+}
+.join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+  width: 180px;
+  height: 40px;
+  border: none;
+  background: #ebded6;
+  font: bold 14px/1 "arial";
+  color: #000;
+  margin: 0 10px;
+}
+.join .inner table td {
+  border-bottom: 1px solid #bbb;
+  padding: 20px 30px;
+}
+.join .inner table td input[type=text],
+.join .inner table td input[type=password],
+.join .inner table td select {
+  width: 30%;
+  height: 30px;
+  border: 1px solid #bbb;
+  background: #eeffff;
+  padding-left: 20px;
+}
+.join .inner table td input[type=checkbox],
+.join .inner table td input[type=radio] {
+  margin-right: 5px;
+}
+.join .inner table td label {
+  margin-right: 30px;
+}
+.join .inner table td textarea#comments {
+  width: 80%;
+  height: 100px;
+  border: 1px solid #bbb;
+  background: #eeffff;
+  resize: none;
+  padding: 20px;
+}
+.join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+  font: 12px/1 "arial";
+  color: #f71f43;
+  margin-top: 10px;
+  display: none;
+}
+.join .inner p {
+  font: 12px/1 "arial";
+  color: #f71f43;
+  margin-top: 10px;
+}
+
+/* ----- Responsive Settings ----- */
+@media screen and (max-width: 1179px) {
+  .join .inner table th {
+    display: none;
+  }
+  .join .inner table th:last-child {
+    display: block;
+    width: 100%;
+  }
+  .join .inner table td input[type=text],
+.join .inner table td input[type=password],
+.join .inner table td select {
+    width: 50%;
+  }
+  .join .inner table td textarea#comments {
+    width: 90%;
+  }
+  .join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+    display: block;
+  }
+}
+@media screen and (max-width: 539px) {
+  .join .inner table th {
+    font-size: 0;
+  }
+  .join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+    width: 40%;
+    margin: 0 5%;
+  }
+  .join .inner table td input[type=text],
+.join .inner table td input[type=password],
+.join .inner table td select {
+    width: 100%;
+  }
+  .join .inner table td label {
+    display: block;
+    margin-right: 0px;
+  }
+  .join .inner table td textarea#comments {
+    width: 100%;
+  }
+  .join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+    display: block;
+  }
+}
+.login {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.login .inner {
+  /* form Container */
+  /* the header form form */
+  /* Login title form form */
+  /*  A welcome message or an explanation of the login form */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* Show/hide password Font Icon */
+  /* inputs form  */
+  /* focus  */
+  /* //////////////////////////////////////////// */
+  /* //////////////////////////////////////////// */
+  /* input[type="text"] {min-width: 250px;} */
+  /* buttons  */
+  /* Submits */
+  /*       Forgot Password button FAF3DD  */
+  /*     Sign Up button  */
+  /* buttons hover */
+  /* buttons hover Animation */
+}
+.login .inner form {
+  width: 450px;
+  min-height: 500px;
+  height: auto;
+  border-radius: 5px;
+  margin: 2% auto;
+  box-shadow: 0 9px 50px rgba(235, 204, 189, 0.31);
+  padding: 2%;
+  background-image: linear-gradient(-225deg, #f3e9d6 50%, #ebded6 50%);
+}
+.login .inner form .con {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+.login .inner header {
+  margin: 2% auto 10% auto;
+  text-align: center;
+}
+.login .inner header h2 {
+  font-size: 250%;
+  font-family: "Antic Slab";
+  color: #3e403f;
+}
+.login .inner header p {
+  letter-spacing: 0.05em;
+}
+.login .inner .input-item {
+  background: #fff;
+  color: #333;
+  padding: 14.5px 0px 15px 9px;
+  border-radius: 5px 0px 0px 5px;
+}
+.login .inner #eye {
+  background: #fff;
+  color: #333;
+  margin: 5.9px 0 0 0;
+  margin-left: -20px;
+  padding: 15px 9px 19px 0px;
+  border-radius: 0px 5px 5px 0px;
+  float: right;
+  position: relative;
+  right: 1%;
+  top: -0.2%;
+  z-index: 5;
+  cursor: pointer;
+}
+.login .inner input[class=form-input] {
+  width: 240px;
+  height: 50px;
+  margin-top: 2%;
+  padding: 15px;
+  font-size: 16px;
+  font-family: "arial";
+  color: #5e6472;
+  outline: none;
+  border: none;
+  border-radius: 0px 5px 5px 0px;
+  transition: 0.2s linear;
+}
+.login .inner input[id=txt-input] {
+  width: 250px;
+}
+.login .inner input:focus {
+  transform: translateX(-2px);
+  border-radius: 5px;
+}
+.login .inner button {
+  display: inline-block;
+  color: #252537;
+  width: 280px;
+  height: 50px;
+  padding: 0 20px;
+  background: #fff;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s linear;
+  margin: 7% auto;
+  letter-spacing: 0.05em;
+}
+.login .inner .submits {
+  width: 48%;
+  float: left;
+  margin-left: 2%;
+}
+.login .inner .frpw {
+  background: transparent;
+}
+.login .inner .signup {
+  background: #b8f2e6;
+}
+.login .inner a:hover {
+  transform: translatey(3px);
+  box-shadow: none;
+}
+.login .inner a:hover {
+  animation: ani9 0.4s ease-in-out infinite alternate;
+}
+@keyframes ani9 {
+  0% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(5px);
+  }
 }
 
 #header,
@@ -648,6 +1231,9 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+#products .container .prodList article > div:hover {
+  transition: all 0.5s ease;
+}
 #products .container .prodList article > div:hover img {
   filter: blur(2px);
   transform: scale(1.1);
@@ -922,36 +1508,45 @@ a {
 
 /* ----- Responsive Settings ----- */
 @media screen and (max-width: 1179px) {
-  #header .inner {
+  #header .inner,
+#header_sub .inner {
     width: 100%;
     height: 100px;
   }
-  #header .inner > h1 {
+  #header .inner > h1,
+#header_sub .inner > h1 {
     left: 20px;
   }
-  #header .inner .menuWeb {
+  #header .inner .menuWeb,
+#header_sub .inner .menuWeb {
     display: none;
   }
-  #header .inner .btnCall {
+  #header .inner .btnCall,
+#header_sub .inner .btnCall {
     display: block;
   }
-  #header .inner .menuMo {
+  #header .inner .menuMo,
+#header_sub .inner .menuMo {
     display: block;
   }
 
-  #footer {
+  #footer,
+#footer_sub {
     padding: 80px 30px;
   }
-  #footer .inner {
+  #footer .inner,
+#footer_sub .inner {
     width: 100%;
   }
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
-  #footer .inner ul {
+  #footer .inner ul,
+#footer_sub .inner ul {
     width: 100%;
   }
-  #footer .inner ul li {
+  #footer .inner ul li,
+#footer_sub .inner ul li {
     margin-left: 0;
     margin: 5px;
   }

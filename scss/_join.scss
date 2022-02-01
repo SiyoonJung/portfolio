@@ -1,0 +1,216 @@
+.join {
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+
+	.sub_visual {
+		width: 100%;
+		height: 250px;
+		opacity: 0.8;
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+
+	.inner {
+		width: 1200px;
+		margin: 0 auto;
+		padding: 100px;
+
+		h1 {
+			font: normal 50px/1 "arial";
+			color: #000;
+			text-align: center;
+			margin-bottom: 50px;
+			span {
+				font: normal 20px/1 "맑은 고딕";
+				color: #aaa;
+			}
+		}
+
+		h2 {
+			font: bold 18px/1 "arial";
+			color: #555;
+			text-align: center;
+			margin-bottom: 20px;
+		}
+		#terms {
+			width: 100%;
+			height: 100px;
+			padding: 20px;
+			resize: none;
+			font: 12px/1.3 "arial";
+			color: #888;
+			background: #eee;
+			margin-bottom: 10px;
+		}
+		.agreement {
+			text-align: center;
+			margin-bottom: 70px;
+
+			label[for="agree"] {
+				font-size: 15px;
+			}
+		}
+
+		fieldset {
+			padding: 30px;
+		}
+
+		table {
+			width: 100%;
+			border-top: 2px solid #999;
+			border-bottom: 2px solid #999;
+
+			th {
+				width: 22%;
+				text-align: left;
+				font: bold 14px/1 "arial";
+				color: #666;
+				padding: 20px;
+				border-right: 1px solid #bbb;
+				border-bottom: 1px solid #bbb;
+				background: #eee;
+
+				&:last-child {
+					background: #fff;
+					text-align: center;
+					border-right: none;
+				}
+
+				input[type="submit"],
+				input[type="reset"] {
+					width: 180px;
+					height: 40px;
+					border: none;
+					background: #ebded6;
+					font: bold 14px/1 "arial";
+					color: #000;
+					margin: 0 10px;
+				}
+			}
+
+			td {
+				border-bottom: 1px solid #bbb;
+				padding: 20px 30px;
+
+				input[type="text"],
+				input[type="password"],
+				select {
+					width: 30%;
+					height: 30px;
+					border: 1px solid #bbb;
+					background: #eeffff;
+					padding-left: 20px;
+				}
+
+				input[type="checkbox"],
+				input[type="radio"] {
+					margin-right: 5px;
+				}
+				label {
+					margin-right: 30px;
+				}
+
+				textarea#comments {
+					width: 80%;
+					height: 100px;
+					border: 1px solid #bbb;
+					background: #eeffff;
+					resize: none;
+					padding: 20px;
+				}
+
+				.hobbyTxt,
+				.genderTxt {
+					font: 12px/1 "arial";
+					color: rgb(247, 31, 67);
+					margin-top: 10px;
+					display: none;
+				}
+			}
+		}
+		p {
+			font: 12px/1 "arial";
+			color: rgb(247, 31, 67);
+			margin-top: 10px;
+		}
+	}
+}
+
+/* ----- Responsive Settings ----- */
+@media screen and (max-width: $tablet) {
+	.join {
+		.inner {
+			table {
+				th {
+					display: none;
+
+					&:last-child {
+						display: block;
+						width: 100%;
+					}
+				}
+
+				td {
+					input[type="text"],
+					input[type="password"],
+					select {
+						width: 50%;
+					}
+
+					textarea#comments {
+						width: 90%;
+					}
+
+					.hobbyTxt,
+					.genderTxt {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.join {
+		.inner {
+			table {
+				th {
+					font-size: 0;
+					input[type="submit"],
+					input[type="reset"] {
+						width: 40%;
+						margin: 0 5%;
+					}
+				}
+
+				td {
+					input[type="text"],
+					input[type="password"],
+					select {
+						width: 100%;
+					}
+
+					label {
+						display: block;
+						margin-right: 0px;
+					}
+
+					textarea#comments {
+						width: 100%;
+					}
+
+					.hobbyTxt,
+					.genderTxt {
+						display: block;
+					}
+				}
+			}
+		}
+	}
+}
