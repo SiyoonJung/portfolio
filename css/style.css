@@ -212,13 +212,13 @@ a {
 #visual {
   width: 100%;
   position: relative;
+  background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
 #visual .swiper {
-  width: 100%;
+  width: 1200px;
   height: 100%;
 }
 #visual .swiper .swiper-slide {
-  background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -256,6 +256,10 @@ a {
 #visual .swiper .swiper-slide .inner .text h1 {
   font: bold 50px/1.5 "Caveat";
 }
+#visual .swiper .swiper-slide .inner .text p {
+  margin-top: 10px;
+  font: normal 18px/1.8 "arial";
+}
 #visual .swiper .swiper-slide .inner .image {
   width: 50%;
   margin: 0 auto;
@@ -267,9 +271,6 @@ a {
   height: 600px;
   object-fit: cover;
 }
-#visual .swiper .swiper-slide .inner .image p {
-  font: normal 20px/2 "arial";
-}
 
 #features {
   width: 100%;
@@ -278,6 +279,7 @@ a {
   width: 1200px;
   height: 300px;
   margin: 0 auto;
+  text-align: center;
   padding: 0px;
   border-bottom: 1px solid #aaa;
 }
@@ -286,7 +288,6 @@ a {
   margin: 0 auto;
   padding: 50px;
   text-align: center;
-  background-image: #f5f5f5;
   box-sizing: border-box;
   width: 25%;
   height: 100%;
@@ -294,6 +295,22 @@ a {
 }
 #features .wrapper .box:last-of-type {
   border-right: 0;
+}
+#features .wrapper .box:nth-of-type(1):hover {
+  background-color: #e8e7d2;
+  transition: all 0.5s ease;
+}
+#features .wrapper .box:nth-of-type(2):hover {
+  background-color: #d2d5b8;
+  transition: all 0.5s ease;
+}
+#features .wrapper .box:nth-of-type(3):hover {
+  background-color: #bdc2bb;
+  transition: all 0.5s ease;
+}
+#features .wrapper .box:nth-of-type(4):hover {
+  background-color: #c9ba9b;
+  transition: all 0.5s ease;
 }
 #features .wrapper .box h2 {
   font: bold 20px/1.5 "Antic Slab";
@@ -315,57 +332,313 @@ a {
   margin-top: 50px;
   text-align: center;
   font: bold 45px/1.5 "Caveat";
-  letter-spacing: 1px;
+  letter-spacing: 2px;
 }
-#products article {
+#products .container {
+  width: 1200px;
+  margin: 0 auto;
+}
+#products .container .prodMenu {
+  text-align: center;
+  margin-top: 10px;
+}
+#products .container .prodMenu ul li {
+  font: normal 20px/1 "Antic Slab";
+  display: inline-block;
+  margin: 15px;
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 8%;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+#products .container .prodMenu ul li:hover {
+  background: #e9c9b5;
+  color: black;
+}
+#products .container .prodList {
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+#products .container .prodList article {
   width: 22%;
   display: inline-block;
   margin: 0 auto;
+  text-align: center;
   padding: 10px;
 }
-#products article > div {
+#products .container .prodList article > div {
   width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
   cursor: pointer;
 }
-#products article > div:hover img {
+#products .container .prodList article > div:hover img {
   filter: blur(2px);
-  transform: sale(1.1);
+  transform: scale(1.1);
 }
-#products article > div:hover div h2,
-#products article > div:hover div p {
+#products .container .prodList article > div:hover div h2,
+#products .container .prodList article > div:hover div p,
+#products .container .prodList article > div:hover div a {
   opacity: 1;
   transform: translateY(0%);
 }
-#products article > div div {
+#products .container .prodList article > div div {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
   left: 5%;
-  padding: 0px 30px;
+  padding: 0px 20px;
 }
-#products article > div div img {
+#products .container .prodList article > div div img {
   width: 100%;
   height: 100%;
   transition: linear 0.3s;
 }
-#products article > div div h2 {
-  font: bold 22px/1 "arial";
+#products .container .prodList article > div div h2 {
+  font: bold 25px/1 "arial";
   color: #fff;
   letter-spacing: 1px;
   margin: 15px 0px;
   opacity: 0;
   transition: 0.5s;
-  transform: translateY(-100%);
+  transform: -100%;
 }
-#products article > div div p {
-  font: 12px/1.2 "arial";
-  color: black;
+#products .container .prodList article > div div p {
+  font: 14px/1.2 "arial";
+  color: #fff;
   opacity: 0;
   transition: 0.5s;
-  transform: translateY(100%);
+  transform: 100%;
+}
+#products .container .prodList article > div div a {
+  display: block;
+  width: 150px;
+  height: auto;
+  padding: 5px;
+  margin: 10px;
+  font: bold 15px/1.2 "arial";
+  color: #fff;
+  background-color: black;
+  opacity: 0;
+  transition: 0.5s;
+  transform: 100%;
+}
+
+#celebrity {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  position: relative;
+  background-color: #e8e7d2;
+}
+#celebrity .swiper {
+  width: 1200px;
+  height: 100%;
+}
+#celebrity .swiper .swiper-slide {
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+#celebrity .swiper .swiper-slide::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#celebrity .swiper .swiper-slide .inner {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0px;
+}
+#celebrity .swiper .swiper-slide .inner .text {
+  width: 60%;
+  margin: 0 auto;
+  padding: 100px 50px;
+  float: right;
+  text-align: center;
+}
+#celebrity .swiper .swiper-slide .inner .text h2 {
+  font: bold 25px/1.5 "Antic Slab";
+}
+#celebrity .swiper .swiper-slide .inner .text h1 {
+  font: bold 40px/1.5 "Caveat";
+}
+#celebrity .swiper .swiper-slide .inner .text p {
+  margin-top: 10px;
+  margin-bottom: 20px;
+  font: normal 18px/1.8 "arial";
+}
+#celebrity .swiper .swiper-slide .inner .text a {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  padding: 5px;
+  font: bold 20px/1 "Antic Slab";
+  color: #fff;
+  text-align: center;
+  background-color: #b38368;
+}
+#celebrity .swiper .swiper-slide .inner .text a:hover {
+  color: #b38368;
+  background-color: #fff;
+  transition: all 0.3s ease;
+}
+#celebrity .swiper .swiper-slide .inner .image {
+  width: 40%;
+  margin: 0 auto;
+  padding: 200px;
+  position: relative;
+  float: right;
+}
+#celebrity .swiper .swiper-slide .inner .image img {
+  display: block;
+  width: 450px;
+  height: 450px;
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+#banner {
+  width: 100%;
+  height: 300px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  position: relative;
+}
+#banner .wrapper {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
+  background-image: url(../img/main/bg.png);
+  background-color: #ddd7d4;
+  background-blend-mode: multiply;
+}
+#banner .wrapper .left {
+  width: 300px;
+  float: right;
+  margin: 0 auto;
+}
+#banner .wrapper .left img {
+  width: 100%;
+}
+#banner .wrapper .center {
+  width: 600px;
+  margin: 0 auto;
+  padding: 80px;
+  float: right;
+}
+#banner .wrapper .center p {
+  font: normal 20px/1.5 "Antic Slab";
+  color: black;
+  margin-bottom: 10px;
+}
+#banner .wrapper .center h3 {
+  font: bold 35px/1.5 "Antic Slab";
+  color: black;
+  margin-bottom: 10px;
+}
+#banner .wrapper .center a {
+  display: block;
+  width: 200px;
+  height: auto;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font: bold 18px/1 "Antic Slab";
+  color: #fff;
+  border: 1px solid #999;
+  background-color: #111;
+}
+#banner .wrapper .center:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
+#banner .wrapper .right {
+  width: 300px;
+  float: right;
+  margin: 0 auto;
+}
+#banner .wrapper .right img {
+  width: 100%;
+}
+
+#footer {
+  width: 100%;
+  margin-top: 50px;
+  padding: 100px 0;
+  background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+}
+#footer .inner {
+  width: 1180px;
+  margin: 0 auto;
+}
+#footer .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#footer .inner h1 {
+  font: bold 25px/1 "Antic Slab";
+  letter-spacing: 1px;
+  color: black;
+  margin-bottom: 15px;
+  float: left;
+}
+#footer .inner ul {
+  float: right;
+}
+#footer .inner ul li {
+  float: left;
+  margin-left: 20px;
+}
+#footer .inner ul li a {
+  font: bold 15px/1.5 "Antic Slab";
+  letter-spacing: 1px;
+  color: black;
+}
+#footer .inner address {
+  float: left;
+  width: 100%;
+  font: 15px/1.5 "Antic Slab";
+  color: black;
+  letter-spacing: 1px;
+  border-top: 2px solid #fff;
+  margin-bottom: 15px;
+}
+#footer .inner p {
+  font: 15px/1 "Antic Slab";
+  letter-spacing: 1px;
+  color: black;
+  width: 100%;
+  float: left;
+}
+#footer .inner #sns {
+  margin-right: 10px;
+  float: right;
+  font: bold 20px/1 "Antic Slab";
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

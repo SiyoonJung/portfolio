@@ -1,6 +1,17 @@
-var swiper = new Swiper(".mySwiper", {
+var swiper = new Swiper(".swiper1", {
   pagination: {
     el: ".swiper-pagination",
+  },
+});
+
+var swiper = new Swiper(".swiper2", {
+  pagination: {
+    el: ".swiper-pagination",
+    type: "fraction",
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
 });
 
@@ -15,56 +26,23 @@ btnCall.onclick = function (e) {
   menuMo.classList.toggle("on");
 }
 
-window.addEventListener("load", () => {
-  /* 전역변수 리스트---------------------------------------- */
-  const grid = new Isotope("#products", {
-    itemSelection: "article",
-    columnWidth: "article",
-    transitionDuration: "0.5s"
-  });
-
-  const className_on = "on";
-
-  //header#header
-  const menu = header.querySelector("menuProd");
-  const btns = menu.querySelector("li");
-
-  //section#sort
-  const articles = document.querySelectorAll("article");
-
-  /* 이벤트 연결---------------------------------------- */
-  for (let el of btns) {
-    el.addEventListener("click", e => {
-      e.preventDefault();
-
-      sortFrame(e);
-      activation(btns, e);
-    });
-  }
-
-  for (let el of articles) {
-    el.addEventListener("click", e => {
-      activePopUp(e);
-    })
-  }
-
-
-  /* 함수 선언---------------------------------------- */
-  //선택한 메뉴에 .on 추가
-  function activation(lists, active) {
-    for (let el of lists) {
-      el.classList.remove(className_on);
+/* ------------ Isotope ------------*/
+$(".prodList").isotope({
+  itemSelector: '.prod',
+  layoutMode: 'fitRows',
+  masonry: {
+    columnWidth: 20,
+    isFitWidth: true
     }
+});
 
-    active.currentTarget.classList.add(className_on);
-  }
+$(".prodMenu ul li").click(function () {
+  $(".prodMenu ul li").removeClass("active");
+  $(this).addClass("active");
 
-  //정렬 함수
-  function sortFrame(target) {
-    const sort = target.currentTarget.querySelector("a").getAttribute("href");
-
-    grid.arrange({
-      filter: sort,
-    });
-  }
+  var selector = $(this).attr("data-filter");
+  $(".prodList").isotope({
+    filter: selector
+  });
+  return false;
 });

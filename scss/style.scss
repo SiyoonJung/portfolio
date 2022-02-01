@@ -11,17 +11,6 @@ $mobile: 539px;
 	margin-bottom: $mb;
 }
 
-@mixin fontEffectOff($translateY: translateY(-100%)) {
-	opacity: 0;
-	transition: 0.5s;
-	transform: $translateY;
-}
-
-@mixin fontEffectOn {
-	opacity: 1;
-	transform: translateY(0%);
-}
-
 @import "reset.scss";
 @import "gallery.scss";
 @import "board.scss";
@@ -224,14 +213,13 @@ $mobile: 539px;
 #visual {
 	width: 100%;
 	position: relative;
+	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.swiper {
-		width: 100%;
+		width: 1200px;
 		height: 100%;
 
 		.swiper-slide {
-			background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
-
 			/* Center slide text vertically */
 			display: -webkit-box;
 			display: -ms-flexbox;
@@ -270,6 +258,10 @@ $mobile: 539px;
 					h1 {
 						font: bold 50px/1.5 "Caveat";
 					}
+					p {
+						margin-top: 10px;
+						font: normal 18px/1.8 "arial";
+					}
 				}
 
 				.image {
@@ -282,10 +274,6 @@ $mobile: 539px;
 						width: 600px;
 						height: 600px;
 						object-fit: cover;
-					}
-
-					p {
-						font: normal 20px/2 "arial";
 					}
 				}
 			}
@@ -300,6 +288,7 @@ $mobile: 539px;
 		width: 1200px;
 		height: 300px;
 		margin: 0 auto;
+		text-align: center;
 		padding: 0px;
 		border-bottom: 1px solid #aaa;
 
@@ -308,7 +297,6 @@ $mobile: 539px;
 			margin: 0 auto;
 			padding: 50px;
 			text-align: center;
-			background-image: #f5f5f5;
 			box-sizing: border-box;
 			width: 25%;
 			height: 100%;
@@ -316,6 +304,26 @@ $mobile: 539px;
 
 			&:last-of-type {
 				border-right: 0;
+			}
+
+			&:nth-of-type(1):hover {
+				background-color: #e8e7d2;
+				transition: all 0.5s ease;
+			}
+
+			&:nth-of-type(2):hover {
+				background-color: #d2d5b8;
+				transition: all 0.5s ease;
+			}
+
+			&:nth-of-type(3):hover {
+				background-color: #bdc2bb;
+				transition: all 0.5s ease;
+			}
+
+			&:nth-of-type(4):hover {
+				background-color: #c9ba9b;
+				transition: all 0.5s ease;
 			}
 
 			h2 {
@@ -342,61 +350,355 @@ $mobile: 539px;
 		margin-top: 50px;
 		text-align: center;
 		font: bold 45px/1.5 "Caveat";
-		letter-spacing: 1px;
+		letter-spacing: 2px;
 	}
 
-	article {
-		width: 22%;
-		display: inline-block;
+	.container {
+		width: 1200px;
 		margin: 0 auto;
-		padding: 10px;
 
-		> div {
-			width: 100%;
-			height: 100%;
-			position: relative;
-			overflow: hidden;
-			cursor: pointer;
+		.prodMenu {
+			text-align: center;
+			margin-top: 10px;
 
-			&:hover {
-				img {
-					filter: blur(2px);
-					transform: sale(1.1);
-				}
+			ul li {
+				font: normal 20px/1 "Antic Slab";
+				display: inline-block;
+				margin: 15px;
+				padding: 10px 15px;
+				border: 1px solid black;
+				border-radius: 8%;
+				cursor: pointer;
+				-webkit-transition: all 0.5s ease;
+				-moz-transition: all 0.5s ease;
+				-ms-transition: all 0.5s ease;
+				-o-transition: all 0.5s ease;
+				transition: all 0.5s ease;
 
-				div h2,
-				div p {
-					@include fontEffectOn();
+				&:hover {
+					background: #e9c9b5;
+					color: black;
 				}
 			}
+		}
 
-			div {
-				position: absolute;
-				top: 50%;
-				transform: translateY(-50%);
-				left: 5%;
-				padding: 0px 30px;
+		.prodList {
+			width: 100%;
+			margin: 0 auto;
+			text-align: center;
 
-				img {
+			article {
+				width: 22%;
+				display: inline-block;
+				margin: 0 auto;
+				text-align: center;
+				padding: 10px;
+
+				> div {
 					width: 100%;
 					height: 100%;
-					transition: linear 0.3s;
-				}
+					position: relative;
+					overflow: hidden;
+					cursor: pointer;
 
-				h2 {
-					font: bold 22px/1 "arial";
-					color: #fff;
-					letter-spacing: 1px;
-					margin: 15px 0px;
-					@include fontEffectOff();
-				}
+					&:hover {
+						img {
+							filter: blur(2px);
+							transform: scale(1.1);
+						}
 
-				p {
-					font: 12px/1.2 "arial";
-					color: black;
-					@include fontEffectOff($translateY: translateY(100%));
+						div h2,
+						div p,
+						div a {
+							opacity: 1;
+							transform: translateY(0%);
+						}
+					}
+
+					div {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 5%;
+						padding: 0px 20px;
+
+						img {
+							width: 100%;
+							height: 100%;
+							transition: linear 0.3s;
+						}
+
+						h2 {
+							font: bold 25px/1 "arial";
+							color: #fff;
+							letter-spacing: 1px;
+							margin: 15px 0px;
+							opacity: 0;
+							transition: 0.5s;
+							transform: -100%;
+						}
+
+						p {
+							font: 14px/1.2 "arial";
+							color: #fff;
+							opacity: 0;
+							transition: 0.5s;
+							transform: 100%;
+						}
+
+						a {
+							display: block;
+							width: 150px;
+							height: auto;
+							padding: 5px;
+							margin: 10px;
+							font: bold 15px/1.2 "arial";
+							color: #fff;
+							background-color: black;
+							opacity: 0;
+							transition: 0.5s;
+							transform: 100%;
+						}
+					}
 				}
 			}
+		}
+	}
+}
+
+#celebrity {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	position: relative;
+	background-color: #e8e7d2;
+
+	.swiper {
+		width: 1200px;
+		height: 100%;
+
+		.swiper-slide {
+			/* Center slide text vertically */
+			display: -webkit-box;
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-box-pack: center;
+			-ms-flex-pack: center;
+			-webkit-justify-content: center;
+			justify-content: center;
+			-webkit-box-align: center;
+			-ms-flex-align: center;
+			-webkit-align-items: center;
+			align-items: center;
+
+			&::after {
+				display: block;
+				content: "";
+				clear: both;
+			}
+
+			.inner {
+				width: 100%;
+				margin: 0 auto;
+				padding: 0px;
+
+				.text {
+					width: 60%;
+					margin: 0 auto;
+					padding: 100px 50px;
+					float: right;
+					text-align: center;
+
+					h2 {
+						font: bold 25px/1.5 "Antic Slab";
+					}
+					h1 {
+						font: bold 40px/1.5 "Caveat";
+					}
+
+					p {
+						margin-top: 10px;
+						margin-bottom: 20px;
+						font: normal 18px/1.8 "arial";
+					}
+
+					a {
+						display: block;
+						width: 150px;
+						height: auto;
+						margin: 0 auto;
+						padding: 5px;
+						font: bold 20px/1 "Antic Slab";
+						color: #fff;
+						text-align: center;
+						background-color: rgb(179, 131, 104);
+
+						&:hover {
+							color: rgb(179, 131, 104);
+							background-color: #fff;
+							transition: all 0.3s ease;
+						}
+					}
+				}
+
+				.image {
+					width: 40%;
+					margin: 0 auto;
+					padding: 200px;
+					position: relative;
+					float: right;
+
+					img {
+						display: block;
+						width: 450px;
+						height: 450px;
+						border-radius: 50%;
+						object-fit: cover;
+						position: absolute;
+						top: 15%;
+						left: 15%;
+					}
+				}
+			}
+		}
+	}
+}
+
+#banner {
+	width: 100%;
+	height: 300px;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	position: relative;
+
+	.wrapper {
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		text-align: center;
+		background-image: url(../img/main/bg.png);
+		background-color: #ddd7d4;
+		background-blend-mode: multiply;
+
+		.left {
+			width: 300px;
+			float: right;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.center {
+			width: 600px;
+			margin: 0 auto;
+			padding: 80px;
+			float: right;
+			p {
+				font: normal 20px/1.5 "Antic Slab";
+				color: black;
+				margin-bottom: 10px;
+			}
+			h3 {
+				font: bold 35px/1.5 "Antic Slab";
+				color: black;
+				margin-bottom: 10px;
+			}
+
+			a {
+				display: block;
+				width: 200px;
+				height: auto;
+				padding: 5px;
+				margin: 0 auto;
+				text-align: center;
+				font: bold 18px/1 "Antic Slab";
+				color: #fff;
+				border: 1px solid #999;
+				background-color: #111;
+			}
+
+			&:hover {
+				transform: scale(1.1);
+				transition: all 1s ease;
+			}
+		}
+
+		.right {
+			width: 300px;
+			float: right;
+			margin: 0 auto;
+
+			img {
+				width: 100%;
+			}
+		}
+	}
+}
+
+#footer {
+	width: 100%;
+	margin-top: 50px;
+	padding: 100px 0;
+	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+
+		&::after {
+			content: "";
+			display: block;
+			clear: both;
+		}
+
+		h1 {
+			font: bold 25px/1 "Antic Slab";
+			letter-spacing: 1px;
+			color: black;
+			margin-bottom: 15px;
+			float: left;
+		}
+
+		ul {
+			float: right;
+
+			li {
+				float: left;
+				margin-left: 20px;
+
+				a {
+					font: bold 15px/1.5 "Antic Slab";
+					letter-spacing: 1px;
+					color: black;
+				}
+			}
+		}
+
+		address {
+			float: left;
+			width: 100%;
+			font: 15px/1.5 "Antic Slab";
+			color: black;
+			letter-spacing: 1px;
+			border-top: 2px solid #fff;
+			margin-bottom: 15px;
+		}
+		p {
+			font: 15px/1 "Antic Slab";
+			letter-spacing: 1px;
+			color: black;
+			width: 100%;
+			float: left;
+		}
+
+		#sns {
+			margin-right: 10px;
+			float: right;
+			font: bold 20px/1 "Antic Slab";
+			text-align: center;
 		}
 	}
 }
