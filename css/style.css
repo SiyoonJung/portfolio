@@ -559,6 +559,97 @@ a {
   cursor: pointer;
 }
 
+.location {
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+}
+.location .sub_visual {
+  width: 100%;
+  height: 250px;
+  opacity: 0.8;
+}
+.location .sub_visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.location .inner {
+  margin: 0 auto;
+  padding: 100px 50px;
+  width: 1200px;
+  height: 100%;
+  text-align: center;
+  position: relative;
+}
+.location .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.location .inner h1 {
+  font: normal 50px/1 "arial";
+  color: black;
+  margin-bottom: 50px;
+}
+.location .inner h1 span {
+  font: normal 20px/1 "맑은 고딕";
+  color: #aaa;
+}
+.location .inner #map {
+  width: 100%;
+  height: 500px;
+  border: 1px solid #000;
+  margin-bottom: 20px;
+}
+.location .inner::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.location .inner .traffic {
+  float: left;
+}
+.location .inner .traffic li {
+  float: left;
+  margin-right: 20px;
+}
+.location .inner .traffic li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .inner .traffic li.on a {
+  background: #fff;
+  color: #333;
+}
+.location .inner .branch {
+  float: right;
+}
+.location .inner .branch li {
+  float: left;
+  margin-left: 10px;
+}
+.location .inner .branch li a {
+  display: block;
+  width: 150px;
+  height: 40px;
+  background: #555;
+  font: bold 12px/40px "맑은 고딕";
+  color: #fff;
+  text-align: center;
+  border: 1px solid #555;
+}
+.location .inner .branch li.on a {
+  background: #fff;
+  color: #333;
+}
+
 .join {
   width: 100%;
   height: 100%;
@@ -1079,6 +1170,7 @@ a {
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  transition: all 0.5s ease;
 }
 #visual .swiper .swiper-slide::after {
   display: block;

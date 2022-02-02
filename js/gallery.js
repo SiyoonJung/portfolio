@@ -10,7 +10,7 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "59306e618c1ccae927923d78b847eb75"; 
-const per_page = 10; 
+const per_page = 20; 
 const format = "json"; 
 
 // //검색량이 많은 이미지를 요청하는 주소 

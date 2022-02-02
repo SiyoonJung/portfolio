@@ -230,6 +230,7 @@ $mobile: 539px;
 			-ms-flex-align: center;
 			-webkit-align-items: center;
 			align-items: center;
+			transition: all 0.5s ease;
 
 			&::after {
 				display: block;
