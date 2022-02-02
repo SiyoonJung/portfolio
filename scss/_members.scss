@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
 
 .members {
 	width: 100%;
@@ -18,10 +18,10 @@
 	}
 
 	.inner {
-		margin: 0 auto;
 		padding: 100px 50px;
 		width: 1200px;
 		height: 100%;
+		margin: 0 auto;
 		text-align: center;
 		position: relative;
 
@@ -44,66 +44,97 @@
 			}
 		}
 
-		.wrapper {
-			
-		}
 		article {
+			width: 100%;
+			height: 350px;
 			box-sizing: border-box;
-			padding: 20px;
-			margin: 0 auto;
-			box-shadow: 10px 10px 20px rgba(218, 154, 248, 0.1);
-			width: 300px;
-			height: auto;
-			float: left;
+			border-radius: 2rem;
+			padding: 0px;
+			margin: 0.5rem;
 
-			img {
-				object-fit: cover;
-				height: 250px;
-				width: 250px;
-				margin: 20px;
+			&::after {
+				display: block;
+				content:"";
+				clear: both;
 			}
 
-			.name {
-				display: block;
-				font: bold 18px/1.5 "Antic Slab";
-				margin-top: 5px;
-			}
-
-			.department {
-				display: block;
-				font: normal 17px/1.5 "Antic Slab";
-				color: #777;
-				margin-top: 5px;
-			}
-
-			.email {
-				display: block;
-				font: normal 17px/1.5 "Antic Slab";
-				margin-top: 5px;
-				margin-bottom: 10px;
-			}
-
-			a {
-				display: block;
-				width: 100px;
-				height: auto;
-				text-align: center;
+			.photo,
+			.text {
+				width: 50%;
+				height: 350px;
 				margin: 0 auto;
-				padding: 5px;
-				font: bold 17px/1 "arial";
-				color: #fff;
-				background-color: rgb(209, 180, 137);
-				border-radius: 5px;
-				
+				padding: 20px 30px;
+				text-align: center;
+			}
+
+			.photo {
+				position: relative;
+				 img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+
+				&:hover {
+					transition: all 0.5s ease;
+					
+					img {
+						filter: blur(2px);
+					}
+
+					div a {
+						opacity: 1;
+					}
+				}
+
+				div a {
+					display: block;
+					margin: 0 auto;
+					width: 80px;
+					height: 80px;
+					border-radius: 50%;
+					font: bold 20px/90px "Antic Slab";
+					color: #111;
+					background-color: rgb(214, 213, 199);
+					position: absolute;
+					top: 40%;
+					left: 40%;
+					opacity: 0;
+				}
+			}
+
+			.text {
+				h2 {
+					font: bold 40px/1.5 "Courgette";
+				}
+				h3 {
+					font: normal 30px/1.5  "Courgette";
+				}
+				p {
+					font: normal 18px/1.5 
+					"arial";
+				}
 			}
 		}
 
 		.odd {
-			background-color: #ccc;
+			background-image: linear-gradient(to right, #f1e3e0, #f1bcae);
+			
+			.photo, 
+			.text {
+				float: left;
+			}
+
 		}
 
 		.even {
-			background-color:antiquewhite;
+			background-image: linear-gradient(to left, #e5f3e9, #c0dbc8);
+
+			.photo, 
+			.text {
+				float: right;
+			}
 		}
+
 	}
 }
