@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
 
 $tablet: 1179px;
 $mobile: 539px;
@@ -11,6 +11,11 @@ $mobile: 539px;
 	margin-bottom: $mb;
 }
 
+@keyframes slide {
+	from {left: -50px; opacity: 0;}
+	to {left: 50px; opacity: 1;}
+}
+
 @import "reset.scss";
 @import "gallery.scss";
 @import "board.scss";
@@ -19,6 +24,14 @@ $mobile: 539px;
 @import "location.scss";
 @import "join.scss";
 @import "login.scss";
+
+#header {
+	.inner {
+		h1 {
+			animation: slide 1.2s ease-in-out;
+		}
+	}
+}
 
 #header,
 #header_sub {
@@ -305,22 +318,22 @@ $mobile: 539px;
 			}
 
 			&:nth-of-type(1):hover {
-				background-color: #e8e7d2;
+				background-color: #e9e1d4;
 				transition: all 0.5s ease;
 			}
 
 			&:nth-of-type(2):hover {
-				background-color: #d2d5b8;
+				background-color: #f5ddad;
 				transition: all 0.5s ease;
 			}
 
 			&:nth-of-type(3):hover {
-				background-color: #bdc2bb;
+				background-color: #f1bcae;
 				transition: all 0.5s ease;
 			}
 
 			&:nth-of-type(4):hover {
-				background-color: #c9ba9b;
+				background-color: #c9decf;
 				transition: all 0.5s ease;
 			}
 
@@ -541,7 +554,11 @@ $mobile: 539px;
 					height: auto;
 					font: bold 20px/1 "Antic Slab";
 					color: #000;
-					background-image: linear-gradient(to left, #e8e7d2, #e5d5ca);
+					background-image: linear-gradient(
+						to left,
+						#e8e7d2,
+						#e5d5ca
+					);
 					position: absolute;
 					top: 40%;
 					left: 20%;
@@ -556,7 +573,6 @@ $mobile: 539px;
 	width: 100%;
 	height: 300px;
 	margin-top: 50px;
-	margin-bottom: 50px;
 	position: relative;
 
 	.wrapper {
@@ -567,6 +583,7 @@ $mobile: 539px;
 		background-image: url(../img/main/bg.png);
 		background-color: #ddd7d4;
 		background-blend-mode: multiply;
+		overflow: hidden;
 
 		.left {
 			width: 300px;
@@ -576,6 +593,11 @@ $mobile: 539px;
 			img {
 				width: 100%;
 			}
+
+			&:hover {
+				transform: scale(1.1);
+				transition: all 0.8s ease;
+			}
 		}
 
 		.center {
@@ -583,6 +605,7 @@ $mobile: 539px;
 			margin: 0 auto;
 			padding: 80px;
 			float: right;
+
 			p {
 				font: normal 20px/1.5 "Antic Slab";
 				color: black;
@@ -609,7 +632,7 @@ $mobile: 539px;
 
 			&:hover {
 				transform: scale(1.1);
-				transition: all 1s ease;
+				transition: all 0.8s ease;
 			}
 		}
 
@@ -621,120 +644,208 @@ $mobile: 539px;
 			img {
 				width: 100%;
 			}
+
+			&:hover {
+				transform: scale(1.1);
+				transition: all 0.8s ease;
+			}
 		}
 	}
 }
 
-#footer,
-#footer_sub {
+#sub {
 	width: 100%;
-	border-top: 1px double #999;
-	padding: 100px 0;
-	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+	margin-top: 50px;
+	height: 250px;
+	background-color: #f7f2ef;
 
-	.inner {
-		width: 1180px;
+	.wrapper {
+		width: 1200px;
+		padding: 30px;
 		margin: 0 auto;
+		position: relative;
 
 		&::after {
-			content: "";
 			display: block;
+			content: "";
 			clear: both;
 		}
 
-		h1 {
-			font: bold 25px/1 "Antic Slab";
-			letter-spacing: 1px;
-			color: black;
-			margin-bottom: 15px;
+		.content {
 			float: left;
-		}
+			width: 550px;
+			margin: 0 auto;
+			padding: 30px;
 
-		ul {
-			float: right;
-
-			li {
+			img {
+				display: block;
 				float: left;
-				margin-left: 20px;
-
-				a {
-					font: bold 15px/1.5 "Antic Slab";
-					letter-spacing: 1px;
-					color: black;
-				}
+				margin: 20px;
+			}
+			h4 {
+				font: bold 24px/1.5 "Antic Slab";
+				color: #000;
+				text-align: center;
+				margin-bottom: 30px;
+			}
+			p {
+				font: normal 18px/1.5 "arial";
+				color: #333;
+				text-align: center;
 			}
 		}
 
-		address {
+		.searchbox {
 			float: left;
-			width: 100%;
-			font: 15px/1.5 "Antic Slab";
-			color: black;
-			letter-spacing: 1px;
-			border-top: 2px solid #fff;
-			margin-bottom: 15px;
-		}
-		p {
-			font: 15px/1 "Antic Slab";
-			letter-spacing: 1px;
-			color: black;
-			width: 100%;
-			float: left;
-		}
-
-		#sns {
-			margin-right: 10px;
-			float: right;
+			width: 550px;
+			margin: 0 auto;
+			padding: 0px;
 			text-align: center;
-		}
-	}
-}
+		
+				input[type="text"] {
+					width: 400px;
+					height: 40px;
+					font: bold 15px/1.5px "arial";
+					color: #333;
+					text-align: center;
+					letter-spacing: 1px;
+					margin: 40px;
+					border: none;
+				}
 
-/* ----- Responsive Settings ----- */
-@media screen and (max-width: $tablet) {
-	#header,
-	#header_sub {
-		.inner {
-			width: 100%;
-			height: 100px;
+				.btnSearch {
+					width: 150px;
+					height: 35px;
+					font: bold 20px/1 "Antic Slab";
+					color: #eee;
+					background: #222;
+					margin: 0 auto;
+					padding: 5px;
+					border: none;
+					cursor:pointer; 
+					cursor:hand;
+					border-radius: 2em;
 
-			> h1 {
-				left: 20px;
-			}
-			.menuWeb {
-				display: none;
-			}
-			.btnCall {
-				display: block;
-			}
-			.menuMo {
-				display: block;
-			}
-		}
-	}
-
-	#footer,
-	#footer_sub {
-		padding: 80px 30px;
-
-		.inner {
-			width: 100%;
-		}
-	}
-}
-
-/* Responsive Mobile Verision*/
-@media screen and (max-width: $mobile) {
-	#footer,
-	#footer_sub {
-		.inner {
-			ul {
-				width: 100%;
-				li {
-					margin-left: 0;
-					margin: 5px;
+					&:hover {
+						color: #222;
+						background: #ccc;
+					}
 				}
 			}
 		}
 	}
-}
+
+	#footer,
+	#footer_sub {
+		width: 100%;
+		height: 300px;
+		border-top: 1px double #999;
+		padding: 100px 0;
+		background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+
+		.inner {
+			width: 1180px;
+			margin: 0 auto;
+
+			&::after {
+				content: "";
+				clear: both;
+			}
+
+			h1 {
+				font: bold 25px/1 "Antic Slab";
+				letter-spacing: 3px;
+				color: black;
+				margin-bottom: 15px;
+				float: left;
+			}
+
+			ul {
+				float: right;
+
+				li {
+					float: left;
+					margin-left: 20px;
+
+					a {
+						font: bold 15px/1.5 "Antic Slab";
+						letter-spacing: 1px;
+						color: black;
+					}
+				}
+			}
+
+			address {
+				float: left;
+				width: 100%;
+				font: 15px/1.5 "Antic Slab";
+				color: black;
+				letter-spacing: 1px;
+				border-top: 2px solid #fff;
+				margin-bottom: 15px;
+			}
+			p {
+				font: 15px/1 "Antic Slab";
+				letter-spacing: 1px;
+				color: black;
+				width: 100%;
+				float: left;
+			}
+
+			#sns {
+				margin-right: 10px;
+				float: right;
+				text-align: center;
+			}
+		}
+	}
+
+	/* ----- Responsive Settings ----- */
+	@media screen and (max-width: $tablet) {
+		#header,
+		#header_sub {
+			.inner {
+				width: 100%;
+				height: 100px;
+
+				> h1 {
+					left: 20px;
+				}
+				.menuWeb {
+					display: none;
+				}
+				.btnCall {
+					display: block;
+				}
+				.menuMo {
+					display: block;
+				}
+			}
+		}
+
+		#footer,
+		#footer_sub {
+			padding: 80px 30px;
+
+			.inner {
+				width: 100%;
+			}
+		}
+	}
+
+	/* Responsive Mobile Verision*/
+	@media screen and (max-width: $mobile) {
+		#footer,
+		#footer_sub {
+			.inner {
+				ul {
+					width: 100%;
+					li {
+						margin-left: 0;
+						margin: 5px;
+					}
+				}
+			}
+		}
+	}
+

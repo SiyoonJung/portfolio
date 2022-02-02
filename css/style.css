@@ -1,6 +1,16 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&display=swap");
+@keyframes slide {
+  from {
+    left: -50px;
+    opacity: 0;
+  }
+  to {
+    left: 50px;
+    opacity: 1;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -964,6 +974,10 @@ a {
   }
 }
 
+#header .inner h1 {
+  animation: slide 1.2s ease-in-out;
+}
+
 #header,
 #header_sub {
   width: 100%;
@@ -1236,19 +1250,19 @@ a {
   border-right: 0;
 }
 #features .wrapper .box:nth-of-type(1):hover {
-  background-color: #e8e7d2;
+  background-color: #e9e1d4;
   transition: all 0.5s ease;
 }
 #features .wrapper .box:nth-of-type(2):hover {
-  background-color: #d2d5b8;
+  background-color: #f5ddad;
   transition: all 0.5s ease;
 }
 #features .wrapper .box:nth-of-type(3):hover {
-  background-color: #bdc2bb;
+  background-color: #f1bcae;
   transition: all 0.5s ease;
 }
 #features .wrapper .box:nth-of-type(4):hover {
-  background-color: #c9ba9b;
+  background-color: #c9decf;
   transition: all 0.5s ease;
 }
 #features .wrapper .box h2 {
@@ -1453,7 +1467,6 @@ a {
   width: 100%;
   height: 300px;
   margin-top: 50px;
-  margin-bottom: 50px;
   position: relative;
 }
 #banner .wrapper {
@@ -1464,6 +1477,7 @@ a {
   background-image: url(../img/main/bg.png);
   background-color: #ddd7d4;
   background-blend-mode: multiply;
+  overflow: hidden;
 }
 #banner .wrapper .left {
   width: 300px;
@@ -1472,6 +1486,10 @@ a {
 }
 #banner .wrapper .left img {
   width: 100%;
+}
+#banner .wrapper .left:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
 }
 #banner .wrapper .center {
   width: 600px;
@@ -1503,7 +1521,7 @@ a {
 }
 #banner .wrapper .center:hover {
   transform: scale(1.1);
-  transition: all 1s ease;
+  transition: all 0.8s ease;
 }
 #banner .wrapper .right {
   width: 300px;
@@ -1513,10 +1531,89 @@ a {
 #banner .wrapper .right img {
   width: 100%;
 }
+#banner .wrapper .right:hover {
+  transform: scale(1.1);
+  transition: all 0.8s ease;
+}
+
+#sub {
+  width: 100%;
+  margin-top: 50px;
+  height: 250px;
+  background-color: #f7f2ef;
+}
+#sub .wrapper {
+  width: 1200px;
+  padding: 30px;
+  margin: 0 auto;
+  position: relative;
+}
+#sub .wrapper::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#sub .wrapper .content {
+  float: left;
+  width: 550px;
+  margin: 0 auto;
+  padding: 30px;
+}
+#sub .wrapper .content img {
+  display: block;
+  float: left;
+  margin: 20px;
+}
+#sub .wrapper .content h4 {
+  font: bold 24px/1.5 "Antic Slab";
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#sub .wrapper .content p {
+  font: normal 18px/1.5 "arial";
+  color: #333;
+  text-align: center;
+}
+#sub .wrapper .searchbox {
+  float: left;
+  width: 550px;
+  margin: 0 auto;
+  padding: 0px;
+  text-align: center;
+}
+#sub .wrapper .searchbox input[type=text] {
+  width: 400px;
+  height: 40px;
+  font: bold 15px/1.5px "arial";
+  color: #333;
+  text-align: center;
+  letter-spacing: 1px;
+  margin: 40px;
+  border: none;
+}
+#sub .wrapper .searchbox .btnSearch {
+  width: 150px;
+  height: 35px;
+  font: bold 20px/1 "Antic Slab";
+  color: #eee;
+  background: #222;
+  margin: 0 auto;
+  padding: 5px;
+  border: none;
+  cursor: pointer;
+  cursor: hand;
+  border-radius: 2em;
+}
+#sub .wrapper .searchbox .btnSearch:hover {
+  color: #222;
+  background: #ccc;
+}
 
 #footer,
 #footer_sub {
   width: 100%;
+  height: 300px;
   border-top: 1px double #999;
   padding: 100px 0;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
@@ -1529,13 +1626,12 @@ a {
 #footer .inner::after,
 #footer_sub .inner::after {
   content: "";
-  display: block;
   clear: both;
 }
 #footer .inner h1,
 #footer_sub .inner h1 {
   font: bold 25px/1 "Antic Slab";
-  letter-spacing: 1px;
+  letter-spacing: 3px;
   color: black;
   margin-bottom: 15px;
   float: left;
