@@ -1,6 +1,6 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap&family=Orbitron&display=swap");
 @keyframes slide {
   from {
     left: -200px;
@@ -415,12 +415,12 @@ a {
   clear: both;
 }
 .members .inner .title h1 {
-  font: normal 50px/1 "arial";
+  font: normal 55px/1 "orbitron";
   color: black;
   margin-bottom: 50px;
 }
 .members .inner .title h1 span {
-  font: normal 20px/1 "맑은 고딕";
+  font: normal 20px/1 "orbitron";
   color: #aaa;
 }
 .members .inner article {
@@ -453,10 +453,11 @@ a {
   object-fit: cover;
 }
 .members .inner article .photo:hover {
-  transition: all 0.5s ease;
+  transition: all 0.5s ease-in-out;
 }
 .members .inner article .photo:hover img {
   filter: blur(2px);
+  transform: scale(1.1);
 }
 .members .inner article .photo:hover div a {
   opacity: 1;
@@ -469,7 +470,7 @@ a {
   border-radius: 50%;
   font: bold 20px/90px "Antic Slab";
   color: #111;
-  background-color: #d6d5c7;
+  background-color: #f5ea58;
   position: absolute;
   top: 40%;
   left: 40%;
