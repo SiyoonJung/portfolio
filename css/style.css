@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&display=swap");
 * {
   margin: 0;
@@ -1380,85 +1380,73 @@ a {
   position: relative;
   background-color: #e8e7d2;
 }
-#celebrity .swiper {
+#celebrity .inner {
   width: 1200px;
   height: 100%;
+  margin: 0 auto;
+  padding: 20px;
 }
-#celebrity .swiper .swiper-slide {
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-#celebrity .swiper .swiper-slide::after {
+#celebrity .inner::after {
   display: block;
   content: "";
   clear: both;
 }
-#celebrity .swiper .swiper-slide .inner {
+#celebrity .inner article {
+  width: 350px;
+  height: 100%;
+  margin: 15px;
+  padding: 10px;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #aaa;
+}
+#celebrity .inner article:last-of-type {
+  border-right: none;
+}
+#celebrity .inner article .text {
   width: 100%;
   margin: 0 auto;
-  padding: 0px;
 }
-#celebrity .swiper .swiper-slide .inner .text {
-  width: 60%;
-  margin: 0 auto;
-  padding: 100px 50px;
-  float: right;
+#celebrity .inner article .text h2 {
+  font: normal 30px/1.2 "Courgette";
   text-align: center;
+  margin-bottom: 15px;
 }
-#celebrity .swiper .swiper-slide .inner .text h2 {
-  font: bold 25px/1.5 "Antic Slab";
+#celebrity .inner article .text p {
+  font: normal 15px/1.5 "arial";
+  margin-bottom: 15px;
 }
-#celebrity .swiper .swiper-slide .inner .text h1 {
-  font: bold 40px/1.5 "Caveat";
-}
-#celebrity .swiper .swiper-slide .inner .text p {
-  margin-top: 10px;
-  margin-bottom: 20px;
-  font: normal 18px/1.8 "arial";
-}
-#celebrity .swiper .swiper-slide .inner .text a {
-  display: block;
-  width: 150px;
-  height: auto;
+#celebrity .inner article .image {
   margin: 0 auto;
-  padding: 5px;
-  font: bold 20px/1 "Antic Slab";
-  color: #fff;
-  text-align: center;
-  background-color: #b38368;
-}
-#celebrity .swiper .swiper-slide .inner .text a:hover {
-  color: #b38368;
-  background-color: #fff;
-  transition: all 0.3s ease;
-}
-#celebrity .swiper .swiper-slide .inner .image {
-  width: 40%;
-  margin: 0 auto;
-  padding: 200px;
   position: relative;
-  float: right;
 }
-#celebrity .swiper .swiper-slide .inner .image img {
-  display: block;
-  width: 450px;
-  height: 450px;
+#celebrity .inner article .image img {
+  width: 250px;
+  height: 250px;
   border-radius: 50%;
-  object-fit: cover;
+}
+#celebrity .inner article .image:hover {
+  transition: all 0.5s ease;
+}
+#celebrity .inner article .image:hover img {
+  filter: blur(2px);
+}
+#celebrity .inner article .image:hover div a {
+  opacity: 1;
+}
+#celebrity .inner article .image div a {
+  display: block;
+  margin: 0 auto;
+  padding: 10px;
+  width: 200px;
+  height: auto;
+  font: bold 20px/1 "Antic Slab";
+  color: #000;
+  background-image: linear-gradient(to left, #e8e7d2, #e5d5ca);
   position: absolute;
-  top: 15%;
-  left: 15%;
+  top: 40%;
+  left: 20%;
+  opacity: 0;
 }
 
 #banner {
@@ -1529,7 +1517,6 @@ a {
 #footer,
 #footer_sub {
   width: 100%;
-  margin-top: 50px;
   border-top: 1px double #999;
   padding: 100px 0;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
