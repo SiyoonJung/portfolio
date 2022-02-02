@@ -31,17 +31,22 @@
 			clear: both;
 		}
 
-		h1 {
-			font: normal 50px/1 "arial";
-			color: black;
-			margin-bottom: 50px;
+		.title {
+			h1 {
+				font: normal 50px/1 "arial";
+				color: black;
+				margin-bottom: 50px;
 
-			span {
-				font: normal 20px/1 "맑은 고딕";
-				color: #aaa;
+				span {
+					font: normal 20px/1 "맑은 고딕";
+					color: #aaa;
+				}
 			}
 		}
 
+		.wrapper {
+			
+		}
 		article {
 			box-sizing: border-box;
 			padding: 20px;
@@ -55,7 +60,6 @@
 				object-fit: cover;
 				height: 250px;
 				width: 250px;
-				border-radius: 50%;
 				margin: 20px;
 			}
 
@@ -92,6 +96,14 @@
 				border-radius: 5px;
 				
 			}
+		}
+
+		.odd {
+			background-color: #ccc;
+		}
+
+		.even {
+			background-color:antiquewhite;
 		}
 	}
 }

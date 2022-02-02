@@ -12,8 +12,8 @@ $mobile: 539px;
 }
 
 @keyframes slide {
-	from {left: -50px; opacity: 0;}
-	to {left: 50px; opacity: 1;}
+	from {left: -200px; opacity: 0;}
+	to {left: 0px; opacity: 1;}
 }
 
 @import "reset.scss";
@@ -28,7 +28,7 @@ $mobile: 539px;
 #header {
 	.inner {
 		h1 {
-			animation: slide 1.2s ease-in-out;
+			animation: slide 1.5s ease-in-out;
 		}
 	}
 }
@@ -373,12 +373,12 @@ $mobile: 539px;
 			margin-top: 10px;
 
 			ul li {
-				font: normal 20px/1 "Antic Slab";
+				font: bold 20px/1 "Antic Slab";
 				display: inline-block;
 				margin: 15px;
 				padding: 10px 15px;
 				border: 1px solid black;
-				border-radius: 8%;
+				border-radius: 2rem;
 				cursor: pointer;
 				-webkit-transition: all 0.5s ease;
 				-moz-transition: all 0.5s ease;
@@ -401,9 +401,9 @@ $mobile: 539px;
 			article {
 				width: 22%;
 				display: inline-block;
-				margin: 0 auto;
+				margin: 1rem;
 				text-align: center;
-				padding: 10px;
+				padding: 0;
 
 				> div {
 					width: 100%;
@@ -431,7 +431,7 @@ $mobile: 539px;
 						position: absolute;
 						top: 50%;
 						transform: translateY(-50%);
-						left: 5%;
+						left: 10%;
 						padding: 0px 20px;
 
 						img {

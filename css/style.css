@@ -3,11 +3,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Architects+Daughter&display=swap");
 @keyframes slide {
   from {
-    left: -50px;
+    left: -200px;
     opacity: 0;
   }
   to {
-    left: 50px;
+    left: 0px;
     opacity: 1;
   }
 }
@@ -414,12 +414,12 @@ a {
   content: "";
   clear: both;
 }
-.members .inner h1 {
+.members .inner .title h1 {
   font: normal 50px/1 "arial";
   color: black;
   margin-bottom: 50px;
 }
-.members .inner h1 span {
+.members .inner .title h1 span {
   font: normal 20px/1 "맑은 고딕";
   color: #aaa;
 }
@@ -436,7 +436,6 @@ a {
   object-fit: cover;
   height: 250px;
   width: 250px;
-  border-radius: 50%;
   margin: 20px;
 }
 .members .inner article .name {
@@ -467,6 +466,12 @@ a {
   color: #fff;
   background-color: #d1b489;
   border-radius: 5px;
+}
+.members .inner .odd {
+  background-color: #ccc;
+}
+.members .inner .even {
+  background-color: antiquewhite;
 }
 
 .youtube {
@@ -975,7 +980,7 @@ a {
 }
 
 #header .inner h1 {
-  animation: slide 1.2s ease-in-out;
+  animation: slide 1.5s ease-in-out;
 }
 
 #header,
@@ -1296,12 +1301,12 @@ a {
   margin-top: 10px;
 }
 #products .container .prodMenu ul li {
-  font: normal 20px/1 "Antic Slab";
+  font: bold 20px/1 "Antic Slab";
   display: inline-block;
   margin: 15px;
   padding: 10px 15px;
   border: 1px solid black;
-  border-radius: 8%;
+  border-radius: 2rem;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1321,9 +1326,9 @@ a {
 #products .container .prodList article {
   width: 22%;
   display: inline-block;
-  margin: 0 auto;
+  margin: 1rem;
   text-align: center;
-  padding: 10px;
+  padding: 0;
 }
 #products .container .prodList article > div {
   width: 100%;
@@ -1349,7 +1354,7 @@ a {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
-  left: 5%;
+  left: 10%;
   padding: 0px 20px;
 }
 #products .container .prodList article > div div img {

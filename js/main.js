@@ -31,7 +31,7 @@ $(".prodList").isotope({
   itemSelector: '.prod',
   layoutMode: 'fitRows',
   masonry: {
-    columnWidth: 20,
+    columnWidth: 10,
     isFitWidth: true
     }
 });
