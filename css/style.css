@@ -427,9 +427,7 @@ a {
   width: 100%;
   height: 350px;
   box-sizing: border-box;
-  border-radius: 2rem;
   padding: 0px;
-  margin: 0.5rem;
 }
 .members .inner article::after {
   display: block;
@@ -470,7 +468,7 @@ a {
   border-radius: 50%;
   font: bold 20px/90px "Antic Slab";
   color: #111;
-  background-color: #f5ea58;
+  background-color: #ffff;
   position: absolute;
   top: 40%;
   left: 40%;

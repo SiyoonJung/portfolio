@@ -48,9 +48,9 @@
 			width: 100%;
 			height: 350px;
 			box-sizing: border-box;
-			border-radius: 2rem;
+			// border-radius: 2rem;
 			padding: 0px;
-			margin: 0.5rem;
+			// margin: 0.5rem;
 
 			&::after {
 				display: block;
@@ -96,7 +96,7 @@
 					border-radius: 50%;
 					font: bold 20px/90px "Antic Slab";
 					color: #111;
-					background-color: rgb(245, 234, 88);
+					background-color: #ffff;
 					position: absolute;
 					top: 40%;
 					left: 40%;
