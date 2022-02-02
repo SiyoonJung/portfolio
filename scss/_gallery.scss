@@ -90,7 +90,7 @@
 				}
 		
 				li {
-					width: calc(100% / 6);
+					width: calc(100% / 5);
 					float: left;
 					padding: 10px;
 		
@@ -165,11 +165,6 @@
 
 
 
-@media screen and (max-width: 1599px) {
-	#wrap #list li {
-		width: calc(100% / 5);
-	}
-}
 @media screen and (max-width: 1399px) {
 	#wrap #list li {
 		width: calc(100% / 4);

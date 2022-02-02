@@ -1,28 +1,4 @@
-/*
-flickr api 이용하기 
-https://www.flickr.com/services/api/
 
-key : "89aae050d1d8c006bdb5bf866029199d"
-          241283814e27c217bfa40d86ae6e658d
-
-https://live.staticflickr.com/{server-id}/{id}_{secret}_{size-suffix}.jpg
-
-https://www.flickr.com/services/rest/?method=flickr.test.echo&name=value
-
-http://farm{icon-farm}.staticflickr.com/{icon-server}/buddyicons/{nsid}.jpg
-
-flickr.interestingness.getList
-flickr.photos.search
-
-
-fetch(데이터요청url)
-.then()
-.then() 
-
-187597869@N08
-flickr.favorites.getList
-
-*/
 //#list 변수로 저장 
 const body = document.querySelector("body");
 const main = document.querySelector("main");
@@ -34,11 +10,11 @@ const base = "https://www.flickr.com/services/rest/?";
 const method1 = "flickr.interestingness.getList";
 const method2 = "flickr.photos.search";
 const key = "59306e618c1ccae927923d78b847eb75"; 
-const per_page = 3; 
+const per_page = 10; 
 const format = "json"; 
 
-//검색량이 많은 이미지를 요청하는 주소 
-const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`; 
+// //검색량이 많은 이미지를 요청하는 주소 
+// const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&format=${format}&nojsoncallback=1`; 
 
 //처음 페이지 로딩시 호출되는 메소드 : url1 
 //callData(url1);  
@@ -46,7 +22,7 @@ const url1 = `${base}method=${method1}&api_key=${key}&per_page=${per_page}&forma
 
 // 좋아요 사진 찾기 
 const method3 = "flickr.favorites.getList";
-const username = "187597869@N08";
+const username = "194851816@N07";
 const url3 = `${base}method=${method3}&api_key=${key}&per_page=${per_page}&format=json&nojsoncallback=1&user_id=${username}`; 
 
 callData(url3);

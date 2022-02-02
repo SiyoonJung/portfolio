@@ -107,7 +107,7 @@ a {
   clear: both;
 }
 .gallery .inner #wrap #list li {
-  width: 16.6666666667%;
+  width: 20%;
   float: left;
   padding: 10px;
 }
@@ -168,11 +168,6 @@ a {
   color: #fff;
 }
 
-@media screen and (max-width: 1599px) {
-  #wrap #list li {
-    width: 20%;
-  }
-}
 @media screen and (max-width: 1399px) {
   #wrap #list li {
     width: 25%;
