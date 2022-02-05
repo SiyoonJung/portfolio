@@ -90,25 +90,30 @@
 				}
 		
 				li {
-					width: calc(100% / 5);
+					width: calc(100% / 4);
+					height: 400px;
 					float: left;
 					padding: 10px;
 		
 					div {
 						width: 100%;
-						background: #fff;
-						padding: 20px;
+						height: 300px;
+						background-image: linear-gradient(90deg, #f5efeb, #e4d1c5);
+						padding: 10px;
 						border-radius: 5px;
 						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 		
 						a {
 							img {
 								width: 100%;
+								height: 80%;
+								object-fit: cover;
+								color: black;
 							}
 						}
 						p {
-							font: 12px/1.2 "arial";
-							color: #777;
+							font: 12px/1 "arial";
+							color: #555;
 							margin-top: 10px;
 							margin-bottom: 10px;
 						}
@@ -116,6 +121,7 @@
 							display: flex;
 							align-items: center;
 							margin-top: 20px;
+							color: black;
 		
 							img {
 								width: 20px;
@@ -125,7 +131,7 @@
 							}
 							strong {
 								font: 11px/1 "arial";
-								color: orange;
+								color: black;
 							}
 						}
 					}

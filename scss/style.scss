@@ -25,6 +25,7 @@ $mobile: 539px;
 @import "join.scss";
 @import "login.scss";
 
+
 #header {
 	.inner {
 		h1 {
@@ -376,7 +377,8 @@ $mobile: 539px;
 				font: bold 20px/1 "Antic Slab";
 				display: inline-block;
 				margin: 15px;
-				padding: 10px 15px;
+				text-align: center;
+				padding: 10px 20px;
 				border: 1px solid black;
 				border-radius: 2rem;
 				cursor: pointer;

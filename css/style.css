@@ -117,23 +117,28 @@ a {
   clear: both;
 }
 .gallery .inner #wrap #list li {
-  width: 20%;
+  width: 25%;
+  height: 400px;
   float: left;
   padding: 10px;
 }
 .gallery .inner #wrap #list li div {
   width: 100%;
-  background: #fff;
-  padding: 20px;
+  height: 300px;
+  background-image: linear-gradient(90deg, #f5efeb, #e4d1c5);
+  padding: 10px;
   border-radius: 5px;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
 .gallery .inner #wrap #list li div a img {
   width: 100%;
+  height: 80%;
+  object-fit: cover;
+  color: black;
 }
 .gallery .inner #wrap #list li div p {
-  font: 12px/1.2 "arial";
-  color: #777;
+  font: 12px/1 "arial";
+  color: #555;
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -141,6 +146,7 @@ a {
   display: flex;
   align-items: center;
   margin-top: 20px;
+  color: black;
 }
 .gallery .inner #wrap #list li div span img {
   width: 20px;
@@ -150,7 +156,7 @@ a {
 }
 .gallery .inner #wrap #list li div span strong {
   font: 11px/1 "arial";
-  color: orange;
+  color: black;
 }
 .gallery .inner #wrap #list.on {
   opacity: 1;
@@ -458,6 +464,7 @@ a {
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  position: relative;
 }
 .members .sub_visual {
   width: 100%;
@@ -470,7 +477,7 @@ a {
   object-fit: cover;
 }
 .members .inner {
-  padding: 100px 50px;
+  padding: 50px 0px 0px 0px;
   width: 1200px;
   height: 100%;
   margin: 0 auto;
@@ -482,88 +489,79 @@ a {
   content: "";
   clear: both;
 }
+.members .inner .title {
+  z-index: 10;
+  background-color: white;
+  margin-top: 50px;
+  width: 450px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 2rem;
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%, -2%);
+}
 .members .inner .title h1 {
-  font: normal 55px/1 "orbitron";
+  font: bold 33px/100px "orbitron";
   color: black;
   margin-bottom: 50px;
 }
-.members .inner .title h1 span {
-  font: normal 20px/1 "orbitron";
-  color: #aaa;
-}
-.members .inner article {
+.members .wrapper {
+  z-index: -999;
   width: 100%;
-  height: 350px;
-  box-sizing: border-box;
-  padding: 0px;
+  height: 100%;
+  margin: 80px 0px 50px 0px;
+  padding: 50px 0px 0px 0px;
+  background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
 }
-.members .inner article::after {
+.members .wrapper::after {
   display: block;
   content: "";
   clear: both;
 }
-.members .inner article .photo,
-.members .inner article .text {
-  width: 50%;
-  height: 350px;
-  margin: 0 auto;
-  padding: 20px 30px;
-  text-align: center;
-}
-.members .inner article .photo {
+.members .wrapper article {
+  width: 48%;
+  height: 400px;
+  border-radius: 2rem;
+  margin: 1%;
+  float: left;
   position: relative;
+  border-radius: 2rem;
+  z-index: 999;
 }
-.members .inner article .photo img {
+.members .wrapper article img {
+  width: 100%;
+  height: 80%;
+  object-fit: contain;
+}
+.members .wrapper article:hover {
+  transition: all 0.5s ease-in-out;
+}
+.members .wrapper article:hover .info {
+  opacity: 0.9;
+}
+.members .wrapper article .info {
+  margin: 0 auto;
   width: 100%;
   height: 100%;
-  object-fit: cover;
-}
-.members .inner article .photo:hover {
-  transition: all 1s ease-in-out;
-}
-.members .inner article .photo:hover img {
-  filter: blur(2px);
-  transform: scale(1.1);
-}
-.members .inner article .photo:hover div a {
-  opacity: 1;
-}
-.members .inner article .photo div a {
-  display: block;
-  margin: 0 auto;
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  font: bold 20px/90px "Antic Slab";
+  font: bold 20px/1 "Antic Slab";
   color: #111;
-  background-color: #ffff;
+  background-color: white;
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   opacity: 0;
 }
-.members .inner article .text h2 {
-  font: bold 40px/1.5 "Courgette";
+.members .wrapper article .info p {
+  text-align: center;
 }
-.members .inner article .text h3 {
-  font: normal 30px/1.5 "Courgette";
-}
-.members .inner article .text p {
-  font: normal 18px/1.5 "arial";
-}
-.members .inner .odd {
-  background-image: linear-gradient(to right, #f1e3e0, #f1bcae);
-}
-.members .inner .odd .photo,
-.members .inner .odd .text {
-  float: left;
-}
-.members .inner .even {
-  background-image: linear-gradient(to left, #e5f3e9, #c0dbc8);
-}
-.members .inner .even .photo,
-.members .inner .even .text {
-  float: right;
+.members .wrapper article .contact {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid black;
+  text-align: center;
 }
 
 .youtube {
@@ -1396,7 +1394,8 @@ a {
   font: bold 20px/1 "Antic Slab";
   display: inline-block;
   margin: 15px;
-  padding: 10px 15px;
+  text-align: center;
+  padding: 10px 20px;
   border: 1px solid black;
   border-radius: 2rem;
   cursor: pointer;
