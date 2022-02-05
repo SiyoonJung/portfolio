@@ -7,6 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/anime.js"></script>
+    <script defer src="js/board.js"></script>
     <script defer src="js/main.js"></script>
     <title>BOARD</title>
 </head>
@@ -56,143 +58,420 @@
         </div>
         <div class="inner">
             <h1>BOARD <span> / 게시판</span></h1>
-            <table>
-                <caption class="hidden">자유게시판</caption>
 
-                <thead>
-                    <tr>
-                        <th scope="col">번호</th>
-                        <th scope="col">게시글제목</th>
-                        <th scope="col">작성자</th>
-                        <th scope="col">작성일</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>10</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>9</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>8</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>7</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>6</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>
-                            <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit, nobis.</a>
-                        </td>
-                        <td>
-                            홍길동
-                        </td>
-                        <td>2021.12.30</td>
-                    </tr>
-                </tbody>
-            </table>
-
-            <div class="pagination">
-                <a href="#" class="prev">
-                    <i class="fas fa-angle-double-left"></i>
-                </a>
-
-                <p class="numbers">
-                    <a href="#">1</a>
-                    <a href="#">2</a>
-                    <a href="#">3</a>
-                    <a href="#">4</a>
-                    <a href="#">5</a>
-                    <a href="#">6</a>
-                    <a href="#">7</a>
-                    <a href="#">8</a>
-                    <a href="#">9</a>
-                    <a href="#">10</a>
-                </p>
-
-                <a href="#" class="next">
-                    <i class="fas fa-angle-double-right"></i>
-                </a>
+            <div id="searchBox">
+                <td>
+                    <select id="sort">
+                        <option value="">분류</option>
+                        <option value="elementary school">NOTICE</option>
+                        <option value="middle school">Q & A</option>
+                        <option value="high school">REVIEW</option>
+                    </select>
+                </td>
+                <input type="text" id="search" placeholder="검색어 입력">
+                <button class="btnSearch"> Search </button>
             </div>
+
+            <dl id="tab">
+                <dt class="active"><a href="#"> NOTICE </a></dt>
+                <dd class="active">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">게시글제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+
+                <dt><a href="#"> Q & A </a></dt>
+                <dd>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">게시글제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt?
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+
+                <dt><a href="#"> REVIEW </a></dt>
+                <dd>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th scope="col">번호</th>
+                                <th scope="col">게시글제목</th>
+                                <th scope="col">작성자</th>
+                                <th scope="col">작성일</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>10</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>8</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>7</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>6</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet consectetur dignissimos molestias.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                            <tr>
+                                <td>1</td>
+                                <td>
+                                    <a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit,
+                                        nobis.</a>
+                                </td>
+                                <td>
+                                    홍길동
+                                </td>
+                                <td>2021.12.30</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </dd>
+            </dl>
+
+                <div class="pagination">
+                    <a href="#" class="prev">
+                        <i class="fas fa-angle-double-left"></i>
+                    </a>
+
+                    <p class="numbers">
+                        <a href="#">1</a>
+                        <a href="#">2</a>
+                        <a href="#">3</a>
+                        <a href="#">4</a>
+                        <a href="#">5</a>
+                        <a href="#">6</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <a href="#">9</a>
+                        <a href="#">10</a>
+                    </p>
+
+                    <a href="#" class="next">
+                        <i class="fas fa-angle-double-right"></i>
+                    </a>
+                </div>
         </div>
     </section>
 

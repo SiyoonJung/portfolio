@@ -219,20 +219,87 @@ a {
   padding: 100px 50px;
 }
 .board .inner h1 {
-  font: normal 50px/1 "arial";
-  color: #000;
-  text-align: center;
+  font: normal 55px/1 "orbitron";
+  color: black;
   margin-bottom: 50px;
+  text-align: center;
 }
 .board .inner h1 span {
-  font: normal 20px/1 "맑은 고딕";
+  font: normal 20px/1 "orbitron";
   color: #aaa;
+}
+.board .inner #searchBox {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+  text-align: center;
+}
+.board .inner #searchBox #sort {
+  font: 15px/30px "arial";
+  width: 100px;
+  height: 30px;
+}
+.board .inner #searchBox input[type=text] {
+  width: 200px;
+  height: 30px;
+  background: #fff;
+  border: 1px solid #4d4949;
+  font: normal 15px/30px "arial";
+}
+.board .inner #searchBox button {
+  width: 80px;
+  height: 30px;
+  font: normal 15px/1 "arial";
+}
+.board .inner #tab {
+  width: 100%;
+  border: 1px solid black;
+  margin: 100px auto;
+  position: relative;
+  padding-top: 30px;
+}
+.board .inner #tab dt {
+  width: 33.3333333333%;
+  height: 40px;
+  position: absolute;
+  top: 0;
+}
+.board .inner #tab dt:nth-of-type(1) {
+  left: 0%;
+}
+.board .inner #tab dt:nth-of-type(2) {
+  left: 33.3333333333%;
+}
+.board .inner #tab dt:nth-of-type(3) {
+  left: 66.6666666667%;
+}
+.board .inner #tab dt a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  font: bold 14px/40px "arial";
+  color: #555;
+  text-align: center;
+}
+.board .inner #tab dt.active a {
+  background: #555;
+  color: #fff;
+}
+.board .inner #tab dd {
+  width: 100%;
+  background: #fff;
+  text-align: center;
+  display: none;
+}
+.board .inner #tab dd.active {
+  display: block;
 }
 .board .inner table {
   width: 100%;
-  border-bottom: 2px solid #111;
+  border-bottom: 1px solid #111;
   border-collapse: collapse;
-  margin-bottom: 50px;
+  margin: 0 auto;
 }
 .board .inner table tr:nth-of-type(even) {
   background: #eee;
@@ -241,9 +308,9 @@ a {
   background: #e5d8d0;
 }
 .board .inner table tr th {
-  padding: 15px;
-  background: #444;
+  background: #555;
   color: #fff;
+  padding: 15px;
 }
 .board .inner table tr th:nth-of-type(1) {
   width: 10%;
@@ -305,12 +372,13 @@ a {
   font-size: 0;
 }
 .board .inner .pagination .numbers a {
-  border: 1px solid #888;
+  border: 1px solid #555;
   display: inline-block;
-  width: 30px;
-  height: 30px;
-  font: 11px/30px "arial";
-  color: #666;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  font: bold 13px/33px "arial";
+  color: #111;
   margin: 0 5px;
   transition: 0.5s;
 }
@@ -451,7 +519,7 @@ a {
   object-fit: cover;
 }
 .members .inner article .photo:hover {
-  transition: all 0.5s ease-in-out;
+  transition: all 1s ease-in-out;
 }
 .members .inner article .photo:hover img {
   filter: blur(2px);
