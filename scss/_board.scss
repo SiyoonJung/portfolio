@@ -16,36 +16,59 @@
 	}
 
 	.inner {
+		padding: 50px 0px 0px 0px;
 		width: 1200px;
+		height: 100%;
 		margin: 0 auto;
-		padding: 100px 50px;
+		position: relative;
 
-		h1 {
-			font: normal 55px/1 "orbitron";
-			color: black;
-			margin-bottom: 50px;
-			text-align: center;
-
-			span {
-				font: normal 20px/1 "orbitron";
-				color: #aaa;
-			}
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
 		}
 
-		
-		#searchBox {
+		#title {
 			width: 100%;
-			overflow: hidden;
+			height: 50px;
+			text-align: left;
+			padding-left: 50px;
+			padding-top: 50px;
+			position: relative;
+
+			.bar {
+				width: 5px;
+				height: 200px;
+				background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
+				position: absolute;
+				top: 30px;
+				left: 0;
+			}
+				h1 {
+					font: bold 35px/1 "arial";
+					color: black;
+				}
+		}
+
+		#searchBox {
+			width: 32%;
+			height: 40px;
 			margin: 0 auto;
-			text-align: center;
+			padding-top: 60px;
+			position: absolute;
+			top: 200px;
+			right: 0px;
+			z-index: 999;
+			font-size: 0;
 		
 			#sort {
 				font: 15px/30px "arial";
+				margin: 0 auto;
 				width: 100px;
 				height: 30px;
 			}
 
-			input[type="text"] {
+				input[type="text"] {
 				width: 200px;
 				height: 30px;
 				background: #fff;
@@ -53,18 +76,17 @@
 				font: normal 15px/30px "arial";
 			}
 
-			button {
-				width: 80px;
-				height: 30px;
-				font: normal 15px/1 "arial";
-			}
+				button {
+					width: 80px;
+					height: 30px;
+					font: normal 15px/1 "arial";
+				}
 		}
 
 		#tab {
 			width: 100%;
 			border: 1px solid black;
-
-			margin: 100px auto;
+			margin-top: 200px;
 			position: relative;
 			padding-top: 30px;
 
@@ -95,8 +117,8 @@
 				}
 
 				&.active a {
-					background: #555;
-					color: #fff;
+					background-color:#d1b7a1;
+					color: black;
 				}
 			}
 
@@ -123,12 +145,12 @@
 				}
 
 				&:hover {
-					background: #e5d8d0;
+					background: #bdb6b2;
 				}
 
 				th {
-					background: #555;
-					color: #fff;
+					background-color:#d1b7a1;
+					color: black;
 					padding: 15px;
 
 					&:nth-of-type(1) {
@@ -163,6 +185,9 @@
 
 		.pagination {
 			width: 100%;
+			margin: 0 auto;
+			padding-top: 50px;
+			padding-bottom: 100px;
 			text-align: center;
 
 			&::after {
@@ -176,9 +201,9 @@
 				width: 30px;
 				height: 30px;
 				font-size: 20px;
-				color: #eee;
+				color: #fff;
 				text-align: center;
-				background: #555;
+				background-color:#d1b7a1;
 			}
 			.next {
 				float: right;
@@ -186,9 +211,9 @@
 				width: 30px;
 				height: 30px;
 				font-size: 20px;
-				color: #eee;
+				color: #fff;
 				text-align: center;
-				background: #555;
+				background-color:#d1b7a1;
 			}
 
 			.numbers {
@@ -197,19 +222,17 @@
 				font-size: 0;
 
 				a {
-					border: 1px solid #555;
+					border-right: 1px solid #555;
 					display: inline-block;
-					width: 33px;
-					height: 33px;
-					border-radius: 50%;
-					font: bold 13px/33px "arial";
+					width: 35px;
+					height: 30px;
+					font: bold 15px/30px "arial";
 					color: #111;
-					margin: 0 5px;
+					margin: 0 auto;
 					transition: 0.5s;
 
-					&:hover {
-						background: #e5d8d0;
-						color: #111;
+					&:last-child {
+						border-right: none;
 					}
 				}
 			}
@@ -310,3 +333,20 @@
 		}
 	}
 }
+
+/* .w-btn-gra-anim {
+    background-size: 400% 400%;
+    animation: gradient1 5s ease infinite;
+}
+
+@keyframes gradient1 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
