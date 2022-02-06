@@ -1,6 +1,5 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap&family=Orbitron&display=swap");
 @keyframes slide {
   from {
     left: -200px;
@@ -476,20 +475,18 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.members .inner {
+.members .intro {
   padding: 50px 0px 0px 0px;
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  text-align: center;
-  position: relative;
 }
-.members .inner::after {
+.members .intro::after {
   display: block;
   content: "";
   clear: both;
 }
-.members .inner .header {
+.members .intro #title {
   width: 100%;
   height: 50px;
   text-align: left;
@@ -497,7 +494,7 @@ a {
   padding-top: 50px;
   position: relative;
 }
-.members .inner .header .bar {
+.members .intro #title .bar {
   width: 5px;
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
@@ -505,23 +502,114 @@ a {
   top: 30px;
   left: 0;
 }
-.members .inner .header h1 {
-  font: bold 33px/1 "orbitron";
+.members .intro #title h1 {
+  font: bold 35px/1 "arial";
   color: black;
 }
-.members .wrapper {
+.members .intro .about {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+.members .intro .about .image {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  top: 100px;
+  left: 50px;
+}
+.members .intro .about .image::after {
+  display: block;
+  content: "";
+  clear: both;
+  position: absolute;
+  top: 80px;
+  left: 40px;
+  width: 400px;
+  height: 450px;
+  background-image: linear-gradient(to top, #dbcbbe, #e2dddb);
+  z-index: -999;
+}
+.members .intro .about .image img {
+  width: 100%;
+  object-fit: contain;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
+}
+.members .intro .about .image img:hover {
+  -webkit-filter: grayscale(0%);
+  filter: none;
+}
+.members .intro .about .content {
+  width: 600px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 50px;
+  float: right;
+}
+.members .intro .about .content span {
+  font: bold 40px/1.7 "Caveat";
+  margin-bottom: 30px;
+}
+.members .intro .about .content span::after {
+  display: block;
+  content: "";
+  width: 500px;
+  height: 3px;
+  background-color: #ddd;
+  margin-bottom: 20px;
+}
+.members .intro .about .content p {
+  font: normal 18px/1.7 "arial";
+  margin-bottom: 50px;
+}
+.members .intro .about .content img {
+  display: block;
+  width: 250px;
+  height: 180px;
+  margin: 0 auto;
+  object-fit: contain;
+  float: right;
+}
+.members .people {
+  width: 100%;
+  position: relative;
+}
+.members .people #title {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 50px;
+  position: relative;
+}
+.members .people #title .bar {
+  width: 5px;
+  height: 200px;
+  background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.members .people #title h1 {
+  font: bold 35px/1 "arial";
+  color: black;
+}
+.members .people .memberInfo {
   z-index: -999;
   width: 100%;
   height: 100%;
   margin: 50px 0px;
   padding: 50px;
 }
-.members .wrapper::after {
+.members .people .memberInfo::after {
   display: block;
   content: "";
   clear: both;
 }
-.members .wrapper article {
+.members .people .memberInfo article {
   width: 33%;
   height: 450px;
   margin: 0.1rem;
@@ -532,19 +620,19 @@ a {
   z-index: 99;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
 }
-.members .wrapper article img {
-  width: 99%;
+.members .people .memberInfo article img {
+  width: 80%;
   height: 80%;
   object-fit: scale-down;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
 }
-.members .wrapper article:hover {
+.members .people .memberInfo article:hover {
   transition: all 0.5s ease-in-out;
 }
-.members .wrapper article:hover .info {
+.members .people .memberInfo article:hover .info {
   opacity: 0.9;
 }
-.members .wrapper article .info {
+.members .people .memberInfo article .info {
   margin: 0 auto;
   width: 85%;
   height: 78%;
@@ -557,24 +645,24 @@ a {
   transform: translate(-50%, -10%);
   opacity: 0;
 }
-.members .wrapper article .info h2 {
+.members .people .memberInfo article .info h2 {
   margin-top: 20px;
-  font: bold 25px/2 "orbitron";
+  font: bold 25px/2 "arial";
 }
-.members .wrapper article .info h3 {
+.members .people .memberInfo article .info h3 {
   font: bold 20px/2 "arial";
 }
-.members .wrapper article .info p {
+.members .people .memberInfo article .info p {
   font: normal 18px/1.5 "arial";
 }
-.members .wrapper article .contact {
+.members .people .memberInfo article .contact {
   width: 50%;
   padding: 5px 0px;
   text-align: center;
   margin: 0 auto;
   position: relative;
 }
-.members .wrapper article .contact a {
+.members .people .memberInfo article .contact a {
   display: block;
   float: left;
   width: 60px;
@@ -583,15 +671,15 @@ a {
   padding: 8px;
   text-align: center;
 }
-.members .wrapper article .contact a:nth-of-type(1) {
+.members .people .memberInfo article .contact a:nth-of-type(1) {
   background-color: #f1bcae;
   border-top-left-radius: 1rem 1rem;
   border-bottom-left-radius: 1rem 1rem;
 }
-.members .wrapper article .contact a:nth-of-type(2) {
+.members .people .memberInfo article .contact a:nth-of-type(2) {
   background-color: #f5ddad;
 }
-.members .wrapper article .contact a:nth-of-type(3) {
+.members .people .memberInfo article .contact a:nth-of-type(3) {
   background-color: #c9decf;
   border-top-right-radius: 1rem 1rem;
   border-bottom-right-radius: 1rem 1rem;

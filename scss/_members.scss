@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Courgette&display=swap&family=Orbitron&display=swap");
 
 .members {
 	width: 100%;
@@ -18,13 +17,11 @@
 		}
 	}
 
-	.inner {
+	.intro {
 		padding: 50px 0px 0px 0px;
 		width: 1200px;
 		height: 100%;
 		margin: 0 auto;
-		text-align: center;
-		position: relative;
 
 		&::after {
 			display: block;
@@ -32,7 +29,7 @@
 			clear: both;
 		}
 
-		.header {
+		#title {
 			width: 100%;
 			height: 50px;
 			text-align: left;
@@ -48,108 +45,209 @@
 				top: 30px;
 				left: 0;
 			}
-			h1 {
-				font: bold 33px/1 "orbitron";
-				color: black;
+				h1 {
+					font: bold 35px/1 "arial";
+					color: black;
+				}
+		}
+
+		.about {
+			width: 1200px;
+			height: 700px;
+			margin: 0 auto;
+			padding: 10px;
+			position: relative;
+
+			.image {
+				width: 400px;
+				height: 500px;
+				position: absolute;
+				top: 100px;
+				left: 50px;
+
+				&::after {
+					display: block;
+					content:"";
+					clear:both;
+					position: absolute;
+					top: 80px;
+					left: 40px;
+					width: 400px;
+					height: 450px;
+					background-image: linear-gradient(to top, #dbcbbe, #e2dddb);
+					z-index: -999;
+				}
+
+				img {
+					width: 100%;
+					object-fit: contain;
+					-webkit-filter: grayscale(100%);
+					filter: gray;
+
+					&:hover {
+						-webkit-filter: grayscale(0%);
+						filter: none;
+					}
+				}
+			}
+
+			.content {
+				width: 600px;
+				height: 400px;
+				margin: 0 auto;
+				padding: 50px;
+				float: right;
+
+				span {
+					font: bold 40px/1.7 "Caveat";
+					margin-bottom: 30px;
+
+					&::after {
+						display: block;
+						content:"";
+						width: 500px;
+						height: 3px;
+						background-color: #ddd;
+						margin-bottom: 20px;
+					}
+				}
+				p {
+					font: normal 18px/1.7 "arial";
+					margin-bottom: 50px;
+				}
+				img {
+					display: block;
+					width: 250px;
+					height: 180px;
+					margin: 0 auto;
+					object-fit: contain;
+					float: right;
+				}
 			}
 		}
 	}
 
-	.wrapper {
-		z-index: -999;
+	.people {
 		width: 100%;
-		height: 100%;
-		margin: 50px 0px;
-		padding: 50px;
+		position: relative;
 
-		&::after {
-			display: block;
-			content: "";
-			clear: both;
+		#title {
+			width: 100%;
+			height: 50px;
+			text-align: left;
+			padding-left: 50px;
+			padding-top: 50px;
+			position: relative;
+
+			.bar {
+				width: 5px;
+				height: 200px;
+				background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
+				position: absolute;
+				top: 30px;
+				left: 0;
+			}
+				h1 {
+					font: bold 35px/1 "arial";
+					color: black;
+				}
 		}
 
-		article {
-			width: 33%;
-			height: 450px;
-			margin: 0.1rem;
-			padding: 0px;
-			float: left;
-			position: relative;
-			text-align: center;
-			z-index: 99;
-			background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+		.memberInfo {
+			z-index: -999;
+			width: 100%;
+			height: 100%;
+			margin: 50px 0px;
+			padding: 50px;
 
-			img {
-				width: 99%;
-				height: 80%;
-				object-fit: scale-down;
-				background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+			&::after {
+				display: block;
+				content: "";
+				clear: both;
 			}
 
-			
-			&:hover {
-				transition: all 0.5s ease-in-out;
+			article {
+				width: 33%;
+				height: 450px;
+				margin: 0.1rem;
+				padding: 0px;
+				float: left;
+				position: relative;
+				text-align: center;
+				z-index: 99;
+				background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+
+				img {
+					width: 80%;
+					height: 80%;
+					object-fit: scale-down;
+					background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+				}
+
+				&:hover {
+					transition: all 0.5s ease-in-out;
+
+					.info {
+						opacity: 0.9;
+					}
+				}
 
 				.info {
-					opacity: 0.9;
+					margin: 0 auto;
+					width: 85%;
+					height: 78%;
+					font: bold 20px/1 "Antic Slab";
+					color: #111;
+					background-color: white;
+					position: absolute;
+					top: 10%;
+					left: 50%;
+					transform: translate(-50%, -10%);
+					opacity: 0;
+
+					h2 {
+						margin-top: 20px;
+						font: bold 25px/2 "arial";
+					}
+
+					h3 {
+						font: bold 20px/2 "arial";
+					}
+
+					p {
+						font: normal 18px/1.5 "arial";
+					}
 				}
-			}
 
-			.info {
-				margin: 0 auto;
-				width: 85%;
-				height: 78%;
-				font: bold 20px/1 "Antic Slab";
-				color: #111;
-				background-color: white;
-				position: absolute;
-				top: 10%;
-				left: 50%;
-				transform: translate(-50%, -10%);
-				opacity: 0;
-
-				h2 {
-					margin-top: 20px;
-					font: bold 25px/2 "orbitron";
-				}
-
-				h3 {
-					font: bold 20px/2 "arial";
-				}
-
-				p {
-					font: normal 18px/1.5 "arial";
-				}
-			}
-
-			.contact {
-				width: 50%;
-				padding: 5px 0px;
-				text-align: center;
-				margin: 0 auto;
-				position: relative;
-
-				a {
-					display: block;
-					float: left;
-					width: 60px;
-					height: 50px;
-					color: black;
-					padding: 8px;
+				.contact {
+					width: 50%;
+					padding: 5px 0px;
 					text-align: center;
+					margin: 0 auto;
+					position: relative;
 
-					&:nth-of-type(1) {
-						background-color: #f1bcae;
-						border-top-left-radius: 1rem 1rem;
-						border-bottom-left-radius: 1rem 1rem;
-					}
-					&:nth-of-type(2) {
-						background-color: #f5ddad;
-					}
-					&:nth-of-type(3) {
-						background-color: #c9decf;
-						border-top-right-radius: 1rem 1rem;
-						border-bottom-right-radius: 1rem 1rem;
+					a {
+						display: block;
+						float: left;
+						width: 60px;
+						height: 50px;
+						color: black;
+						padding: 8px;
+						text-align: center;
+
+						&:nth-of-type(1) {
+							background-color: #f1bcae;
+							border-top-left-radius: 1rem 1rem;
+							border-bottom-left-radius: 1rem 1rem;
+						}
+						&:nth-of-type(2) {
+							background-color: #f5ddad;
+						}
+						&:nth-of-type(3) {
+							background-color: #c9decf;
+							border-top-right-radius: 1rem 1rem;
+							border-bottom-right-radius: 1rem 1rem;
+						}
 					}
 				}
 			}
