@@ -355,7 +355,7 @@ $mobile: 539px;
 
 #products {
 	width: 100%;
-	height: auto;
+	height: 100%;
 	position: relative;
 	margin-top: 50px;
 
@@ -368,6 +368,7 @@ $mobile: 539px;
 
 	.container {
 		width: 1200px;
+		height: 100%;
 		margin: 0 auto;
 
 		.prodMenu {
