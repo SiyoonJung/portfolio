@@ -228,12 +228,12 @@ $mobile: 539px;
 
 #visual {
 	width: 100%;
-	height: calc(100vh - 120px);
+	height: calc(100vh - 200px);
 	position: relative;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.swiper {
-		width: 1200px;
+		width: 1180px;
 		height: 100%;
 
 		.swiper-slide {
@@ -265,6 +265,7 @@ $mobile: 539px;
 
 				.text {
 					width: 50%;
+					height: 100%;
 					margin: 0 auto;
 					padding: 300px 50px;
 					float: left;
@@ -441,7 +442,7 @@ $mobile: 539px;
 							border-radius: 50%;
 							margin: 0 auto;
 							padding: 5px;
-							background: black;
+							object-fit: contain;
 							display: block;
 							transform: translateY(-50%);
 							cursor: pointer;

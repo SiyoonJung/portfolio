@@ -28,7 +28,7 @@ btnCall.onclick = function (e) {
 
 
 $(window).load(function() {
-  $.getScript('/js/jquery.isotope.min.js', function() { });
+  $.getScript(`https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js`, function() { })
 });
 // prodList에 istope 적용 시 folded(overlay) 되는 문제 해결
 
