@@ -169,20 +169,22 @@
 
 			article {
 				width: 33%;
-				height: 450px;
+				height: auto;
 				margin: 0.1rem;
-				padding: 0px;
+				padding: 15px;
 				float: left;
 				position: relative;
 				text-align: center;
 				z-index: 99;
-				background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+				
 
 				img {
-					width: 80%;
-					height: 80%;
-					object-fit: scale-down;
+					width: 320px;
+					height: 320px;
+					border-radius: 50%;
+					object-fit: contain;
 					background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+					box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
 				}
 
 				&:hover {
@@ -195,8 +197,9 @@
 
 				.info {
 					margin: 0 auto;
-					width: 85%;
-					height: 78%;
+					padding: 100px;
+					width: 100%;
+					height: 100%;
 					font: bold 20px/1 "Antic Slab";
 					color: #111;
 					background-color: white;
@@ -208,20 +211,21 @@
 
 					h2 {
 						margin-top: 20px;
-						font: bold 25px/2 "arial";
+						font: bold 30px/2 "arial";
 					}
 
 					h3 {
 						font: bold 20px/2 "arial";
 					}
 
-					p {
+					span {
 						font: normal 18px/1.5 "arial";
+						color: #111;
 					}
 				}
 
 				.contact {
-					width: 50%;
+					width: 70%;
 					padding: 5px 0px;
 					text-align: center;
 					margin: 0 auto;
@@ -232,22 +236,19 @@
 						float: left;
 						width: 60px;
 						height: 50px;
+						font: 15px/50px "arial";
 						color: black;
-						padding: 8px;
+						padding: 5px;
 						text-align: center;
 
 						&:nth-of-type(1) {
 							background-color: #f1bcae;
-							border-top-left-radius: 1rem 1rem;
-							border-bottom-left-radius: 1rem 1rem;
 						}
 						&:nth-of-type(2) {
 							background-color: #f5ddad;
 						}
 						&:nth-of-type(3) {
 							background-color: #c9decf;
-							border-top-right-radius: 1rem 1rem;
-							border-bottom-right-radius: 1rem 1rem;
 						}
 					}
 				}

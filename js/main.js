@@ -26,7 +26,12 @@ btnCall.onclick = function (e) {
   menuMo.classList.toggle("on");
 }
 
-/* ------------ Isotope ------------*/
+
+$(window).load(function() {
+  $.getScript('/js/jquery.isotope.min.js', function() { });
+});
+// prodList에 istope 적용 시 folded(overlay) 되는 문제 해결
+
 $(".prodList").isotope({
   itemSelector: '.prod',
   layoutMode: 'fitRows',

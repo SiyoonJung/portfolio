@@ -269,6 +269,7 @@ a {
 .gallery .inner #wrap #list li div span strong {
   font: 11px/1 "arial";
   color: black;
+  margin: 0 auto;
 }
 .gallery .inner #wrap #list.on {
   opacity: 1;
@@ -765,20 +766,21 @@ a {
 }
 .members .people .memberInfo article {
   width: 33%;
-  height: 450px;
+  height: auto;
   margin: 0.1rem;
-  padding: 0px;
+  padding: 15px;
   float: left;
   position: relative;
   text-align: center;
   z-index: 99;
-  background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
 }
 .members .people .memberInfo article img {
-  width: 80%;
-  height: 80%;
-  object-fit: scale-down;
+  width: 320px;
+  height: 320px;
+  border-radius: 50%;
+  object-fit: contain;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+  box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
 }
 .members .people .memberInfo article:hover {
   transition: all 0.5s ease-in-out;
@@ -788,8 +790,9 @@ a {
 }
 .members .people .memberInfo article .info {
   margin: 0 auto;
-  width: 85%;
-  height: 78%;
+  padding: 100px;
+  width: 100%;
+  height: 100%;
   font: bold 20px/1 "Antic Slab";
   color: #111;
   background-color: white;
@@ -801,16 +804,17 @@ a {
 }
 .members .people .memberInfo article .info h2 {
   margin-top: 20px;
-  font: bold 25px/2 "arial";
+  font: bold 30px/2 "arial";
 }
 .members .people .memberInfo article .info h3 {
   font: bold 20px/2 "arial";
 }
-.members .people .memberInfo article .info p {
+.members .people .memberInfo article .info span {
   font: normal 18px/1.5 "arial";
+  color: #111;
 }
 .members .people .memberInfo article .contact {
-  width: 50%;
+  width: 70%;
   padding: 5px 0px;
   text-align: center;
   margin: 0 auto;
@@ -821,22 +825,19 @@ a {
   float: left;
   width: 60px;
   height: 50px;
+  font: 15px/50px "arial";
   color: black;
-  padding: 8px;
+  padding: 5px;
   text-align: center;
 }
 .members .people .memberInfo article .contact a:nth-of-type(1) {
   background-color: #f1bcae;
-  border-top-left-radius: 1rem 1rem;
-  border-bottom-left-radius: 1rem 1rem;
 }
 .members .people .memberInfo article .contact a:nth-of-type(2) {
   background-color: #f5ddad;
 }
 .members .people .memberInfo article .contact a:nth-of-type(3) {
   background-color: #c9decf;
-  border-top-right-radius: 1rem 1rem;
-  border-bottom-right-radius: 1rem 1rem;
 }
 
 .youtube {
@@ -1074,34 +1075,52 @@ a {
   object-fit: cover;
 }
 .join .inner {
+  padding: 50px 0px 0px 0px;
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
-  padding: 100px;
+  position: relative;
 }
-.join .inner h1 {
-  font: normal 50px/1 "arial";
-  color: #000;
-  text-align: center;
-  margin-bottom: 50px;
+.join .inner::after {
+  display: block;
+  content: "";
+  clear: both;
 }
-.join .inner h1 span {
-  font: normal 20px/1 "맑은 고딕";
-  color: #aaa;
+.join .inner #title {
+  width: 100%;
+  height: 50px;
+  text-align: left;
+  padding-left: 50px;
+  padding-top: 50px;
+  position: relative;
+}
+.join .inner #title .bar {
+  width: 5px;
+  height: 200px;
+  background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
+  position: absolute;
+  top: 30px;
+  left: 0;
+}
+.join .inner #title h1 {
+  font: bold 35px/1 "arial";
+  color: black;
 }
 .join .inner h2 {
-  font: bold 18px/1 "arial";
-  color: #555;
+  font: bold 20px/1 "arial";
+  color: #333;
   text-align: center;
   margin-bottom: 20px;
+  margin-top: 100px;
 }
 .join .inner #terms {
   width: 100%;
-  height: 100px;
+  height: 150px;
   padding: 20px;
   resize: none;
-  font: 12px/1.3 "arial";
-  color: #888;
-  background: #eee;
+  font: 14px/1.3 "arial";
+  color: #333;
+  background: #ebe5e2;
   margin-bottom: 10px;
 }
 .join .inner .agreement {
@@ -1113,26 +1132,29 @@ a {
 }
 .join .inner fieldset {
   padding: 30px;
+  margin-bottom: 50px;
+  border: none;
 }
 .join .inner table {
   width: 100%;
-  border-top: 2px solid #999;
-  border-bottom: 2px solid #999;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 .join .inner table th {
   width: 22%;
   text-align: left;
   font: bold 14px/1 "arial";
-  color: #666;
+  color: #333;
   padding: 20px;
   border-right: 1px solid #bbb;
   border-bottom: 1px solid #bbb;
-  background: #eee;
+  background: #ebe3df;
 }
 .join .inner table th:last-child {
   background: #fff;
   text-align: center;
   border-right: none;
+  border-bottom: none;
 }
 .join .inner table th input[type=submit],
 .join .inner table th input[type=reset] {
@@ -1153,8 +1175,8 @@ a {
 .join .inner table td select {
   width: 30%;
   height: 30px;
-  border: 1px solid #bbb;
-  background: #eeffff;
+  border: 1px solid #a8a7a7;
+  background: #f4f7f7;
   padding-left: 20px;
 }
 .join .inner table td input[type=checkbox],
@@ -1168,7 +1190,7 @@ a {
   width: 80%;
   height: 100px;
   border: 1px solid #bbb;
-  background: #eeffff;
+  background: #f4f7f7;
   resize: none;
   padding: 20px;
 }
@@ -1243,13 +1265,9 @@ a {
   /* the header form form */
   /* Login title form form */
   /*  A welcome message or an explanation of the login form */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
   /* Show/hide password Font Icon */
   /* inputs form  */
   /* focus  */
-  /* //////////////////////////////////////////// */
-  /* //////////////////////////////////////////// */
   /* input[type="text"] {min-width: 250px;} */
   /* buttons  */
   /* Submits */
@@ -1263,7 +1281,7 @@ a {
   min-height: 500px;
   height: auto;
   border-radius: 5px;
-  margin: 2% auto;
+  margin: 5% auto;
   box-shadow: 0 9px 50px rgba(235, 204, 189, 0.31);
   padding: 2%;
   background-image: linear-gradient(-225deg, #f3e9d6 50%, #ebded6 50%);
@@ -1561,6 +1579,7 @@ a {
 
 #visual {
   width: 100%;
+  height: calc(100vh - 120px);
   position: relative;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
@@ -1597,7 +1616,7 @@ a {
 #visual .swiper .swiper-slide .inner .text {
   width: 50%;
   margin: 0 auto;
-  padding: 200px 50px;
+  padding: 300px 50px;
   float: left;
   text-align: center;
 }
@@ -1613,14 +1632,15 @@ a {
 }
 #visual .swiper .swiper-slide .inner .image {
   width: 50%;
+  height: 100%;
   margin: 0 auto;
   padding: 0px;
   float: left;
 }
 #visual .swiper .swiper-slide .inner .image img {
-  width: 600px;
-  height: 600px;
-  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 
 #features {
@@ -1688,7 +1708,6 @@ a {
 }
 #products .container {
   width: 1200px;
-  height: 100%;
   margin: 0 auto;
 }
 #products .container .prodMenu {
@@ -1721,71 +1740,67 @@ a {
 }
 #products .container .prodList article {
   width: 22%;
-  display: inline-block;
+  float: left;
   margin: 1rem;
   text-align: center;
   padding: 0;
 }
 #products .container .prodList article > div {
   width: 100%;
-  height: 100%;
+  padding-bottom: 20px;
   position: relative;
   overflow: hidden;
-  cursor: pointer;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 }
-#products .container .prodList article > div:hover {
-  transition: all 0.5s ease;
-}
-#products .container .prodList article > div:hover img {
-  filter: blur(2px);
-  transform: scale(1.1);
-}
-#products .container .prodList article > div:hover div h2,
-#products .container .prodList article > div:hover div p,
-#products .container .prodList article > div:hover div a {
+#products .container .prodList article > div:hover a {
   opacity: 1;
-  transform: translateY(0%);
+}
+#products .container .prodList article > div img {
+  width: 100%;
 }
 #products .container .prodList article > div div {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  left: 10%;
-  padding: 0px 20px;
+  width: 100%;
 }
 #products .container .prodList article > div div img {
-  width: 100%;
-  height: 100%;
-  transition: linear 0.3s;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin: 0 auto;
+  padding: 5px;
+  background: black;
+  display: block;
+  transform: translateY(-50%);
+  cursor: pointer;
 }
 #products .container .prodList article > div div h2 {
   font: bold 25px/1 "arial";
-  color: #fff;
+  color: #111;
   letter-spacing: 1px;
-  margin: 15px 0px;
-  opacity: 0;
+  margin: 10px 0px;
   transition: 0.5s;
-  transform: -100%;
+  margin-bottom: 20px;
+  transform: translateY(-100%);
 }
 #products .container .prodList article > div div p {
   font: 14px/1.2 "arial";
-  color: #fff;
-  opacity: 0;
+  color: #111;
   transition: 0.5s;
   transform: 100%;
+  margin-bottom: 20px;
+  transform: translateY(-100%);
 }
 #products .container .prodList article > div div a {
   display: block;
   width: 150px;
   height: auto;
+  border-radius: 2rem;
   padding: 5px;
-  margin: 10px;
-  font: bold 15px/1.2 "arial";
-  color: #fff;
-  background-color: black;
+  margin: 0 auto;
+  font: bold 16px/1.2 "arial";
+  color: #000;
+  background-color: #dac4b6;
   opacity: 0;
   transition: 0.5s;
-  transform: 100%;
 }
 
 #celebrity {
@@ -1840,15 +1855,6 @@ a {
   height: 250px;
   border-radius: 50%;
 }
-#celebrity .inner article .image:hover {
-  transition: all 0.5s ease;
-}
-#celebrity .inner article .image:hover img {
-  filter: blur(2px);
-}
-#celebrity .inner article .image:hover div a {
-  opacity: 1;
-}
 #celebrity .inner article .image div a {
   display: block;
   margin: 0 auto;
@@ -1888,15 +1894,16 @@ a {
 #banner .wrapper .left img {
   width: 100%;
 }
-#banner .wrapper .left:hover {
-  transform: scale(1.1);
-  transition: all 0.8s ease;
-}
 #banner .wrapper .center {
   width: 600px;
   margin: 0 auto;
   padding: 80px;
   float: right;
+}
+#banner .wrapper .center:hover {
+  transform: scale(1.1);
+  transition: all 0.5s ease-in-out;
+  overflow: hidden;
 }
 #banner .wrapper .center p {
   font: normal 20px/1.5 "Antic Slab";
@@ -1920,10 +1927,6 @@ a {
   border: 1px solid #999;
   background-color: #111;
 }
-#banner .wrapper .center:hover {
-  transform: scale(1.1);
-  transition: all 0.8s ease;
-}
 #banner .wrapper .right {
   width: 300px;
   float: right;
@@ -1931,10 +1934,6 @@ a {
 }
 #banner .wrapper .right img {
   width: 100%;
-}
-#banner .wrapper .right:hover {
-  transform: scale(1.1);
-  transition: all 0.8s ease;
 }
 
 #sub {
@@ -1997,18 +1996,17 @@ a {
   width: 150px;
   height: 35px;
   font: bold 20px/1 "Antic Slab";
-  color: #eee;
-  background: #222;
+  color: #fff;
+  background: black;
   margin: 0 auto;
   padding: 5px;
   border: none;
   cursor: pointer;
-  cursor: hand;
   border-radius: 2em;
 }
 #sub .wrapper .searchbox .btnSearch:hover {
-  color: #222;
-  background: #ccc;
+  color: black;
+  background: #ffff;
 }
 
 #footer,

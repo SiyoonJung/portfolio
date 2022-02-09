@@ -12,8 +12,14 @@ $mobile: 539px;
 }
 
 @keyframes slide {
-	from {left: -200px; opacity: 0;}
-	to {left: 0px; opacity: 1;}
+	from {
+		left: -200px;
+		opacity: 0;
+	}
+	to {
+		left: 0px;
+		opacity: 1;
+	}
 }
 
 @import "reset.scss";
@@ -24,7 +30,6 @@ $mobile: 539px;
 @import "location.scss";
 @import "join.scss";
 @import "login.scss";
-
 
 #header {
 	.inner {
@@ -223,6 +228,7 @@ $mobile: 539px;
 
 #visual {
 	width: 100%;
+	height: calc(100vh - 120px);
 	position: relative;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
@@ -260,7 +266,7 @@ $mobile: 539px;
 				.text {
 					width: 50%;
 					margin: 0 auto;
-					padding: 200px 50px;
+					padding: 300px 50px;
 					float: left;
 					text-align: center;
 
@@ -278,14 +284,15 @@ $mobile: 539px;
 
 				.image {
 					width: 50%;
+					height: 100%;
 					margin: 0 auto;
 					padding: 0px;
 					float: left;
 
 					img {
-						width: 600px;
-						height: 600px;
-						object-fit: cover;
+						width: 100%;
+						height: 100%;
+						object-fit: contain;
 					}
 				}
 			}
@@ -368,7 +375,6 @@ $mobile: 539px;
 
 	.container {
 		width: 1200px;
-		height: 100%;
 		margin: 0 auto;
 
 		.prodMenu {
@@ -404,76 +410,74 @@ $mobile: 539px;
 
 			article {
 				width: 22%;
-				display: inline-block;
+				float: left;
 				margin: 1rem;
 				text-align: center;
 				padding: 0;
 
 				> div {
 					width: 100%;
-					height: 100%;
+					padding-bottom: 20px;
 					position: relative;
 					overflow: hidden;
-					cursor: pointer;
+					box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 					&:hover {
-						transition: all 0.5s ease;
-						img {
-							filter: blur(2px);
-							transform: scale(1.1);
-						}
-
-						div h2,
-						div p,
-						div a {
+						a {
 							opacity: 1;
-							transform: translateY(0%);
 						}
 					}
 
-					div {
-						position: absolute;
-						top: 50%;
-						transform: translateY(-50%);
-						left: 10%;
-						padding: 0px 20px;
 
+					img {
+						width: 100%;	
+					}
+
+					div {
+						width: 100%;
 						img {
-							width: 100%;
-							height: 100%;
-							transition: linear 0.3s;
+							width: 60px;
+							height: 60px;
+							border-radius: 50%;
+							margin: 0 auto;
+							padding: 5px;
+							background: black;
+							display: block;
+							transform: translateY(-50%);
+							cursor: pointer;
 						}
 
 						h2 {
 							font: bold 25px/1 "arial";
-							color: #fff;
+							color: #111;
 							letter-spacing: 1px;
-							margin: 15px 0px;
-							opacity: 0;
+							margin: 10px 0px;
 							transition: 0.5s;
-							transform: -100%;
+							margin-bottom: 20px;
+							transform: translateY(-100%);
 						}
 
 						p {
 							font: 14px/1.2 "arial";
-							color: #fff;
-							opacity: 0;
+							color: #111;
 							transition: 0.5s;
 							transform: 100%;
+							margin-bottom: 20px;
+							transform: translateY(-100%);
 						}
 
 						a {
 							display: block;
 							width: 150px;
 							height: auto;
+							border-radius: 2rem;
 							padding: 5px;
-							margin: 10px;
-							font: bold 15px/1.2 "arial";
-							color: #fff;
-							background-color: black;
+							margin: 0 auto;
+							font: bold 16px/1.2 "arial";
+							color: #000;
+							background-color: #dac4b6;
 							opacity: 0;
 							transition: 0.5s;
-							transform: 100%;
 						}
 					}
 				}
@@ -539,17 +543,6 @@ $mobile: 539px;
 					border-radius: 50%;
 				}
 
-				&:hover {
-					transition: all 0.5s ease;
-					img {
-						filter: blur(2px);
-					}
-
-					div a {
-						opacity: 1;
-					}
-				}
-
 				div a {
 					display: block;
 					margin: 0 auto;
@@ -597,11 +590,6 @@ $mobile: 539px;
 			img {
 				width: 100%;
 			}
-
-			&:hover {
-				transform: scale(1.1);
-				transition: all 0.8s ease;
-			}
 		}
 
 		.center {
@@ -609,6 +597,12 @@ $mobile: 539px;
 			margin: 0 auto;
 			padding: 80px;
 			float: right;
+
+			&:hover {
+				transform: scale(1.1);
+				transition: all 0.5s ease-in-out;
+				overflow: hidden;
+			}
 
 			p {
 				font: normal 20px/1.5 "Antic Slab";
@@ -633,11 +627,6 @@ $mobile: 539px;
 				border: 1px solid #999;
 				background-color: #111;
 			}
-
-			&:hover {
-				transform: scale(1.1);
-				transition: all 0.8s ease;
-			}
 		}
 
 		.right {
@@ -647,11 +636,6 @@ $mobile: 539px;
 
 			img {
 				width: 100%;
-			}
-
-			&:hover {
-				transform: scale(1.1);
-				transition: all 0.8s ease;
 			}
 		}
 	}
@@ -705,151 +689,149 @@ $mobile: 539px;
 			margin: 0 auto;
 			padding: 0px;
 			text-align: center;
-		
-				input[type="text"] {
-					width: 400px;
-					height: 40px;
-					font: bold 15px/1.5px "arial";
-					color: #333;
-					text-align: center;
+
+			input[type="text"] {
+				width: 400px;
+				height: 40px;
+				font: bold 15px/1.5px "arial";
+				color: #333;
+				text-align: center;
+				letter-spacing: 1px;
+				margin: 40px;
+				border: none;
+			}
+
+			.btnSearch {
+				width: 150px;
+				height: 35px;
+				font: bold 20px/1 "Antic Slab";
+				color: #fff;
+				background: black;
+				margin: 0 auto;
+				padding: 5px;
+				border: none;
+				cursor: pointer;
+				border-radius: 2em;
+
+				&:hover {
+					color: black;
+					background: #ffff;
+				}
+			}
+		}
+	}
+}
+
+#footer,
+#footer_sub {
+	width: 100%;
+	height: 300px;
+	border-top: 1px double #999;
+	padding: 100px 0;
+	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+
+	.inner {
+		width: 1180px;
+		margin: 0 auto;
+
+		&::after {
+			content: "";
+			clear: both;
+		}
+
+		h1 {
+			font: bold 25px/1 "Antic Slab";
+			letter-spacing: 3px;
+			color: black;
+			margin-bottom: 15px;
+			float: left;
+		}
+
+		ul {
+			float: right;
+
+			li {
+				float: left;
+				margin-left: 20px;
+
+				a {
+					font: bold 15px/1.5 "Antic Slab";
 					letter-spacing: 1px;
-					margin: 40px;
-					border: none;
+					color: black;
 				}
+			}
+		}
 
-				.btnSearch {
-					width: 150px;
-					height: 35px;
-					font: bold 20px/1 "Antic Slab";
-					color: #eee;
-					background: #222;
-					margin: 0 auto;
-					padding: 5px;
-					border: none;
-					cursor:pointer; 
-					cursor:hand;
-					border-radius: 2em;
+		address {
+			float: left;
+			width: 100%;
+			font: 15px/1.5 "Antic Slab";
+			color: black;
+			letter-spacing: 1px;
+			border-top: 2px solid #fff;
+			margin-bottom: 15px;
+		}
+		p {
+			font: 15px/1 "Antic Slab";
+			letter-spacing: 1px;
+			color: black;
+			width: 100%;
+			float: left;
+		}
 
-					&:hover {
-						color: #222;
-						background: #ccc;
-					}
-				}
+		#sns {
+			margin-right: 10px;
+			float: right;
+			text-align: center;
+		}
+	}
+}
+
+/* ----- Responsive Settings ----- */
+@media screen and (max-width: $tablet) {
+	#header,
+	#header_sub {
+		.inner {
+			width: 100%;
+			height: 100px;
+
+			> h1 {
+				left: 20px;
+			}
+			.menuWeb {
+				display: none;
+			}
+			.btnCall {
+				display: block;
+			}
+			.menuMo {
+				display: block;
 			}
 		}
 	}
 
 	#footer,
 	#footer_sub {
-		width: 100%;
-		height: 300px;
-		border-top: 1px double #999;
-		padding: 100px 0;
-		background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
+		padding: 80px 30px;
 
 		.inner {
-			width: 1180px;
-			margin: 0 auto;
+			width: 100%;
+		}
+	}
+}
 
-			&::after {
-				content: "";
-				clear: both;
-			}
-
-			h1 {
-				font: bold 25px/1 "Antic Slab";
-				letter-spacing: 3px;
-				color: black;
-				margin-bottom: 15px;
-				float: left;
-			}
-
+/* Responsive Mobile Verision*/
+@media screen and (max-width: $mobile) {
+	#footer,
+	#footer_sub {
+		.inner {
 			ul {
-				float: right;
-
+				width: 100%;
 				li {
-					float: left;
-					margin-left: 20px;
-
-					a {
-						font: bold 15px/1.5 "Antic Slab";
-						letter-spacing: 1px;
-						color: black;
-					}
-				}
-			}
-
-			address {
-				float: left;
-				width: 100%;
-				font: 15px/1.5 "Antic Slab";
-				color: black;
-				letter-spacing: 1px;
-				border-top: 2px solid #fff;
-				margin-bottom: 15px;
-			}
-			p {
-				font: 15px/1 "Antic Slab";
-				letter-spacing: 1px;
-				color: black;
-				width: 100%;
-				float: left;
-			}
-
-			#sns {
-				margin-right: 10px;
-				float: right;
-				text-align: center;
-			}
-		}
-	}
-
-	/* ----- Responsive Settings ----- */
-	@media screen and (max-width: $tablet) {
-		#header,
-		#header_sub {
-			.inner {
-				width: 100%;
-				height: 100px;
-
-				> h1 {
-					left: 20px;
-				}
-				.menuWeb {
-					display: none;
-				}
-				.btnCall {
-					display: block;
-				}
-				.menuMo {
-					display: block;
-				}
-			}
-		}
-
-		#footer,
-		#footer_sub {
-			padding: 80px 30px;
-
-			.inner {
-				width: 100%;
-			}
-		}
-	}
-
-	/* Responsive Mobile Verision*/
-	@media screen and (max-width: $mobile) {
-		#footer,
-		#footer_sub {
-			.inner {
-				ul {
-					width: 100%;
-					li {
-						margin-left: 0;
-						margin: 5px;
-					}
+					margin-left: 0;
+					margin: 5px;
 				}
 			}
 		}
 	}
-
+}
