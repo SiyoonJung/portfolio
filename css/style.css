@@ -1926,7 +1926,7 @@ a {
 
 #sub {
   width: 100%;
-  margin-top: 5%;
+  margin-top: 50px;
   height: 20.8333%;
   background-color: #f7f2ef;
 }
@@ -2064,6 +2064,7 @@ a {
 }
 
 /* ----- Responsive Settings ----- */
+/* Responsive Tablet Verision*/
 @media screen and (max-width: 1179px) {
   #header .inner,
 #header_sub .inner {

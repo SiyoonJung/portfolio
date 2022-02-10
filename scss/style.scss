@@ -625,7 +625,7 @@ $mobile: 539px;
 
 #sub {
 	width: 100%;
-	margin-top: 5%;
+	margin-top: 50px;
 	height: 20.8333%;
 	background-color: #f7f2ef;
 
@@ -770,6 +770,8 @@ $mobile: 539px;
 }
 
 /* ----- Responsive Settings ----- */
+
+/* Responsive Tablet Verision*/
 @media screen and (max-width: $tablet) {
 	#header,
 	#header_sub {
