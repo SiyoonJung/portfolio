@@ -72,8 +72,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .gallery .intro #title h1 {
   font: bold 35px/1 "arial";
@@ -164,8 +164,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .gallery .inner #title h1 {
   font: bold 35px/1 "arial";
@@ -351,14 +351,15 @@ a {
   padding-left: 50px;
   padding-top: 50px;
   position: relative;
+  margin-bottom: 200px;
 }
 .board .inner #title .bar {
   width: 5px;
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .board .inner #title h1 {
   font: bold 35px/1 "arial";
@@ -396,7 +397,7 @@ a {
 .board .inner #tab {
   width: 100%;
   border: 1px solid black;
-  margin-top: 200px;
+  margin: 0 auto;
   position: relative;
   padding-top: 30px;
 }
@@ -653,8 +654,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .members .intro #title h1 {
   font: bold 35px/1 "arial";
@@ -745,8 +746,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .members .people #title h1 {
   font: bold 35px/1 "arial";
@@ -840,6 +841,22 @@ a {
   background-color: #c9decf;
 }
 
+/* ----- Responsive Settings ----- */
+/* Responsive Tablet Verision*/
+@media screen and (max-width: 1179px) {
+  .members {
+    width: 100%;
+  }
+  .members .sub_visual {
+    width: 100%;
+  }
+  .members .intro {
+    width: 100%;
+  }
+  .members .people {
+    width: 100%;
+  }
+}
 .youtube {
   width: 100%;
   height: 100%;
@@ -880,8 +897,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .youtube .inner #title h1 {
   font: bold 35px/1 "arial";
@@ -996,8 +1013,8 @@ a {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .location .inner #title h1 {
   font: bold 35px/1 "arial";

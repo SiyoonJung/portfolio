@@ -35,14 +35,15 @@
 			padding-left: 50px;
 			padding-top: 50px;
 			position: relative;
+			margin-bottom: 200px;
 
 			.bar {
 				width: 5px;
 				height: 200px;
 				background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
 				position: absolute;
-				top: 30px;
-				left: 0;
+				top: 2.5%;
+				left: 2%;
 			}
 				h1 {
 					font: bold 35px/1 "arial";
@@ -86,7 +87,7 @@
 		#tab {
 			width: 100%;
 			border: 1px solid black;
-			margin-top: 200px;
+			margin: 0 auto;
 			position: relative;
 			padding-top: 30px;
 

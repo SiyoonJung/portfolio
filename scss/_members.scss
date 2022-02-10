@@ -42,13 +42,14 @@
 				height: 200px;
 				background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
 				position: absolute;
-				top: 30px;
-				left: 0;
+				top: 2.5%;
+				left: 2%;
 			}
 				h1 {
 					font: bold 35px/1 "arial";
 					color: black;
 				}
+			
 		}
 
 		.about {
@@ -145,8 +146,8 @@
 				height: 200px;
 				background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
 				position: absolute;
-				top: 30px;
-				left: 0;
+				top: 2.5%;
+				left: 2%;
 			}
 				h1 {
 					font: bold 35px/1 "arial";
@@ -253,6 +254,27 @@
 					}
 				}
 			}
+		}
+	}
+}
+/* ----- Responsive Settings ----- */
+
+/* Responsive Tablet Verision*/
+@media screen and (max-width: $tablet) {
+
+	.members {
+		width: 100%;
+
+		.sub_visual {
+			width: 100%;
+		}
+
+		.intro {
+			width: 100%;
+		}
+
+		.people {
+			width: 100%;
 		}
 	}
 }
