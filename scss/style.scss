@@ -233,7 +233,7 @@ $mobile: 539px;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.swiper {
-		width: 1180px;
+		width: 100%;
 		height: 100%;
 
 		.swiper-slide {
@@ -259,15 +259,14 @@ $mobile: 539px;
 			}
 
 			.inner {
-				width: 100%;
+				width: 1180px;
 				margin: 0 auto;
 				padding: 0px;
 
 				.text {
 					width: 50%;
-					height: 100%;
 					margin: 0 auto;
-					padding: 300px 50px;
+					padding: 200px 30px;
 					float: left;
 					text-align: center;
 
@@ -293,7 +292,7 @@ $mobile: 539px;
 					img {
 						width: 100%;
 						height: 100%;
-						object-fit: contain;
+						object-fit: cover;
 					}
 				}
 			}
@@ -306,7 +305,7 @@ $mobile: 539px;
 
 	.wrapper {
 		width: 1200px;
-		height: 300px;
+		height: 100%;
 		margin: 0 auto;
 		text-align: center;
 		padding: 0px;
@@ -322,8 +321,8 @@ $mobile: 539px;
 			height: 100%;
 			border-right: 1px solid #aaa;
 
-			&:last-of-type {
-				border-right: 0;
+			&:first-of-type {
+				border-left: 1px solid #aaa;
 			}
 
 			&:nth-of-type(1):hover {
@@ -364,8 +363,9 @@ $mobile: 539px;
 #products {
 	width: 100%;
 	height: 100%;
-	position: relative;
 	margin-top: 50px;
+	position: relative;
+	clear: both;
 
 	h1 {
 		margin: 0 auto;
@@ -377,6 +377,7 @@ $mobile: 539px;
 	.container {
 		width: 1200px;
 		margin: 0 auto;
+		position: relative;
 
 		.prodMenu {
 			text-align: center;
@@ -429,9 +430,8 @@ $mobile: 539px;
 						}
 					}
 
-
 					img {
-						width: 100%;	
+						width: 100%;
 					}
 
 					div {
@@ -481,86 +481,6 @@ $mobile: 539px;
 							transition: 0.5s;
 						}
 					}
-				}
-			}
-		}
-	}
-}
-
-#celebrity {
-	width: 100%;
-	height: auto;
-	margin-top: 50px;
-	position: relative;
-	background-color: #e8e7d2;
-
-	.inner {
-		width: 1200px;
-		height: 100%;
-		margin: 0 auto;
-		padding: 20px;
-
-		&::after {
-			display: block;
-			content: "";
-			clear: both;
-		}
-
-		article {
-			width: 350px;
-			height: 100%;
-			margin: 15px;
-			padding: 10px;
-			float: left;
-			text-align: center;
-			border-right: 1px solid #aaa;
-
-			&:last-of-type {
-				border-right: none;
-			}
-
-			.text {
-				width: 100%;
-				margin: 0 auto;
-
-				h2 {
-					font: normal 30px/1.2 "Courgette";
-					text-align: center;
-					margin-bottom: 15px;
-				}
-				p {
-					font: normal 15px/1.5 "arial";
-					margin-bottom: 15px;
-				}
-			}
-
-			.image {
-				margin: 0 auto;
-				position: relative;
-
-				img {
-					width: 250px;
-					height: 250px;
-					border-radius: 50%;
-				}
-
-				div a {
-					display: block;
-					margin: 0 auto;
-					padding: 10px;
-					width: 200px;
-					height: auto;
-					font: bold 20px/1 "Antic Slab";
-					color: #000;
-					background-image: linear-gradient(
-						to left,
-						#e8e7d2,
-						#e5d5ca
-					);
-					position: absolute;
-					top: 40%;
-					left: 20%;
-					opacity: 0;
 				}
 			}
 		}
@@ -642,15 +562,76 @@ $mobile: 539px;
 	}
 }
 
+#celebrity {
+	width: 100%;
+	height: auto;
+	margin-top: 50px;
+	position: relative;
+	background-color: #e8e7d2;
+
+	.inner {
+		width: 1200px;
+		height: 100%;
+		margin: 0 auto;
+		padding: 1.666667%;
+
+		&::after {
+			display: block;
+			content: "";
+			clear: both;
+		}
+
+		article {
+			width: 30%;
+			height: 100%;
+			margin: 0.8333333%;
+			padding: 0.833333%;
+			float: left;
+			text-align: center;
+			border-right: 1px solid #aaa;
+
+			&:last-of-type {
+				border-right: none;
+			}
+
+			.text {
+				width: 100%;
+				margin: 0 auto;
+
+				h2 {
+					font: normal 30px/1.2 "Courgette";
+					text-align: center;
+					margin-bottom: 15px;
+				}
+				p {
+					font: normal 15px/1.5 "arial";
+					margin-bottom: 15px;
+				}
+			}
+
+			.image {
+				margin: 0 auto;
+				position: relative;
+
+				img {
+					width: 71.4%;
+					height: 71.4%;
+					border-radius: 50%;
+				}
+			}
+		}
+	}
+}
+
 #sub {
 	width: 100%;
-	margin-top: 50px;
-	height: 250px;
+	margin-top: 5%;
+	height: 20.8333%;
 	background-color: #f7f2ef;
 
 	.wrapper {
 		width: 1200px;
-		padding: 30px;
+		padding: 2.5%;
 		margin: 0 auto;
 		position: relative;
 
@@ -662,20 +643,20 @@ $mobile: 539px;
 
 		.content {
 			float: left;
-			width: 550px;
+			width: 45.833333%;
 			margin: 0 auto;
-			padding: 30px;
+			padding: 2.5%;
 
 			img {
 				display: block;
 				float: left;
-				margin: 20px;
+				margin: 1.666667%;
 			}
 			h4 {
 				font: bold 24px/1.5 "Antic Slab";
 				color: #000;
 				text-align: center;
-				margin-bottom: 30px;
+				margin-bottom: 2.5%;
 			}
 			p {
 				font: normal 18px/1.5 "arial";
@@ -686,25 +667,25 @@ $mobile: 539px;
 
 		.searchbox {
 			float: left;
-			width: 550px;
-			margin: 0 auto;
+			width: 45.833333%;
+			margin: 20px;
 			padding: 0px;
 			text-align: center;
 
 			input[type="text"] {
-				width: 400px;
+				width: 300px;
 				height: 40px;
 				font: bold 15px/1.5px "arial";
 				color: #333;
 				text-align: center;
 				letter-spacing: 1px;
-				margin: 40px;
+				margin: 30px;
 				border: none;
 			}
 
 			.btnSearch {
 				width: 150px;
-				height: 35px;
+				height: 40px;
 				font: bold 20px/1 "Antic Slab";
 				color: #fff;
 				background: black;
@@ -811,8 +792,99 @@ $mobile: 539px;
 		}
 	}
 
+	#visual {
+		width: 100%;
+		height: 90vh;
+		.inner {
+			width: 100%;
+			height: 100%;
+
+			.text {
+				width: 50%;
+				margin: 0 auto;
+				padding: 50px;
+
+				h2 {
+					font: normal 15px/1.5 "Antic Slab";
+				}
+				h1 {
+					font: bold 30px/1.5 "Caveat";
+				}
+
+				p {
+					display: none;
+				}
+			}
+
+			.image {
+				width: 50%;
+				height: 100%;
+			}
+		}
+	}
+
+	#features {
+		.wrapper {
+			width: 100%;
+			.box {
+				width: 50%;
+				height: 100%;
+				float: left;
+				border: 1px solid #aaa;
+			}
+		}
+	}
+
+	#products {
+		.container {
+			width: 100%;
+
+			.prodList {
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+
+				article {
+					width: 44%;
+				}
+			}
+		}
+	}
+
+	#banner {
+		.wrapper {
+			width: 100%;
+
+			.left {
+				float: left;
+				display: none;
+			}
+
+			.center,
+			.right {
+				float: left;
+			}
+		}
+	}
+
+	#celebrity {
+		.inner {
+			width: 100%;
+
+			article {
+				width: 30%;
+			}
+		}
+	}
+
+	
+	#sub {
+		display: none;
+	}
+
 	#footer,
 	#footer_sub {
+		margin-top: 50px;
 		padding: 80px 30px;
 
 		.inner {
@@ -821,8 +893,92 @@ $mobile: 539px;
 	}
 }
 
+
 /* Responsive Mobile Verision*/
 @media screen and (max-width: $mobile) {
+	#visual {
+		.inner {
+			width: 100vw;
+			height: 100%;
+
+			.text {
+				width: 50%;
+				margin: 0 auto;
+				padding: 50px;
+			}
+
+			.image {
+				width: 50%;
+				height: 100%;
+			}
+		}
+	}
+
+	#features {
+		.wrapper {
+			width: 100%;
+			.box {
+				width: 100%;
+			}
+		}
+	}
+
+	#products {
+		.container {
+			width: 100%;
+
+			.prodList {
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+
+				article {
+					width: 90%;
+
+					> div {
+						width: 100%;
+
+						img {
+							width: 100%;
+						}
+
+						div {
+							width: 100%;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	#banner {
+		.wrapper {
+			width: 100%;
+
+			.left {
+				display: none;
+			}
+
+			.center {
+				width: 100%;
+				margin: 0 auto;
+			}
+			.right {
+				display: none;
+			}
+		}
+	}
+
+	#celebrity {
+		.inner {
+			width: 100%;
+
+			article {
+				width: 30%;
+			}
+		}
+	}
+
 	#footer,
 	#footer_sub {
 		.inner {
@@ -836,3 +992,4 @@ $mobile: 539px;
 		}
 	}
 }
+

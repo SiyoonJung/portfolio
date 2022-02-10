@@ -1584,7 +1584,7 @@ a {
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
 #visual .swiper {
-  width: 1180px;
+  width: 100%;
   height: 100%;
 }
 #visual .swiper .swiper-slide {
@@ -1609,15 +1609,14 @@ a {
   clear: both;
 }
 #visual .swiper .swiper-slide .inner {
-  width: 100%;
+  width: 1180px;
   margin: 0 auto;
   padding: 0px;
 }
 #visual .swiper .swiper-slide .inner .text {
   width: 50%;
-  height: 100%;
   margin: 0 auto;
-  padding: 300px 50px;
+  padding: 200px 30px;
   float: left;
   text-align: center;
 }
@@ -1641,7 +1640,7 @@ a {
 #visual .swiper .swiper-slide .inner .image img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 #features {
@@ -1649,7 +1648,7 @@ a {
 }
 #features .wrapper {
   width: 1200px;
-  height: 300px;
+  height: 100%;
   margin: 0 auto;
   text-align: center;
   padding: 0px;
@@ -1665,8 +1664,8 @@ a {
   height: 100%;
   border-right: 1px solid #aaa;
 }
-#features .wrapper .box:last-of-type {
-  border-right: 0;
+#features .wrapper .box:first-of-type {
+  border-left: 1px solid #aaa;
 }
 #features .wrapper .box:nth-of-type(1):hover {
   background-color: #e9e1d4;
@@ -1698,8 +1697,9 @@ a {
 #products {
   width: 100%;
   height: 100%;
-  position: relative;
   margin-top: 50px;
+  position: relative;
+  clear: both;
 }
 #products h1 {
   margin: 0 auto;
@@ -1710,6 +1710,7 @@ a {
 #products .container {
   width: 1200px;
   margin: 0 auto;
+  position: relative;
 }
 #products .container .prodMenu {
   text-align: center;
@@ -1804,73 +1805,6 @@ a {
   transition: 0.5s;
 }
 
-#celebrity {
-  width: 100%;
-  height: auto;
-  margin-top: 50px;
-  position: relative;
-  background-color: #e8e7d2;
-}
-#celebrity .inner {
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  padding: 20px;
-}
-#celebrity .inner::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-#celebrity .inner article {
-  width: 350px;
-  height: 100%;
-  margin: 15px;
-  padding: 10px;
-  float: left;
-  text-align: center;
-  border-right: 1px solid #aaa;
-}
-#celebrity .inner article:last-of-type {
-  border-right: none;
-}
-#celebrity .inner article .text {
-  width: 100%;
-  margin: 0 auto;
-}
-#celebrity .inner article .text h2 {
-  font: normal 30px/1.2 "Courgette";
-  text-align: center;
-  margin-bottom: 15px;
-}
-#celebrity .inner article .text p {
-  font: normal 15px/1.5 "arial";
-  margin-bottom: 15px;
-}
-#celebrity .inner article .image {
-  margin: 0 auto;
-  position: relative;
-}
-#celebrity .inner article .image img {
-  width: 250px;
-  height: 250px;
-  border-radius: 50%;
-}
-#celebrity .inner article .image div a {
-  display: block;
-  margin: 0 auto;
-  padding: 10px;
-  width: 200px;
-  height: auto;
-  font: bold 20px/1 "Antic Slab";
-  color: #000;
-  background-image: linear-gradient(to left, #e8e7d2, #e5d5ca);
-  position: absolute;
-  top: 40%;
-  left: 20%;
-  opacity: 0;
-}
-
 #banner {
   width: 100%;
   height: 300px;
@@ -1937,15 +1871,68 @@ a {
   width: 100%;
 }
 
+#celebrity {
+  width: 100%;
+  height: auto;
+  margin-top: 50px;
+  position: relative;
+  background-color: #e8e7d2;
+}
+#celebrity .inner {
+  width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 1.666667%;
+}
+#celebrity .inner::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+#celebrity .inner article {
+  width: 30%;
+  height: 100%;
+  margin: 0.8333333%;
+  padding: 0.833333%;
+  float: left;
+  text-align: center;
+  border-right: 1px solid #aaa;
+}
+#celebrity .inner article:last-of-type {
+  border-right: none;
+}
+#celebrity .inner article .text {
+  width: 100%;
+  margin: 0 auto;
+}
+#celebrity .inner article .text h2 {
+  font: normal 30px/1.2 "Courgette";
+  text-align: center;
+  margin-bottom: 15px;
+}
+#celebrity .inner article .text p {
+  font: normal 15px/1.5 "arial";
+  margin-bottom: 15px;
+}
+#celebrity .inner article .image {
+  margin: 0 auto;
+  position: relative;
+}
+#celebrity .inner article .image img {
+  width: 71.4%;
+  height: 71.4%;
+  border-radius: 50%;
+}
+
 #sub {
   width: 100%;
-  margin-top: 50px;
-  height: 250px;
+  margin-top: 5%;
+  height: 20.8333%;
   background-color: #f7f2ef;
 }
 #sub .wrapper {
   width: 1200px;
-  padding: 30px;
+  padding: 2.5%;
   margin: 0 auto;
   position: relative;
 }
@@ -1956,20 +1943,20 @@ a {
 }
 #sub .wrapper .content {
   float: left;
-  width: 550px;
+  width: 45.833333%;
   margin: 0 auto;
-  padding: 30px;
+  padding: 2.5%;
 }
 #sub .wrapper .content img {
   display: block;
   float: left;
-  margin: 20px;
+  margin: 1.666667%;
 }
 #sub .wrapper .content h4 {
   font: bold 24px/1.5 "Antic Slab";
   color: #000;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 2.5%;
 }
 #sub .wrapper .content p {
   font: normal 18px/1.5 "arial";
@@ -1978,24 +1965,24 @@ a {
 }
 #sub .wrapper .searchbox {
   float: left;
-  width: 550px;
-  margin: 0 auto;
+  width: 45.833333%;
+  margin: 20px;
   padding: 0px;
   text-align: center;
 }
 #sub .wrapper .searchbox input[type=text] {
-  width: 400px;
+  width: 300px;
   height: 40px;
   font: bold 15px/1.5px "arial";
   color: #333;
   text-align: center;
   letter-spacing: 1px;
-  margin: 40px;
+  margin: 30px;
   border: none;
 }
 #sub .wrapper .searchbox .btnSearch {
   width: 150px;
-  height: 35px;
+  height: 40px;
   font: bold 20px/1 "Antic Slab";
   color: #fff;
   background: black;
@@ -2100,8 +2087,81 @@ a {
     display: block;
   }
 
+  #visual {
+    width: 100%;
+    height: 90vh;
+  }
+  #visual .inner {
+    width: 100%;
+    height: 100%;
+  }
+  #visual .inner .text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  #visual .inner .text h2 {
+    font: normal 15px/1.5 "Antic Slab";
+  }
+  #visual .inner .text h1 {
+    font: bold 30px/1.5 "Caveat";
+  }
+  #visual .inner .text p {
+    display: none;
+  }
+  #visual .inner .image {
+    width: 50%;
+    height: 100%;
+  }
+
+  #features .wrapper {
+    width: 100%;
+  }
+  #features .wrapper .box {
+    width: 50%;
+    height: 100%;
+    float: left;
+    border: 1px solid #aaa;
+  }
+
+  #products .container {
+    width: 100%;
+  }
+  #products .container .prodList {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #products .container .prodList article {
+    width: 44%;
+  }
+
+  #banner .wrapper {
+    width: 100%;
+  }
+  #banner .wrapper .left {
+    float: left;
+    display: none;
+  }
+  #banner .wrapper .center,
+#banner .wrapper .right {
+    float: left;
+  }
+
+  #celebrity .inner {
+    width: 100%;
+  }
+  #celebrity .inner article {
+    width: 30%;
+  }
+
+  #sub {
+    display: none;
+  }
+
   #footer,
 #footer_sub {
+    margin-top: 50px;
     padding: 80px 30px;
   }
   #footer .inner,
@@ -2111,6 +2171,69 @@ a {
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
+  #visual .inner {
+    width: 100vw;
+    height: 100%;
+  }
+  #visual .inner .text {
+    width: 50%;
+    margin: 0 auto;
+    padding: 50px;
+  }
+  #visual .inner .image {
+    width: 50%;
+    height: 100%;
+  }
+
+  #features .wrapper {
+    width: 100%;
+  }
+  #features .wrapper .box {
+    width: 100%;
+  }
+
+  #products .container {
+    width: 100%;
+  }
+  #products .container .prodList {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #products .container .prodList article {
+    width: 90%;
+  }
+  #products .container .prodList article > div {
+    width: 100%;
+  }
+  #products .container .prodList article > div img {
+    width: 100%;
+  }
+  #products .container .prodList article > div div {
+    width: 100%;
+  }
+
+  #banner .wrapper {
+    width: 100%;
+  }
+  #banner .wrapper .left {
+    display: none;
+  }
+  #banner .wrapper .center {
+    width: 100%;
+    margin: 0 auto;
+  }
+  #banner .wrapper .right {
+    display: none;
+  }
+
+  #celebrity .inner {
+    width: 100%;
+  }
+  #celebrity .inner article {
+    width: 30%;
+  }
+
   #footer .inner ul,
 #footer_sub .inner ul {
     width: 100%;
