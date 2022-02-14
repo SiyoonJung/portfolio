@@ -51,3 +51,7 @@ $(".prodMenu ul li").click(function () {
   });
   return false;
 });
+
+$("#add-cart").click(function() {
+  $("#cart").addClass('data-num')
+});

@@ -1485,6 +1485,22 @@ a {
   font: normal 18px/1 "Antic Slab";
   color: #333;
 }
+#header .inner .menuWeb #util #cart::before,
+#header_sub .inner .menuWeb #util #cart::before {
+  position: absolute;
+  content: attr(data-num);
+  background-color: #d90474;
+  color: #fff;
+  width: 15px;
+  height: 15px;
+  right: -10px;
+  top: -10px;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  line-height: 15px;
+  font-size: 12px;
+  text-align: center;
+}
 #header .inner .btnCall,
 #header_sub .inner .btnCall {
   display: none;
