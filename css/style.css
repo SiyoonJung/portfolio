@@ -48,97 +48,6 @@ a {
   height: 100%;
   object-fit: cover;
 }
-.gallery .intro {
-  padding: 50px 0px 0px 0px;
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-}
-.gallery .intro::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-.gallery .intro #title {
-  width: 100%;
-  height: 50px;
-  text-align: left;
-  padding-left: 50px;
-  padding-top: 50px;
-  position: relative;
-}
-.gallery .intro #title .bar {
-  width: 5px;
-  height: 200px;
-  background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
-  position: absolute;
-  top: 2.5%;
-  left: 2%;
-}
-.gallery .intro #title h1 {
-  font: bold 35px/1 "arial";
-  color: black;
-}
-.gallery .intro .wrap {
-  width: 1200px;
-  height: 700px;
-  margin: 0 auto;
-  padding: 10px;
-  position: relative;
-}
-.gallery .intro .wrap .image {
-  width: 400px;
-  height: 300px;
-  position: absolute;
-  top: 100px;
-  left: 50px;
-}
-.gallery .intro .wrap .image::after {
-  display: block;
-  content: "";
-  clear: both;
-  position: absolute;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-  top: 80px;
-  left: 40px;
-  width: 400px;
-  height: 480px;
-  background-image: linear-gradient(to top, #e2dddb, #dbcbbe);
-  z-index: -999;
-}
-.gallery .intro .wrap .image img {
-  width: 100%;
-  object-fit: contain;
-  -webkit-filter: grayscale(100%);
-  filter: gray;
-}
-.gallery .intro .wrap .image img:hover {
-  -webkit-filter: grayscale(0%);
-  filter: none;
-}
-.gallery .intro .wrap .content {
-  width: 50%;
-  height: 500px;
-  margin: 0 auto;
-  padding: 50px;
-  float: right;
-}
-.gallery .intro .wrap .content span {
-  font: bold 35px/1.7 "Caveat";
-  margin-bottom: 30px;
-}
-.gallery .intro .wrap .content span::after {
-  display: block;
-  content: "";
-  width: 500px;
-  height: 3px;
-  background-color: #f3d7a4;
-  margin-bottom: 20px;
-}
-.gallery .intro .wrap .content p {
-  font: normal 18px/1.7 "arial";
-  margin-bottom: 50px;
-}
 .gallery .inner {
   padding: 50px 0px 0px 0px;
   width: 1200px;
@@ -690,7 +599,7 @@ a {
 }
 .members .intro .about .image img {
   width: 100%;
-  object-fit: contain;
+  object-fit: cover;
   -webkit-filter: grayscale(100%);
   filter: gray;
 }
@@ -1458,8 +1367,12 @@ a {
   font: normal 18px/1 "Antic Slab";
   color: #333;
 }
-#header .inner .menuWeb #util #cart::before,
-#header_sub .inner .menuWeb #util #cart::before {
+#header .inner .menuWeb #util li a:hover,
+#header_sub .inner .menuWeb #util li a:hover {
+  color: #daa17e;
+}
+#header .inner .menuWeb #util #cart:before,
+#header_sub .inner .menuWeb #util #cart:before {
   position: absolute;
   content: attr(data-num);
   background-color: #e41282;
@@ -1622,7 +1535,7 @@ a {
 #visual .swiper .swiper-slide .inner .text {
   width: 50%;
   margin: 0 auto;
-  padding: 200px 30px;
+  padding: 30vh 5vh;
   float: left;
   text-align: center;
 }
@@ -1717,6 +1630,7 @@ a {
 }
 #products .container {
   width: 1200px;
+  height: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -1731,7 +1645,7 @@ a {
   text-align: center;
   padding: 10px 20px;
   border: 1px solid black;
-  border-radius: 2rem;
+  border-radius: 3rem;
   cursor: pointer;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
@@ -1765,8 +1679,14 @@ a {
 #products .container .prodList article > div:hover a {
   opacity: 1;
 }
+#products .container .prodList article > div:hover img {
+  -webkit-filter: grayscale(0%);
+  filter: none;
+}
 #products .container .prodList article > div img {
   width: 100%;
+  -webkit-filter: grayscale(100%);
+  filter: gray;
 }
 #products .container .prodList article > div div {
   width: 100%;
@@ -1990,7 +1910,7 @@ a {
   float: left;
   width: 22%;
   margin: 0px 10px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
 }
 #footer .inner ul h4,
 #footer_sub .inner ul h4 {
@@ -1998,8 +1918,12 @@ a {
 }
 #footer .inner ul li,
 #footer_sub .inner ul li {
-  font: normal 18px/1.7 "arial";
+  font: normal 15px/1.8 "arial";
   cursor: pointer;
+}
+#footer .inner ul li:hover,
+#footer_sub .inner ul li:hover {
+  color: #f32020;
 }
 #footer p,
 #footer_sub p {
@@ -2042,20 +1966,6 @@ a {
   #visual .inner {
     width: 100%;
     height: 100%;
-  }
-  #visual .inner .text {
-    width: 50%;
-    margin: 0 auto;
-    padding: 50px;
-  }
-  #visual .inner .text h2 {
-    font: normal 15px/1.5 "Antic Slab";
-  }
-  #visual .inner .text h1 {
-    font: bold 30px/1.5 "Caveat";
-  }
-  #visual .inner .text p {
-    display: none;
   }
   #visual .inner .image {
     width: 50%;
@@ -2117,16 +2027,17 @@ a {
     width: 100%;
   }
 }
+@media screen and (max-width: 728px) {
+  #footer .inner ul,
+#footer_sub .inner ul {
+    width: 42%;
+  }
+}
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
   #visual .inner {
     width: 100vw;
     height: 100%;
-  }
-  #visual .inner .text {
-    width: 50%;
-    margin: 0 auto;
-    padding: 50px;
   }
   #visual .inner .image {
     width: 50%;
@@ -2180,16 +2091,6 @@ a {
   }
   #celebrity .inner article {
     width: 30%;
-  }
-
-  #footer .inner ul,
-#footer_sub .inner ul {
-    width: 100%;
-  }
-  #footer .inner ul li,
-#footer_sub .inner ul li {
-    margin-left: 0;
-    margin: 5px;
   }
 }
 

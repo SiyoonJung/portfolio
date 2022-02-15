@@ -103,10 +103,14 @@ $mobile: 539px;
 					a {
 						font: normal 18px/1 "Antic Slab";
 						color: #333;
+
+						&:hover {
+							color: #daa17e;
+						}
 					}
 				}
 
-				#cart::before {
+				#cart:before {
 					position: absolute;
 					content: attr(data-num);
 					background-color: #e41282;
@@ -275,7 +279,7 @@ $mobile: 539px;
 				.text {
 					width: 50%;
 					margin: 0 auto;
-					padding: 200px 30px;
+					padding: 30vh 5vh;
 					float: left;
 					text-align: center;
 
@@ -387,6 +391,7 @@ $mobile: 539px;
 
 	.container {
 		width: 1200px;
+		height: 100%;
 		margin: 0 auto;
 		position: relative;
 
@@ -401,7 +406,7 @@ $mobile: 539px;
 				text-align: center;
 				padding: 10px 20px;
 				border: 1px solid black;
-				border-radius: 2rem;
+				border-radius: 3rem;
 				cursor: pointer;
 				-webkit-transition: all 0.5s ease;
 				-moz-transition: all 0.5s ease;
@@ -439,10 +444,16 @@ $mobile: 539px;
 						a {
 							opacity: 1;
 						}
+						img {
+							-webkit-filter: grayscale(0%);
+							filter: none;
+						}
 					}
 
 					img {
 						width: 100%;
+						-webkit-filter: grayscale(100%);
+						filter: gray;
 					}
 
 					div {
@@ -519,7 +530,7 @@ $mobile: 539px;
 				transform: translateX(40px);
 				transition: all 2s;
 			}
-			.center{
+			.center {
 				transform: scale(1.1);
 				transition: all 0.5s;
 			}
@@ -528,7 +539,6 @@ $mobile: 539px;
 				transition: all 2s;
 			}
 		}
-
 
 		.left {
 			width: 300px;
@@ -641,30 +651,30 @@ $mobile: 539px;
 					border-radius: 1rem;
 					opacity: 1;
 				}
-					&:hover {
-						width: 100%;
-						height: 100%;
-						transition: all 0.7s;
-						overflow: hidden;
-						opacity: 0.9;
+				&:hover {
+					width: 100%;
+					height: 100%;
+					transition: all 0.7s;
+					overflow: hidden;
+					opacity: 0.9;
 
-						a {
-							display: block;
-							overflow: hidden;
-							border-radius: 1rem;
-							width: 50%;
-							height: auto;
-							margin: 0 auto;
-							background-color: #111;
-							font: bold 20px/1 "arial";
-							color: #ffff;
-							padding: 10px;
-							position: absolute;
-							top: 40%;
-							left: 25%;
-						}
+					a {
+						display: block;
+						overflow: hidden;
+						border-radius: 1rem;
+						width: 50%;
+						height: auto;
+						margin: 0 auto;
+						background-color: #111;
+						font: bold 20px/1 "arial";
+						color: #ffff;
+						padding: 10px;
+						position: absolute;
+						top: 40%;
+						left: 25%;
 					}
-				
+				}
+
 				a {
 					display: none;
 				}
@@ -695,14 +705,18 @@ $mobile: 539px;
 			float: left;
 			width: 22%;
 			margin: 0px 10px;
-			padding-bottom: 30px;
+			padding-bottom: 20px;
 
 			h4 {
 				font: bold 30px/2 "Caveat";
 			}
 			li {
-				font: normal 18px/1.7 "arial";
+				font: normal 15px/1.8 "arial";
 				cursor: pointer;
+
+				&:hover {
+					color: rgb(243, 32, 32);
+				}
 			}
 		}
 	}
@@ -745,23 +759,6 @@ $mobile: 539px;
 		.inner {
 			width: 100%;
 			height: 100%;
-
-			.text {
-				width: 50%;
-				margin: 0 auto;
-				padding: 50px;
-
-				h2 {
-					font: normal 15px/1.5 "Antic Slab";
-				}
-				h1 {
-					font: bold 30px/1.5 "Caveat";
-				}
-
-				p {
-					display: none;
-				}
-			}
 
 			.image {
 				width: 50%;
@@ -839,18 +836,25 @@ $mobile: 539px;
 	}
 }
 
+@media screen and (max-width: 728px) {
+#footer,
+	#footer_sub {
+		.inner {
+			ul {
+				width:42%;
+			}
+		}
+	}
+}
+
+
+
 /* Responsive Mobile Verision*/
 @media screen and (max-width: $mobile) {
 	#visual {
 		.inner {
 			width: 100vw;
 			height: 100%;
-
-			.text {
-				width: 50%;
-				margin: 0 auto;
-				padding: 50px;
-			}
 
 			.image {
 				width: 50%;
@@ -920,19 +924,6 @@ $mobile: 539px;
 
 			article {
 				width: 30%;
-			}
-		}
-	}
-
-	#footer,
-	#footer_sub {
-		.inner {
-			ul {
-				width: 100%;
-				li {
-					margin-left: 0;
-					margin: 5px;
-				}
 			}
 		}
 	}
