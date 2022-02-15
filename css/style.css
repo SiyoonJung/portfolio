@@ -1651,6 +1651,7 @@ a {
 
 #features {
   width: 100%;
+  height: auto;
 }
 #features .wrapper {
   width: 1200px;
@@ -1704,6 +1705,7 @@ a {
   width: 100%;
   height: 100%;
   margin-top: 50px;
+  padding-top: 50px;
   position: relative;
   clear: both;
 }
@@ -1775,7 +1777,7 @@ a {
   border-radius: 50%;
   margin: 0 auto;
   padding: 5px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
   transform: translateY(-50%);
   cursor: pointer;
@@ -1786,7 +1788,7 @@ a {
   letter-spacing: 1px;
   margin: 10px 0px;
   transition: 0.5s;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transform: translateY(-100%);
 }
 #products .container .prodList article > div div p {
@@ -1794,7 +1796,7 @@ a {
   color: #111;
   transition: 0.5s;
   transform: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   transform: translateY(-100%);
 }
 #products .container .prodList article > div div a {
@@ -1827,6 +1829,18 @@ a {
   background-blend-mode: multiply;
   overflow: hidden;
 }
+#banner .wrapper:hover .left {
+  transform: translateX(40px);
+  transition: all 2s;
+}
+#banner .wrapper:hover .center {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+#banner .wrapper:hover .right {
+  transform: translateX(-40px);
+  transition: all 2s;
+}
 #banner .wrapper .left {
   width: 300px;
   float: right;
@@ -1840,11 +1854,6 @@ a {
   margin: 0 auto;
   padding: 80px;
   float: right;
-}
-#banner .wrapper .center:hover {
-  transform: scale(1.1);
-  transition: all 0.5s ease-in-out;
-  overflow: hidden;
 }
 #banner .wrapper .center p {
   font: normal 20px/1.5 "Antic Slab";
@@ -1881,8 +1890,9 @@ a {
   width: 100%;
   height: auto;
   margin-top: 50px;
+  padding: 50px 0px;
   position: relative;
-  background-color: #e8e7d2;
+  background-color: #f1f1e0;
 }
 #celebrity .inner {
   width: 1200px;
@@ -1927,6 +1937,7 @@ a {
 #celebrity .inner article .image img {
   width: 75%;
   height: 75%;
+  border-radius: 1rem;
   opacity: 1;
 }
 #celebrity .inner article .image:hover {
@@ -1934,18 +1945,22 @@ a {
   height: 100%;
   transition: all 0.7s;
   overflow: hidden;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 #celebrity .inner article .image:hover a {
   display: block;
   overflow: hidden;
-  width: 80%;
+  border-radius: 1rem;
+  width: 50%;
+  height: auto;
   margin: 0 auto;
-  transform: translateY(-100%);
-  background-color: #ddd;
+  background-color: #111;
   font: bold 20px/1 "arial";
-  color: #111;
+  color: #ffff;
   padding: 10px;
+  position: absolute;
+  top: 40%;
+  left: 25%;
 }
 #celebrity .inner article .image a {
   display: none;
