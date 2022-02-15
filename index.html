@@ -7,8 +7,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6e561f56c7.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
     <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
     <link rel="stylesheet" href="css/style.css">
@@ -132,6 +132,12 @@
             </div>
         </div>
     </section>
+
+    <script>
+        $(window).load(function() {
+            $.getScript(`https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js`, function() { })
+          });
+    </script>
 
     <section id="products">
         <h1>Our Products</h1>
@@ -266,6 +272,7 @@
                 </div>
                 <div class="image">
                     <img src="img/main/celebrity1.png">
+                    <a href="#">READ MORE</a>
                 </div>
             </article>
             <article>
@@ -280,6 +287,7 @@
                 </div>
                 <div class="image">
                     <img src="img/main/celebrity2.png">
+                    <a href="#">READ MORE</a>
                 </div>
             </article>
             <article>
@@ -294,6 +302,7 @@
                 </div>
                 <div class="image">
                     <img src="img/main/celebrity3.png">
+                    <a href="#">READ MORE</a>
                 </div>
             </article>
         </div>
@@ -324,7 +333,7 @@
                 <li>Return</li>
             </ul>
 
-            <ul>
+            <ul id="sns">
                 <h4>SNS</h4>
                 <li><i class="fab fa-facebook-square fa-lg"></i></li>
                 <li><i class="fab fa-twitter-square fa-lg"></i></li>
@@ -333,7 +342,6 @@
             </ul>
         </div>
 
-        <p>Copyright &copy; 2022 Jung Siyoon ALL right reserved.</p>
-
+        <p>Copyright &copy; <br> 2022 Jung Siyoon  ALL right reserved.</p>
     </footer>
   </body>

@@ -39,7 +39,7 @@ $(".prodList").isotope({
   masonry: {
     columnWidth: 10,
     isFitWidth: true
-    }
+  }
 });
 
 //상품 목록 분류하기(filter)
@@ -55,9 +55,8 @@ $(".prodMenu ul li").click(function () {
 });
 
 //shopping cart 수량 증감하기
-$(document).on("click", "#add-cart", function(){
+$("#add-cart").on("click", function(){
   $("#cart").attr("data-num").spinner({
     max:10000, min:0, step:1
   });
 });
-
