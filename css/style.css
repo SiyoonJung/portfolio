@@ -802,12 +802,13 @@ a {
 }
 .youtube .inner .vidList article {
   width: 48%;
-  height: 400px;
+  height: 100%;
   border: 1px solid #927c62;
   border-radius: 2rem;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 .youtube .inner .vidList article .pic {
+  position: relative;
   display: block;
   width: 100%;
   height: 60%;
@@ -815,7 +816,18 @@ a {
 .youtube .inner .vidList article .pic > img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
+  border-radius: 2rem 2rem 0rem 0rem;
+}
+.youtube .inner .vidList article .pic > i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 80px;
+  color: #923131;
+  opacity: 0.8;
+  z-index: 5;
 }
 .youtube .inner .vidList article .con {
   width: 100%;
@@ -829,13 +841,13 @@ a {
   margin-bottom: 15px;
 }
 .youtube .inner .vidList article .con p {
-  font: 14px/1.4 "arial";
+  font: 15px/1.5 "arial";
   color: #666;
   margin-bottom: 20px;
 }
 .youtube .inner .vidList article .con span {
   font: bold 15px/1 "arial";
-  color: #a37c33;
+  color: #917035;
 }
 .youtube .inner figure.pop {
   width: 100%;
@@ -849,6 +861,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 99;
 }
 .youtube .inner figure.pop .btnClose {
   position: absolute;
@@ -858,6 +871,33 @@ a {
   cursor: pointer;
 }
 
+/* Responsive Tablet Verision*/
+@media screen and (max-width: 1179px) {
+  .youtube {
+    width: 100%;
+  }
+  .youtube .inner {
+    width: 100%;
+  }
+  .youtube .inner .vidList {
+    width: 100%;
+  }
+  .youtube .inner .vidList article {
+    width: 80%;
+    height: 400px;
+    margin: 20px auto;
+  }
+}
+/* Responsive Mobile Verision*/
+@media screen and (max-width: 539px) {
+  .youtube .inner .vidList article {
+    height: 300px;
+    margin: 10px auto;
+  }
+  .youtube .inner .vidList article p {
+    display: none;
+  }
+}
 .location {
   width: 100%;
   height: 100%;
@@ -961,6 +1001,36 @@ a {
   color: #111;
 }
 
+/* Responsive Tablet Version */
+@media screen and (max-width: 1179px) {
+  .location {
+    width: 100%;
+  }
+  .location .inner {
+    width: 100%;
+  }
+  .location .inner #map {
+    width: 100%;
+    clear: both;
+  }
+  .location .inner .traffic {
+    margin: 2%;
+    clear: both;
+  }
+  .location .inner .traffic li {
+    clear: both;
+    display: block;
+    margin: 2%;
+  }
+  .location .inner .branch {
+    margin: 2%;
+  }
+  .location .inner .branch li {
+    clear: both;
+    display: block;
+    margin: 2%;
+  }
+}
 .join {
   width: 100%;
   height: 100%;
@@ -1507,7 +1577,6 @@ a {
   height: 100%;
 }
 #visual .swiper .swiper-slide {
-  /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -1529,13 +1598,15 @@ a {
 }
 #visual .swiper .swiper-slide .inner {
   width: 1180px;
+  height: 100%;
   margin: 0 auto;
   padding: 0px;
 }
 #visual .swiper .swiper-slide .inner .text {
   width: 50%;
+  height: 100%;
   margin: 0 auto;
-  padding: 30vh 5vh;
+  transform: translateY(35%);
   float: left;
   text-align: center;
 }
@@ -1959,19 +2030,6 @@ a {
     display: block;
   }
 
-  #visual {
-    width: 100%;
-    height: 90vh;
-  }
-  #visual .inner {
-    width: 100%;
-    height: 100%;
-  }
-  #visual .inner .image {
-    width: 50%;
-    height: 100%;
-  }
-
   #features .wrapper {
     width: 100%;
   }
@@ -2027,12 +2085,6 @@ a {
     width: 100%;
   }
 }
-@media screen and (max-width: 728px) {
-  #footer .inner ul,
-#footer_sub .inner ul {
-    width: 42%;
-  }
-}
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
   #visual .inner {
@@ -2042,6 +2094,9 @@ a {
   #visual .inner .image {
     width: 50%;
     height: 100%;
+  }
+  #visual .inner p {
+    display: none;
   }
 
   #features .wrapper {
@@ -2084,13 +2139,6 @@ a {
   }
   #banner .wrapper .right {
     display: none;
-  }
-
-  #celebrity .inner {
-    width: 100%;
-  }
-  #celebrity .inner article {
-    width: 30%;
   }
 }
 

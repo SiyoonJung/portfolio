@@ -49,6 +49,7 @@ fetch(url)
                 <article>
                     <a href="${item.snippet.resourceId.videoId}" class="pic">
                         <img src="${item.snippet.thumbnails.medium.url}">
+                        <i class="fas fa-play"></i>
                     </a>
                     <div class="con">
                         <h2>${title}</h2>

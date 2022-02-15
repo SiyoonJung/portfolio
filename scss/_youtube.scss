@@ -63,19 +63,31 @@
 
 			article {
 				width: 48%;
-				height: 400px;
+				height: 100%;
 				border: 1px solid rgb(146, 124, 98);
 				border-radius: 2rem;
-				margin-bottom: 40px;
+				margin-bottom: 50px;
 
 				.pic {
+					position: relative;
 					display: block;
 					width: 100%;
 					height: 60%;
 					> img {
 						width: 100%;
 						height: 100%;
-						object-fit: contain;
+						object-fit: cover;
+						border-radius: 2rem 2rem 0rem 0rem;
+					}
+					> i {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						font-size: 80px;
+						color: #923131;
+						opacity: 0.8;
+						z-index: 5;
 					}
 				}
 				.con {
@@ -90,13 +102,13 @@
 						margin-bottom: 15px;
 					}
 					p {
-						font: 14px/1.4 "arial";
+						font: 15px/1.5 "arial";
 						color: #666;
 						margin-bottom: 20px;
 					}
 					span {
 						font: bold 15px/1 "arial";
-						color: rgb(163, 124, 51);
+						color: rgb(145, 112, 53);
 					}
 				}
 			}
@@ -114,6 +126,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
+			z-index: 99;
 
 			.btnClose {
 				position: absolute;
@@ -121,6 +134,42 @@
 				right: 50px;
 				color: #fff;
 				cursor: pointer;
+			}
+		}
+	}
+}
+
+/* Responsive Tablet Verision*/
+@media screen and (max-width: $tablet) {
+	.youtube {
+		width: 100%;
+		.inner {
+			width: 100%;
+			.vidList {
+				width: 100%;
+				article {
+					width: 80%;
+					height: 400px;
+					margin: 20px auto;
+				}
+			}
+		}
+	}
+}
+
+/* Responsive Mobile Verision*/
+@media screen and (max-width: $mobile) {
+	.youtube {
+		.inner {
+			.vidList {
+				article {
+					height: 300px;
+					margin: 10px auto;
+
+					p {
+						display: none;
+					}
+				}
 			}
 		}
 	}
