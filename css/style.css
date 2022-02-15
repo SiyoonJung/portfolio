@@ -1407,10 +1407,6 @@ a {
   }
 }
 
-#header .inner h1 {
-  animation: slide 1.5s ease-in-out;
-}
-
 #header,
 #header_sub {
   width: 100%;
@@ -1429,6 +1425,7 @@ a {
   left: 0;
   bottom: 15px;
   color: #333;
+  animation: slide 1.5s ease-in-out;
 }
 #header .inner > h1 > a,
 #header_sub .inner > h1 > a {
@@ -1489,7 +1486,7 @@ a {
 #header_sub .inner .menuWeb #util #cart::before {
   position: absolute;
   content: attr(data-num);
-  background-color: #d90474;
+  background-color: #e41282;
   color: #fff;
   width: 15px;
   height: 15px;
@@ -1915,7 +1912,7 @@ a {
   width: 1200px;
   height: 100%;
   margin: 0 auto;
-  padding: 1.666667%;
+  padding: 1.6667%;
 }
 #celebrity .inner::after {
   display: block;
@@ -1952,151 +1949,63 @@ a {
   position: relative;
 }
 #celebrity .inner article .image img {
-  width: 71.4%;
-  height: 71.4%;
+  width: 71.5%;
+  height: 71.5%;
   border-radius: 50%;
 }
-
-#sub {
+#celebrity .inner article .image img:hover {
+  position: absolute;
   width: 100%;
-  margin-top: 50px;
-  height: 20.8333%;
-  background-color: #f7f2ef;
-}
-#sub .wrapper {
-  width: 1200px;
-  padding: 2.5%;
-  margin: 0 auto;
-  position: relative;
-}
-#sub .wrapper::after {
-  display: block;
-  content: "";
-  clear: both;
-}
-#sub .wrapper .content {
-  float: left;
-  width: 45.833333%;
-  margin: 0 auto;
-  padding: 2.5%;
-}
-#sub .wrapper .content img {
-  display: block;
-  float: left;
-  margin: 1.666667%;
-}
-#sub .wrapper .content h4 {
-  font: bold 24px/1.5 "Antic Slab";
-  color: #000;
-  text-align: center;
-  margin-bottom: 2.5%;
-}
-#sub .wrapper .content p {
-  font: normal 18px/1.5 "arial";
-  color: #333;
-  text-align: center;
-}
-#sub .wrapper .searchbox {
-  float: left;
-  width: 45.833333%;
-  margin: 20px;
-  padding: 0px;
-  text-align: center;
-}
-#sub .wrapper .searchbox input[type=text] {
-  width: 300px;
-  height: 40px;
-  font: bold 15px/1.5px "arial";
-  color: #333;
-  text-align: center;
-  letter-spacing: 1px;
-  margin: 30px;
-  border: none;
-}
-#sub .wrapper .searchbox .btnSearch {
-  width: 150px;
-  height: 40px;
-  font: bold 20px/1 "Antic Slab";
-  color: #fff;
-  background: black;
-  margin: 0 auto;
-  padding: 5px;
-  border: none;
-  cursor: pointer;
-  border-radius: 2em;
-}
-#sub .wrapper .searchbox .btnSearch:hover {
-  color: black;
-  background: #ffff;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #f7d3b1;
 }
 
 #footer,
 #footer_sub {
   width: 100%;
-  height: 300px;
+  height: auto;
   border-top: 1px double #999;
-  padding: 100px 0;
+  padding: 50px 0;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
 #footer .inner,
 #footer_sub .inner {
   width: 1180px;
   margin: 0 auto;
+  text-align: center;
 }
 #footer .inner::after,
 #footer_sub .inner::after {
   content: "";
   clear: both;
 }
-#footer .inner h1,
-#footer_sub .inner h1 {
-  font: bold 25px/1 "Antic Slab";
-  letter-spacing: 3px;
-  color: black;
-  margin-bottom: 15px;
-  float: left;
-}
 #footer .inner ul,
 #footer_sub .inner ul {
-  float: right;
+  float: left;
+  width: 22%;
+  margin: 0px 10px;
+  padding-bottom: 30px;
+}
+#footer .inner ul h4,
+#footer_sub .inner ul h4 {
+  font: bold 30px/2 "Caveat";
 }
 #footer .inner ul li,
 #footer_sub .inner ul li {
-  float: left;
-  margin-left: 20px;
+  font: normal 18px/1.7 "arial";
+  cursor: pointer;
 }
-#footer .inner ul li a,
-#footer_sub .inner ul li a {
-  font: bold 15px/1.5 "Antic Slab";
-  letter-spacing: 1px;
-  color: black;
-}
-#footer .inner address,
-#footer_sub .inner address {
-  float: left;
+#footer p,
+#footer_sub p {
+  clear: both;
+  display: block;
   width: 100%;
-  font: 15px/1.5 "Antic Slab";
-  color: black;
-  letter-spacing: 1px;
-  border-top: 2px solid #fff;
-  margin-bottom: 15px;
-}
-#footer .inner p,
-#footer_sub .inner p {
-  font: 15px/1 "Antic Slab";
-  letter-spacing: 1px;
-  color: black;
-  width: 100%;
-  float: left;
-}
-#footer .inner #sns,
-#footer_sub .inner #sns {
-  margin-right: 10px;
-  float: right;
+  padding: 20px;
   text-align: center;
+  border-top: 1px solid #aaa;
 }
 
-/* ----- Responsive Settings ----- */
 /* Responsive Tablet Verision*/
 @media screen and (max-width: 1179px) {
   #header .inner,

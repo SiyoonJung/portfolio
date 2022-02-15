@@ -31,14 +31,6 @@ $mobile: 539px;
 @import "join.scss";
 @import "login.scss";
 
-#header {
-	.inner {
-		h1 {
-			animation: slide 1.5s ease-in-out;
-		}
-	}
-}
-
 #header,
 #header_sub {
 	width: 100%;
@@ -55,6 +47,7 @@ $mobile: 539px;
 			left: 0;
 			bottom: 15px;
 			color: #333;
+			animation: slide 1.5s ease-in-out;
 
 			> a {
 				font: bold 30px/1 "Antic Slab";
@@ -116,10 +109,14 @@ $mobile: 539px;
 				#cart::before {
 					position: absolute;
 					content: attr(data-num);
-					background-color: #d90474;
-					color: #fff; width: 15px; height:15px;
-					right: -10px; top: -10px;
-					border: 1px solid #fff; border-radius: 50%;
+					background-color: #e41282;
+					color: #fff;
+					width: 15px;
+					height: 15px;
+					right: -10px;
+					top: -10px;
+					border: 1px solid #fff;
+					border-radius: 50%;
 					line-height: 15px;
 					font-size: 12px;
 					text-align: center;
@@ -585,7 +582,7 @@ $mobile: 539px;
 		width: 1200px;
 		height: 100%;
 		margin: 0 auto;
-		padding: 1.666667%;
+		padding: 1.6667%;
 
 		&::after {
 			display: block;
@@ -626,91 +623,20 @@ $mobile: 539px;
 				position: relative;
 
 				img {
-					width: 71.4%;
-					height: 71.4%;
+					width: 71.5%;
+					height: 71.5%;
 					border-radius: 50%;
+
+					&:hover {
+						position: absolute;
+						width: 100%;
+						height: 100%;
+						border-radius: 50%;
+						background-color: rgb(247, 211, 177);
+					}
 				}
-			}
-		}
-	}
-}
 
-#sub {
-	width: 100%;
-	margin-top: 50px;
-	height: 20.8333%;
-	background-color: #f7f2ef;
 
-	.wrapper {
-		width: 1200px;
-		padding: 2.5%;
-		margin: 0 auto;
-		position: relative;
-
-		&::after {
-			display: block;
-			content: "";
-			clear: both;
-		}
-
-		.content {
-			float: left;
-			width: 45.833333%;
-			margin: 0 auto;
-			padding: 2.5%;
-
-			img {
-				display: block;
-				float: left;
-				margin: 1.666667%;
-			}
-			h4 {
-				font: bold 24px/1.5 "Antic Slab";
-				color: #000;
-				text-align: center;
-				margin-bottom: 2.5%;
-			}
-			p {
-				font: normal 18px/1.5 "arial";
-				color: #333;
-				text-align: center;
-			}
-		}
-
-		.searchbox {
-			float: left;
-			width: 45.833333%;
-			margin: 20px;
-			padding: 0px;
-			text-align: center;
-
-			input[type="text"] {
-				width: 300px;
-				height: 40px;
-				font: bold 15px/1.5px "arial";
-				color: #333;
-				text-align: center;
-				letter-spacing: 1px;
-				margin: 30px;
-				border: none;
-			}
-
-			.btnSearch {
-				width: 150px;
-				height: 40px;
-				font: bold 20px/1 "Antic Slab";
-				color: #fff;
-				background: black;
-				margin: 0 auto;
-				padding: 5px;
-				border: none;
-				cursor: pointer;
-				border-radius: 2em;
-
-				&:hover {
-					color: black;
-					background: #ffff;
-				}
 			}
 		}
 	}
@@ -719,69 +645,45 @@ $mobile: 539px;
 #footer,
 #footer_sub {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	border-top: 1px double #999;
-	padding: 100px 0;
+	padding: 50px 0;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.inner {
 		width: 1180px;
 		margin: 0 auto;
+		text-align: center;
 
 		&::after {
 			content: "";
 			clear: both;
 		}
 
-		h1 {
-			font: bold 25px/1 "Antic Slab";
-			letter-spacing: 3px;
-			color: black;
-			margin-bottom: 15px;
-			float: left;
-		}
-
 		ul {
-			float: right;
+			float: left;
+			width: 22%;
+			margin: 0px 10px;
+			padding-bottom: 30px;
 
+			h4 {
+				font: bold 30px/2 "Caveat";
+			}
 			li {
-				float: left;
-				margin-left: 20px;
-
-				a {
-					font: bold 15px/1.5 "Antic Slab";
-					letter-spacing: 1px;
-					color: black;
-				}
+				font: normal 18px/1.7 "arial";
+				cursor: pointer;
 			}
 		}
-
-		address {
-			float: left;
-			width: 100%;
-			font: 15px/1.5 "Antic Slab";
-			color: black;
-			letter-spacing: 1px;
-			border-top: 2px solid #fff;
-			margin-bottom: 15px;
-		}
-		p {
-			font: 15px/1 "Antic Slab";
-			letter-spacing: 1px;
-			color: black;
-			width: 100%;
-			float: left;
-		}
-
-		#sns {
-			margin-right: 10px;
-			float: right;
-			text-align: center;
-		}
+	}
+	p {
+		clear: both;
+		display: block;
+		width: 100%;
+		padding: 20px;
+		text-align: center;
+		border-top: 1px solid #aaa;
 	}
 }
-
-/* ----- Responsive Settings ----- */
 
 /* Responsive Tablet Verision*/
 @media screen and (max-width: $tablet) {
@@ -891,7 +793,6 @@ $mobile: 539px;
 		}
 	}
 
-	
 	#sub {
 		display: none;
 	}
@@ -906,7 +807,6 @@ $mobile: 539px;
 		}
 	}
 }
-
 
 /* Responsive Mobile Verision*/
 @media screen and (max-width: $mobile) {
@@ -1006,4 +906,3 @@ $mobile: 539px;
 		}
 	}
 }
-
