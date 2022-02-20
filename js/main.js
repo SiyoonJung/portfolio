@@ -56,5 +56,5 @@ $(".prodMenu ul li").click(function () {
 $("#add-cart").click(function add() {
   var quan = document.querySelector('#cart').getAttribute('data-num');
   var n = Number(quan.innerHTML);
-  quan.innerHTML = n+1;
+  quan.innerHTML = n + 1;
 });
