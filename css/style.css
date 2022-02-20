@@ -1,8 +1,8 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bad+Script&family=Julius+Sans+One&display=swap");
 @keyframes slide {
   from {
-    left: -200px;
+    left: -100px;
     opacity: 0;
   }
   to {
@@ -567,7 +567,7 @@ a {
   left: 2%;
 }
 .members .intro #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .members .intro .about {
@@ -578,8 +578,8 @@ a {
   position: relative;
 }
 .members .intro .about .image {
-  width: 400px;
-  height: 500px;
+  width: 33.33%;
+  height: 71.4%;
   position: absolute;
   top: 100px;
   left: 50px;
@@ -592,8 +592,8 @@ a {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   top: 80px;
   left: 40px;
-  width: 400px;
-  height: 450px;
+  width: 100%;
+  height: 90%;
   background-image: linear-gradient(to top, #dbcbbe, #e2dddb);
   z-index: -999;
 }
@@ -608,20 +608,21 @@ a {
   filter: none;
 }
 .members .intro .about .content {
-  width: 600px;
-  height: 400px;
+  width: 58%;
+  height: 70%;
   margin: 0 auto;
   padding: 50px;
   float: right;
 }
 .members .intro .about .content span {
-  font: bold 40px/1.7 "Caveat";
+  font: bold 33px/1.7 "Bad Script";
+  letter-spacing: 3px;
   margin-bottom: 30px;
 }
 .members .intro .about .content span::after {
   display: block;
   content: "";
-  width: 500px;
+  width: 100%;
   height: 3px;
   background-color: #ddd;
   margin-bottom: 20px;
@@ -632,10 +633,10 @@ a {
 }
 .members .intro .about .content img {
   display: block;
-  width: 250px;
-  height: 180px;
+  width: 40%;
+  height: 30%;
   margin: 0 auto;
-  object-fit: contain;
+  object-fit: cover;
   float: right;
 }
 .members .people {
@@ -659,7 +660,7 @@ a {
   left: 2%;
 }
 .members .people #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .members .people .memberInfo {
@@ -675,10 +676,10 @@ a {
   clear: both;
 }
 .members .people .memberInfo .profile-wrapper {
-  width: 33%;
-  height: auto;
-  margin: 0.1rem;
-  padding: 15px;
+  width: 24%;
+  height: 30%;
+  margin: 1rem;
+  padding: 10px;
   float: left;
   position: relative;
   text-align: center;
@@ -693,8 +694,7 @@ a {
   display: block;
 }
 .members .people .memberInfo .profile-wrapper .profile-front img {
-  width: 320px;
-  height: 320px;
+  width: 100%;
   border-radius: 50%;
   object-fit: cover;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
@@ -1369,7 +1369,7 @@ a {
 }
 #header .inner,
 #header_sub .inner {
-  width: 1180px;
+  width: 1200px;
   height: 120px;
   margin: 0 auto;
   position: relative;
@@ -1597,7 +1597,7 @@ a {
   clear: both;
 }
 #visual .swiper .swiper-slide .inner {
-  width: 1180px;
+  width: 1200px;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
@@ -1614,7 +1614,7 @@ a {
   font: normal 20px/1.5 "Antic Slab";
 }
 #visual .swiper .swiper-slide .inner .text h1 {
-  font: bold 50px/1.5 "Caveat";
+  font: bold 50px/1.5 "Bad Script";
 }
 #visual .swiper .swiper-slide .inner .text p {
   margin-top: 10px;
@@ -1675,8 +1675,7 @@ a {
   transition: all 0.5s ease;
 }
 #features .wrapper .box h2 {
-  font: bold 20px/1.5 "Antic Slab";
-  letter-spacing: 1px;
+  font: bold 22px/1.5 "Bad Script";
   margin-top: 10px;
   margin-bottom: 10px;
 }
@@ -1696,7 +1695,7 @@ a {
 #products h1 {
   margin: 0 auto;
   text-align: center;
-  font: bold 45px/1.5 "Caveat";
+  font: bold 45px/1.5 "Bad Script";
   letter-spacing: 2px;
 }
 #products .container {
@@ -1710,7 +1709,7 @@ a {
   margin-top: 10px;
 }
 #products .container .prodMenu ul li {
-  font: bold 20px/1 "Antic Slab";
+  font: bold 20px/1 "Julius Sans One";
   display: inline-block;
   margin: 15px;
   text-align: center;
@@ -1774,7 +1773,7 @@ a {
   cursor: pointer;
 }
 #products .container .prodList article > div div h2 {
-  font: bold 25px/1 "arial";
+  font: bold 25px/1 "Julius Sans One";
   color: #111;
   letter-spacing: 1px;
   margin: 10px 0px;
@@ -1797,7 +1796,7 @@ a {
   border-radius: 2rem;
   padding: 5px;
   margin: 0 auto;
-  font: bold 16px/1.2 "arial";
+  font: bold 16px/1.2 "Julius Sans One";
   color: #000;
   background-color: #dac4b6;
   opacity: 0;
@@ -1806,7 +1805,7 @@ a {
 
 #banner {
   width: 100%;
-  height: 300px;
+  height: 35vh;
   margin-top: 50px;
   position: relative;
 }
@@ -1821,27 +1820,30 @@ a {
   overflow: hidden;
 }
 #banner .wrapper:hover .left {
-  transform: translateX(40px);
-  transition: all 2s;
+  transform: translateX(30px);
+  transition: all 1.7s;
 }
 #banner .wrapper:hover .center {
   transform: scale(1.1);
   transition: all 0.5s;
 }
 #banner .wrapper:hover .right {
-  transform: translateX(-40px);
-  transition: all 2s;
+  transform: translateX(-30px);
+  transition: all 1.7s;
 }
 #banner .wrapper .left {
-  width: 300px;
+  width: 25%;
+  height: 100%;
   float: right;
   margin: 0 auto;
 }
 #banner .wrapper .left img {
   width: 100%;
+  height: 100%;
 }
 #banner .wrapper .center {
-  width: 600px;
+  width: 50%;
+  height: 100%;
   margin: 0 auto;
   padding: 80px;
   float: right;
@@ -1863,18 +1865,20 @@ a {
   padding: 5px;
   margin: 0 auto;
   text-align: center;
-  font: bold 18px/1 "Antic Slab";
+  font: bold 18px/1 "Julius Sans One";
   color: #fff;
   border: 1px solid #999;
   background-color: #111;
 }
 #banner .wrapper .right {
-  width: 300px;
+  width: 25%;
+  height: 100%;
   float: right;
   margin: 0 auto;
 }
 #banner .wrapper .right img {
   width: 100%;
+  height: 100%;
 }
 
 #celebrity {
@@ -1913,7 +1917,7 @@ a {
   margin: 0 auto;
 }
 #celebrity .inner article .text h2 {
-  font: normal 30px/1.2 "Courgette";
+  font: bold 30px/1.5 "Bad Script";
   text-align: center;
   margin-bottom: 15px;
 }
@@ -1946,7 +1950,7 @@ a {
   height: auto;
   margin: 0 auto;
   background-color: #111;
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Julius Sans One";
   color: #ffff;
   padding: 10px;
   position: absolute;
@@ -1967,7 +1971,7 @@ a {
 }
 #footer .inner,
 #footer_sub .inner {
-  width: 1180px;
+  width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -1979,22 +1983,31 @@ a {
 #footer .inner ul,
 #footer_sub .inner ul {
   float: left;
-  width: 22%;
+  width: 23%;
   margin: 0px 10px;
   padding-bottom: 20px;
 }
 #footer .inner ul h4,
 #footer_sub .inner ul h4 {
-  font: bold 30px/2 "Caveat";
+  font: bold 30px/2 "Bad Script";
 }
 #footer .inner ul li,
 #footer_sub .inner ul li {
   font: normal 15px/1.8 "arial";
+  color: #555;
   cursor: pointer;
 }
 #footer .inner ul li:hover,
 #footer_sub .inner ul li:hover {
-  color: #f32020;
+  color: #000;
+}
+#footer .inner ul:nth-of-type(1) li,
+#footer_sub .inner ul:nth-of-type(1) li {
+  cursor: default;
+}
+#footer .inner ul:nth-of-type(1) li:hover,
+#footer_sub .inner ul:nth-of-type(1) li:hover {
+  color: #555;
 }
 #footer p,
 #footer_sub p {
@@ -2030,6 +2043,20 @@ a {
     display: block;
   }
 
+  #visual .swiper .swiper-slide .inner .text {
+    transform: translateY(25%);
+  }
+  #visual .swiper .swiper-slide .inner .text h2 {
+    font: normal 20px/1.5 "Antic Slab";
+  }
+  #visual .swiper .swiper-slide .inner .text h1 {
+    font: bold 40px/1.5 "Bad Script";
+  }
+  #visual .swiper .swiper-slide .inner .text p {
+    margin-top: 10px;
+    font: normal 15px/1.8 "arial";
+  }
+
   #features .wrapper {
     width: 100%;
   }
@@ -2046,22 +2073,39 @@ a {
   #products .container .prodList {
     width: 100%;
     margin: 0 auto;
-    text-align: center;
   }
   #products .container .prodList article {
-    width: 44%;
+    width: 45%;
   }
 
   #banner .wrapper {
     width: 100%;
   }
   #banner .wrapper .left {
-    float: left;
-    display: none;
+    width: 30%;
   }
-  #banner .wrapper .center,
-#banner .wrapper .right {
-    float: left;
+  #banner .wrapper .left img {
+    object-fit: cover;
+  }
+  #banner .wrapper .center {
+    width: 40%;
+    padding: 8%;
+  }
+  #banner .wrapper .center p {
+    font: normal 18px/1.5 "Antic Slab";
+  }
+  #banner .wrapper .center h3 {
+    font: bold 28px/1.5 "Antic Slab";
+  }
+  #banner .wrapper .center a {
+    width: 150px;
+    font: bold 17px/1 "Antic Slab";
+  }
+  #banner .wrapper .right {
+    width: 30%;
+  }
+  #banner .wrapper .right img {
+    object-fit: cover;
   }
 
   #celebrity .inner {
@@ -2071,32 +2115,55 @@ a {
     width: 30%;
   }
 
-  #sub {
-    display: none;
-  }
-
   #footer,
 #footer_sub {
-    margin-top: 50px;
-    padding: 80px 30px;
+    width: 100%;
   }
   #footer .inner,
 #footer_sub .inner {
     width: 100%;
   }
+  #footer .inner ul:nth-of-type(1),
+#footer_sub .inner ul:nth-of-type(1) {
+    display: block;
+    width: 100%;
+  }
+  #footer .inner ul:nth-of-type(1) li,
+#footer_sub .inner ul:nth-of-type(1) li {
+    width: 100%;
+  }
+  #footer .inner ul:nth-of-type(2),
+#footer .inner :nth-of-type(3),
+#footer .inner :nth-of-type(4),
+#footer_sub .inner ul:nth-of-type(2),
+#footer_sub .inner :nth-of-type(3),
+#footer_sub .inner :nth-of-type(4) {
+    float: left;
+    width: 29%;
+  }
+  #footer .inner ul:nth-of-type(2) li,
+#footer .inner :nth-of-type(3) li,
+#footer .inner :nth-of-type(4) li,
+#footer_sub .inner ul:nth-of-type(2) li,
+#footer_sub .inner :nth-of-type(3) li,
+#footer_sub .inner :nth-of-type(4) li {
+    width: 100%;
+  }
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
-  #visual .inner {
-    width: 100vw;
-    height: 100%;
+  #visual .swiper .swiper-slide .inner .text {
+    transform: translateY(25%);
   }
-  #visual .inner .image {
-    width: 50%;
-    height: 100%;
+  #visual .swiper .swiper-slide .inner .text h2 {
+    font: normal 18px/1.5 "Antic Slab";
   }
-  #visual .inner p {
-    display: none;
+  #visual .swiper .swiper-slide .inner .text h1 {
+    font: bold 35px/1.5 "Bad Script";
+  }
+  #visual .swiper .swiper-slide .inner .text p {
+    margin-top: 10px;
+    font: normal 14px/1.8 "arial";
   }
 
   #features .wrapper {
@@ -2118,27 +2185,53 @@ a {
     width: 90%;
   }
   #products .container .prodList article > div {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
   #products .container .prodList article > div img {
-    width: 100%;
+    width: 90%;
   }
   #products .container .prodList article > div div {
-    width: 100%;
+    width: 90%;
+    margin: 0 auto;
   }
 
-  #banner .wrapper {
-    width: 100%;
-  }
   #banner .wrapper .left {
     display: none;
   }
   #banner .wrapper .center {
     width: 100%;
+    padding-top: 22%;
     margin: 0 auto;
   }
   #banner .wrapper .right {
     display: none;
+  }
+
+  #celebrity .inner article {
+    clear: both;
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid #aaa;
+    border-right: none;
+  }
+  #celebrity .inner article:last-of-type {
+    border-bottom: none;
+  }
+  #celebrity .inner article .image img {
+    width: 55%;
+    height: 55%;
+  }
+
+  #footer .inner ul h4,
+#footer_sub .inner ul h4 {
+    font: bold 25px/2 "Bad Script";
+  }
+  #footer .inner ul li,
+#footer_sub .inner ul li {
+    font: normal 15px/1.8 "arial";
   }
 }
 

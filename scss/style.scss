@@ -1,5 +1,5 @@
 @charset "UTF-8";
-@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Caveat&display=swap&family=Courgette&display=swap&family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bad+Script&family=Julius+Sans+One&display=swap");
 
 $tablet: 1179px;
 $mobile: 539px;
@@ -13,7 +13,7 @@ $mobile: 539px;
 
 @keyframes slide {
 	from {
-		left: -200px;
+		left: -100px;
 		opacity: 0;
 	}
 	to {
@@ -37,7 +37,7 @@ $mobile: 539px;
 	border-bottom: 1px double #999;
 
 	.inner {
-		width: 1180px;
+		width: 1200px;
 		height: 120px;
 		margin: 0 auto;
 		position: relative;
@@ -271,7 +271,7 @@ $mobile: 539px;
 			}
 
 			.inner {
-				width: 1180px;
+				width: 1200px;
 				height: 100%;
 				margin: 0 auto;
 				padding: 0px;
@@ -288,7 +288,7 @@ $mobile: 539px;
 						font: normal 20px/1.5 "Antic Slab";
 					}
 					h1 {
-						font: bold 50px/1.5 "Caveat";
+						font: bold 50px/1.5 "Bad Script";
 					}
 					p {
 						margin-top: 10px;
@@ -361,8 +361,7 @@ $mobile: 539px;
 			}
 
 			h2 {
-				font: bold 20px/1.5 "Antic Slab";
-				letter-spacing: 1px;
+				font: bold 22px/1.5 "Bad Script";
 				margin-top: 10px;
 				margin-bottom: 10px;
 			}
@@ -386,7 +385,7 @@ $mobile: 539px;
 	h1 {
 		margin: 0 auto;
 		text-align: center;
-		font: bold 45px/1.5 "Caveat";
+		font: bold 45px/1.5 "Bad Script";
 		letter-spacing: 2px;
 	}
 
@@ -401,7 +400,7 @@ $mobile: 539px;
 			margin-top: 10px;
 
 			ul li {
-				font: bold 20px/1 "Antic Slab";
+				font: bold 20px/1 "Julius Sans One";
 				display: inline-block;
 				margin: 15px;
 				text-align: center;
@@ -472,7 +471,7 @@ $mobile: 539px;
 						}
 
 						h2 {
-							font: bold 25px/1 "arial";
+							font: bold 25px/1 "Julius Sans One";
 							color: #111;
 							letter-spacing: 1px;
 							margin: 10px 0px;
@@ -497,7 +496,7 @@ $mobile: 539px;
 							border-radius: 2rem;
 							padding: 5px;
 							margin: 0 auto;
-							font: bold 16px/1.2 "arial";
+							font: bold 16px/1.2 "Julius Sans One";
 							color: #000;
 							background-color: #dac4b6;
 							opacity: 0;
@@ -512,7 +511,7 @@ $mobile: 539px;
 
 #banner {
 	width: 100%;
-	height: 300px;
+	height: 35vh;
 	margin-top: 50px;
 	position: relative;
 
@@ -528,31 +527,34 @@ $mobile: 539px;
 
 		&:hover {
 			.left {
-				transform: translateX(40px);
-				transition: all 2s;
+				transform: translateX(30px);
+				transition: all 1.7s;
 			}
 			.center {
 				transform: scale(1.1);
 				transition: all 0.5s;
 			}
 			.right {
-				transform: translateX(-40px);
-				transition: all 2s;
+				transform: translateX(-30px);
+				transition: all 1.7s;
 			}
 		}
 
 		.left {
-			width: 300px;
+			width: 25%;
+			height: 100%;
 			float: right;
 			margin: 0 auto;
 
 			img {
 				width: 100%;
+				height: 100%;
 			}
 		}
 
 		.center {
-			width: 600px;
+			width: 50%;
+			height: 100%;
 			margin: 0 auto;
 			padding: 80px;
 			float: right;
@@ -575,7 +577,7 @@ $mobile: 539px;
 				padding: 5px;
 				margin: 0 auto;
 				text-align: center;
-				font: bold 18px/1 "Antic Slab";
+				font: bold 18px/1 "Julius Sans One";
 				color: #fff;
 				border: 1px solid #999;
 				background-color: #111;
@@ -583,12 +585,14 @@ $mobile: 539px;
 		}
 
 		.right {
-			width: 300px;
+			width: 25%;
+			height: 100%;
 			float: right;
 			margin: 0 auto;
 
 			img {
 				width: 100%;
+				height: 100%;
 			}
 		}
 	}
@@ -632,7 +636,7 @@ $mobile: 539px;
 				margin: 0 auto;
 
 				h2 {
-					font: normal 30px/1.2 "Courgette";
+					font: bold 30px/1.5 "Bad Script";
 					text-align: center;
 					margin-bottom: 15px;
 				}
@@ -667,7 +671,7 @@ $mobile: 539px;
 						height: auto;
 						margin: 0 auto;
 						background-color: #111;
-						font: bold 20px/1 "arial";
+						font: bold 20px/1 "Julius Sans One";
 						color: #ffff;
 						padding: 10px;
 						position: absolute;
@@ -693,7 +697,7 @@ $mobile: 539px;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.inner {
-		width: 1180px;
+		width: 1200px;
 		margin: 0 auto;
 		text-align: center;
 
@@ -704,19 +708,29 @@ $mobile: 539px;
 
 		ul {
 			float: left;
-			width: 22%;
+			width: 23%;
 			margin: 0px 10px;
 			padding-bottom: 20px;
 
 			h4 {
-				font: bold 30px/2 "Caveat";
+				font: bold 30px/2 "Bad Script";
 			}
 			li {
 				font: normal 15px/1.8 "arial";
+				color: #555;
 				cursor: pointer;
 
 				&:hover {
-					color: rgb(243, 32, 32);
+					color: #000;
+				}
+			}
+
+			&:nth-of-type(1) {
+				li {
+					cursor: default;
+					&:hover {
+						color: #555;
+					}
 				}
 			}
 		}
@@ -754,6 +768,28 @@ $mobile: 539px;
 		}
 	}
 
+	#visual {
+		.swiper {
+			.swiper-slide {
+				.inner {
+					.text {
+						transform: translateY(25%);
+						h2 {
+							font: normal 20px/1.5 "Antic Slab";
+						}
+						h1 {
+							font: bold 40px/1.5 "Bad Script";
+						}
+						p {
+							margin-top: 10px;
+							font: normal 15px/1.8 "arial";
+						}
+					}
+				}
+			}
+		}
+	}
+
 	#features {
 		.wrapper {
 			width: 100%;
@@ -773,10 +809,9 @@ $mobile: 539px;
 			.prodList {
 				width: 100%;
 				margin: 0 auto;
-				text-align: center;
 
 				article {
-					width: 44%;
+					width: 45%;
 				}
 			}
 		}
@@ -785,15 +820,34 @@ $mobile: 539px;
 	#banner {
 		.wrapper {
 			width: 100%;
-
 			.left {
-				float: left;
-				display: none;
+				width:30%;
+				img {
+					object-fit: cover;
+				}
 			}
 
-			.center,
+			.center {
+				width: 40%;
+				padding: 8%;
+
+				p {
+					font: normal 18px/1.5 "Antic Slab";
+				}
+				h3 {
+					font: bold 28px/1.5 "Antic Slab";
+				}
+				a {
+					width: 150px;
+					font: bold 17px/1 "Antic Slab";
+				}
+			}
+
 			.right {
-				float: left;
+				width: 30%;
+				img {
+					object-fit: cover;
+				}
 			}
 		}
 	}
@@ -808,36 +862,54 @@ $mobile: 539px;
 		}
 	}
 
-	#sub {
-		display: none;
-	}
-
 	#footer,
 	#footer_sub {
-		margin-top: 50px;
-		padding: 80px 30px;
-
+		width: 100%;
 		.inner {
 			width: 100%;
+			ul:nth-of-type(1) {
+				display: block;
+				width: 100%;
+
+				li {
+					width: 100%;
+				}
+			}
+
+			ul:nth-of-type(2),
+			:nth-of-type(3),
+			:nth-of-type(4) {
+				float: left;
+				width: 29%;
+
+				li {
+					width: 100%;
+				}
+			}
 		}
 	}
 }
 
-
 /* Responsive Mobile Verision*/
 @media screen and (max-width: $mobile) {
 	#visual {
-		.inner {
-			width: 100vw;
-			height: 100%;
-
-			.image {
-				width: 50%;
-				height: 100%;
-			}
-
-			p {
-				display: none;
+		.swiper {
+			.swiper-slide {
+				.inner {
+					.text {
+						transform: translateY(25%);
+						h2 {
+							font: normal 18px/1.5 "Antic Slab";
+						}
+						h1 {
+							font: bold 35px/1.5 "Bad Script";
+						}
+						p {
+							margin-top: 10px;
+							font: normal 14px/1.8 "arial";
+						}
+					}
+				}
 			}
 		}
 	}
@@ -864,14 +936,16 @@ $mobile: 539px;
 					width: 90%;
 
 					> div {
-						width: 100%;
+						width: 90%;
+						margin: 0 auto;
 
 						img {
-							width: 100%;
+							width: 90%;
 						}
 
 						div {
-							width: 100%;
+							width: 90%;
+							margin: 0 auto;
 						}
 					}
 				}
@@ -881,18 +955,56 @@ $mobile: 539px;
 
 	#banner {
 		.wrapper {
-			width: 100%;
-
 			.left {
 				display: none;
 			}
 
 			.center {
 				width: 100%;
+				padding-top: 22%;
 				margin: 0 auto;
 			}
 			.right {
 				display: none;
+			}
+		}
+	}
+
+	#celebrity {
+		.inner {
+			article {
+				clear: both;
+				width: 100%;
+				display: block;
+				margin-bottom: 20px;
+				padding-bottom: 30px;
+				border-bottom: 1px solid #aaa;
+				border-right: none;
+
+				&:last-of-type {
+					border-bottom: none;
+				}
+
+				.image {
+					img {
+						width: 55%;
+						height: 55%;
+					}
+				}
+			}
+		}
+	}
+
+	#footer,
+	#footer_sub {
+		.inner {
+			ul {
+				h4 {
+					font: bold 25px/2 "Bad Script";
+				}
+				li {
+					font: normal 15px/1.8 "arial";
+				}
 			}
 		}
 	}
