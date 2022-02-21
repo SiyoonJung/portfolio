@@ -13,7 +13,7 @@ $mobile: 539px;
 
 @keyframes slide {
 	from {
-		left: -100px;
+		left: -150px;
 		opacity: 0;
 	}
 	to {
@@ -556,7 +556,7 @@ $mobile: 539px;
 			width: 50%;
 			height: 100%;
 			margin: 0 auto;
-			padding: 80px;
+			padding: 70px;
 			float: right;
 
 			p {
@@ -829,17 +829,17 @@ $mobile: 539px;
 
 			.center {
 				width: 40%;
-				padding: 8%;
+				padding: 5%;
 
 				p {
-					font: normal 18px/1.5 "Antic Slab";
+					font: normal 15px/1.5 "Antic Slab";
 				}
 				h3 {
-					font: bold 28px/1.5 "Antic Slab";
+					font: bold 25px/1.5 "Antic Slab";
 				}
 				a {
 					width: 150px;
-					font: bold 17px/1 "Antic Slab";
+					font: bold 15px/1 "Antic Slab";
 				}
 			}
 
@@ -961,7 +961,7 @@ $mobile: 539px;
 
 			.center {
 				width: 100%;
-				padding-top: 22%;
+				padding-top: 17%;
 				margin: 0 auto;
 			}
 			.right {

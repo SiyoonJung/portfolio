@@ -1,4 +1,4 @@
-//모바일 버전에서의 메뉴 구현(using toggle)
+//header: 모바일 버전에서의 메뉴 구현(using toggle)
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
@@ -9,7 +9,7 @@ btnCall.onclick = function (e) {
   menuMo.classList.toggle("on");
 }
 
-//visual section의 swiper
+//visual section: swiper
 var swiper = new Swiper(".swiper", {
   pagination: {
     el: ".swiper-pagination",
@@ -25,12 +25,12 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-// prodList section에서 istope 적용시 folded(overlay) 되는 문제 해결
+//products section: istope 적용시 folded(overlay) 되는 문제 해결
 $(window).load(function () {
   $.getScript(`https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js`, function () { })
 });
 
-//prodList section에서 상품들 정렬(istope 이용)
+//produtcs section: istope 이용한 상품들 정렬
 $(".prodList").isotope({
   itemSelector: '.prod',
   layoutMode: 'fitRows',
@@ -40,7 +40,7 @@ $(".prodList").isotope({
   }
 });
 
-//prodList section에서 상품목록 분류(filter)
+//products section: 상품목록 분류(filter)
 $(".prodMenu ul li").click(function () {
   $(".prodMenu ul li").removeClass("active");
   $(this).addClass("active");
@@ -52,7 +52,7 @@ $(".prodMenu ul li").click(function () {
   return false;
 });
 
-//shopping cart 클릭시 수량 증감하기
+//products section: cart 이미지 클릭시 수량 추가하기
 $("#add-cart").click(function add() {
   var quan = document.querySelector('#cart').getAttribute('data-num');
   var n = Number(quan.innerHTML);
