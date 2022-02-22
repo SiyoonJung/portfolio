@@ -25,11 +25,6 @@ var swiper = new Swiper(".swiper", {
   },
 });
 
-//products section: istope 적용시 folded(overlay) 되는 문제 해결
-$(window).load(function () {
-  $.getScript(`https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js`, function () { })
-});
-
 //produtcs section: istope 이용한 상품들 정렬
 $(".prodList").isotope({
   itemSelector: '.prod',
@@ -38,6 +33,20 @@ $(".prodList").isotope({
     columnWidth: 15,
     isFitWidth: true
   }
+});
+
+//products section: istope 적용시 overlay 문제해결
+jQuery(document).ready(function ($) {
+  var $grid = $('.prodList').isotope({
+      itemSelector: '.prod',
+      layoutMode: 'masonry'
+  });
+
+  $grid.imagesLoaded().progress(function() {
+    setTimeout (function(){
+      $grid.isotope('layout');
+    }, 200);
+  });
 });
 
 //products section: 상품목록 분류(filter)
@@ -57,4 +66,6 @@ $("#add-cart").click(function add() {
   var quan = document.querySelector('#cart').getAttribute('data-num');
   var n = Number(quan.innerHTML);
   quan.innerHTML = n + 1;
+  console.log(quan);
+  alert("상품을 장바구니에 담았습니다.");
 });
