@@ -419,58 +419,41 @@ $mobile: 539px;
 
 				> div {
 					width: 100%;
-					padding-bottom: 20px;
 					position: relative;
 					overflow: hidden;
 					box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
 
 					&:hover {
-						a {
-							opacity: 1;
+						>img {
+							filter: blur(2px);
 						}
-						img {
-							-webkit-filter: grayscale(0%);
-							filter: none;
+						.info {
+							margin-top: 50%;
+							transition: all 0.7s;
 						}
 					}
 
-					img {
+					.info {
+						position: absolute;
+						top: 0px;
+						left: 0px;
+						margin-top: 100%;
 						width: 100%;
-						-webkit-filter: grayscale(100%);
-						filter: gray;
-					}
-
-					div {
-						width: 100%;
-						img {
-							width: 60px;
-							height: 60px;
-							border-radius: 50%;
-							margin: 0 auto;
-							padding: 5px;
-							object-fit: cover;
-							display: block;
-							transform: translateY(-50%);
-							cursor: pointer;
-						}
+						height: 100%;
+						background: rgba(0,0,0,0.3);
 
 						h2 {
 							font: bold 25px/1 "Julius Sans One";
-							color: #111;
+							color: #fff;
 							letter-spacing: 1px;
 							margin: 10px 0px;
-							transition: 0.5s;
 							margin-bottom: 10px;
-							transform: translateY(-100%);
 						}
 
 						p {
 							font: 14px/1.2 "arial";
-							color: #111;
-							transition: 0.5s;
-							transform: 100%;
+							color: #fff;
 							margin-bottom: 10px;
-							transform: translateY(-100%);
 						}
 
 						a {
@@ -483,8 +466,6 @@ $mobile: 539px;
 							font: bold 16px/1.2 "Julius Sans One";
 							color: #000;
 							background-color: #dac4b6;
-							opacity: 0;
-							transition: 0.5s;
 						}
 					}
 				}
