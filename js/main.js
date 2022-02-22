@@ -41,7 +41,6 @@ jQuery(document).ready(function ($) {
       itemSelector: '.prod',
       layoutMode: 'masonry'
   });
-
   $grid.imagesLoaded().progress(function() {
     setTimeout (function(){
       $grid.isotope('layout');
@@ -59,13 +58,4 @@ $(".prodMenu ul li").click(function () {
     filter: selector
   });
   return false;
-});
-
-//products section: cart 이미지 클릭시 수량 추가하기
-$("#add-cart").click(function add() {
-  var quan = document.querySelector('#cart').getAttribute('data-num');
-  var n = Number(quan.innerHTML);
-  quan.innerHTML = n + 1;
-  console.log(quan);
-  alert("상품을 장바구니에 담았습니다.");
 });
