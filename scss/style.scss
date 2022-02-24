@@ -27,13 +27,13 @@ $mobile: 539px;
 		transform: rotate(0deg);
 	}
 	25% {
-		transform: rotate(-8deg);
+		transform: rotate(-6deg);
 	}
 	50% {
-		transform: rotate(8deg);
+		transform: rotate(6deg);
 	}
 	75% {
-		transform: rotate(-8deg);
+		transform: rotate(-6deg);
 	}
 	100% {
 		transform: rotate(0deg);
@@ -484,11 +484,6 @@ $mobile: 539px;
 							font: bold 16px/1.2 "Julius Sans One";
 							color: #000;
 							background-color: #dac4b6;
-
-							&:hover {
-								animation-name: shake;
-								animation-duration: 0.5s;
-							}
 						}
 					}
 				}
@@ -665,6 +660,7 @@ $mobile: 539px;
 						position: absolute;
 						top: 40%;
 						left: 25%;
+						animation: shake 0.5s ease-in-out;
 					}
 				}
 

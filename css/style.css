@@ -15,13 +15,13 @@
     transform: rotate(0deg);
   }
   25% {
-    transform: rotate(-8deg);
+    transform: rotate(-6deg);
   }
   50% {
-    transform: rotate(8deg);
+    transform: rotate(6deg);
   }
   75% {
-    transform: rotate(-8deg);
+    transform: rotate(-6deg);
   }
   100% {
     transform: rotate(0deg);
@@ -682,22 +682,14 @@ a {
   color: black;
 }
 .members .people .memberInfo {
-  z-index: -999;
   width: 100%;
   height: 100%;
-  margin: 50px 0px;
+  margin: 50px auto;
   padding: 50px;
 }
-.members .people .memberInfo::after {
-  display: block;
-  content: "";
-  clear: both;
-}
 .members .people .memberInfo .profile-wrapper {
-  width: 24%;
-  height: 30%;
-  margin: 1rem;
-  padding: 10px;
+  width: 30%;
+  margin: 2rem 1rem;
   float: left;
   position: relative;
   text-align: center;
@@ -711,19 +703,22 @@ a {
 .members .people .memberInfo .profile-wrapper:hover .profile-back {
   display: block;
 }
+.members .people .memberInfo .profile-wrapper .profile-front {
+  width: 100%;
+  height: 300px;
+}
 .members .people .memberInfo .profile-wrapper .profile-front img {
   width: 100%;
-  border-radius: 50%;
-  object-fit: cover;
+  height: 100%;
+  object-fit: contain;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
   box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
 }
 .members .people .memberInfo .profile-wrapper .profile-back {
   margin: 0 auto;
-  padding: 100px;
+  padding-top: 50px;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: 300px;
   font: bold 20px/1 "Antic Slab";
   color: #111;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
@@ -1786,10 +1781,6 @@ a {
   color: #000;
   background-color: #dac4b6;
 }
-#products .container .prodList article > div .info a:hover {
-  animation-name: shake;
-  animation-duration: 0.5s;
-}
 
 #banner {
   width: 100%;
@@ -1944,6 +1935,7 @@ a {
   position: absolute;
   top: 40%;
   left: 25%;
+  animation: shake 0.5s ease-in-out;
 }
 #celebrity .inner article .image a {
   display: none;
