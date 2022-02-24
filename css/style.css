@@ -10,6 +10,23 @@
     opacity: 1;
   }
 }
+@keyframes shake {
+  0% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-8deg);
+  }
+  50% {
+    transform: rotate(8deg);
+  }
+  75% {
+    transform: rotate(-8deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -1768,6 +1785,10 @@ a {
   font: bold 16px/1.2 "Julius Sans One";
   color: #000;
   background-color: #dac4b6;
+}
+#products .container .prodList article > div .info a:hover {
+  animation-name: shake;
+  animation-duration: 0.5s;
 }
 
 #banner {
