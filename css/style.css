@@ -67,7 +67,7 @@ a {
 }
 .gallery .inner {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -260,7 +260,7 @@ a {
 }
 .board .inner {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -558,7 +558,7 @@ a {
 }
 .members .intro {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
 }
@@ -588,7 +588,7 @@ a {
   color: black;
 }
 .members .intro .about {
-  width: 1200px;
+  width: 1180px;
   height: 700px;
   margin: 0 auto;
   padding: 10px;
@@ -688,7 +688,7 @@ a {
   padding: 50px;
 }
 .members .people .memberInfo .profile-wrapper {
-  width: 30%;
+  width: 22%;
   margin: 2rem 1rem;
   float: left;
   position: relative;
@@ -696,6 +696,7 @@ a {
   z-index: 99;
   transition: all 1s ease-in-out;
   transform-style: preserve-3d;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 }
 .members .people .memberInfo .profile-wrapper:hover {
   transform: rotateY(180deg);
@@ -705,11 +706,11 @@ a {
 }
 .members .people .memberInfo .profile-wrapper .profile-front {
   width: 100%;
-  height: 300px;
+  height: 200px;
 }
 .members .people .memberInfo .profile-wrapper .profile-front img {
   width: 100%;
-  height: 100%;
+  height: 200px;
   object-fit: contain;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
   box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
@@ -718,7 +719,7 @@ a {
   margin: 0 auto;
   padding-top: 50px;
   width: 100%;
-  height: 300px;
+  height: 200px;
   font: bold 20px/1 "Antic Slab";
   color: #111;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
@@ -739,20 +740,40 @@ a {
   font: normal 18px/1.5 "arial";
   color: #111;
 }
+.members .people .memberInfo .profile-wrapper:nth-of-type(6) {
+  margin-bottom: 100px;
+}
 
 /* Responsive Tablet Verision*/
 @media screen and (max-width: 1179px) {
-  .members {
-    width: 100%;
-  }
-  .members .sub_visual {
-    width: 100%;
-  }
   .members .intro {
     width: 100%;
   }
   .members .people {
     width: 100%;
+  }
+  .members .people .memberInfo {
+    width: 100%;
+  }
+  .members .people .memberInfo .profile-wrapper {
+    width: 29%;
+  }
+}
+@media screen and (max-width: 539px) {
+  .members .intro {
+    width: 100%;
+  }
+  .members .intro .about .content {
+    clear: both;
+  }
+  .members .people {
+    width: 100%;
+  }
+  .members .people .memberInfo {
+    width: 100%;
+  }
+  .members .people .memberInfo .profile-wrapper {
+    width: 41%;
   }
 }
 .youtube {
@@ -772,7 +793,7 @@ a {
 }
 .youtube .inner {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -928,7 +949,7 @@ a {
 }
 .location .inner {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -1061,7 +1082,7 @@ a {
 }
 .join .inner {
   padding: 50px 0px 0px 0px;
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -1382,7 +1403,7 @@ a {
 }
 #header .inner,
 #header_sub .inner {
-  width: 1200px;
+  width: 1180px;
   height: 120px;
   margin: 0 auto;
   position: relative;
@@ -1594,7 +1615,7 @@ a {
   clear: both;
 }
 #visual .swiper .swiper-slide .inner {
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
@@ -1635,7 +1656,7 @@ a {
   height: auto;
 }
 #features .wrapper {
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -1696,7 +1717,7 @@ a {
   letter-spacing: 2px;
 }
 #products .container {
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   position: relative;
@@ -1714,10 +1735,6 @@ a {
   border: 1px solid black;
   border-radius: 3rem;
   cursor: pointer;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  -o-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
 #products .container .prodMenu ul li:hover {
@@ -1753,7 +1770,7 @@ a {
   position: absolute;
   top: 0px;
   left: 0px;
-  margin-top: 100%;
+  margin-top: 120%;
   width: 100%;
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
@@ -1789,7 +1806,7 @@ a {
   position: relative;
 }
 #banner .wrapper {
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   text-align: center;
@@ -1869,7 +1886,7 @@ a {
   background-color: #f1f1e0;
 }
 #celebrity .inner {
-  width: 1200px;
+  width: 1180px;
   height: 100%;
   margin: 0 auto;
   padding: 1.66%;
@@ -1951,7 +1968,7 @@ a {
 }
 #footer .inner,
 #footer_sub .inner {
-  width: 1200px;
+  width: 1180px;
   margin: 0 auto;
   text-align: center;
 }

@@ -55,7 +55,7 @@ $mobile: 539px;
 	border-bottom: 1px double #999;
 
 	.inner {
-		width: 1200px;
+		width: 1180px;
 		height: 120px;
 		margin: 0 auto;
 		position: relative;
@@ -273,7 +273,7 @@ $mobile: 539px;
 			}
 
 			.inner {
-				width: 1200px;
+				width: 1180px;
 				height: 100%;
 				margin: 0 auto;
 				padding: 0px;
@@ -321,7 +321,7 @@ $mobile: 539px;
 	height: auto;
 
 	.wrapper {
-		width: 1200px;
+		width: 1180px;
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
@@ -392,7 +392,7 @@ $mobile: 539px;
 	}
 
 	.container {
-		width: 1200px;
+		width: 1180px;
 		height: 100%;
 		margin: 0 auto;
 		position: relative;
@@ -410,10 +410,6 @@ $mobile: 539px;
 				border: 1px solid black;
 				border-radius: 3rem;
 				cursor: pointer;
-				-webkit-transition: all 0.5s ease;
-				-moz-transition: all 0.5s ease;
-				-ms-transition: all 0.5s ease;
-				-o-transition: all 0.5s ease;
 				transition: all 0.5s ease;
 
 				&:hover {
@@ -455,7 +451,7 @@ $mobile: 539px;
 						position: absolute;
 						top: 0px;
 						left: 0px;
-						margin-top: 100%;
+						margin-top: 120%;
 						width: 100%;
 						height: 100%;
 						background: rgba(0, 0, 0, 0.3);
@@ -499,7 +495,7 @@ $mobile: 539px;
 	position: relative;
 
 	.wrapper {
-		width: 1200px;
+		width: 1180px;
 		height: 100%;
 		margin: 0 auto;
 		text-align: center;
@@ -590,7 +586,7 @@ $mobile: 539px;
 	background-color: #f1f1e0;
 
 	.inner {
-		width: 1200px;
+		width: 1180px;
 		height: 100%;
 		margin: 0 auto;
 		padding: 1.66%;
@@ -681,7 +677,7 @@ $mobile: 539px;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
 	.inner {
-		width: 1200px;
+		width: 1180px;
 		margin: 0 auto;
 		text-align: center;
 
