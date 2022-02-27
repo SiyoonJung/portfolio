@@ -291,35 +291,6 @@ a {
   font: bold 35px/1 "arial";
   color: black;
 }
-.board .inner #searchBox {
-  width: 32%;
-  height: 40px;
-  margin: 0 auto;
-  padding-top: 60px;
-  position: absolute;
-  top: 200px;
-  right: 0px;
-  z-index: 999;
-  font-size: 0;
-}
-.board .inner #searchBox #sort {
-  font: 15px/30px "arial";
-  margin: 0 auto;
-  width: 100px;
-  height: 30px;
-}
-.board .inner #searchBox input[type=text] {
-  width: 200px;
-  height: 30px;
-  background: #fff;
-  border: 1px solid #4d4949;
-  font: normal 15px/30px "arial";
-}
-.board .inner #searchBox button {
-  width: 80px;
-  height: 30px;
-  font: normal 15px/1 "arial";
-}
 .board .inner #tab {
   width: 100%;
   border: 1px solid black;
@@ -688,15 +659,15 @@ a {
   padding: 50px;
 }
 .members .people .memberInfo .profile-wrapper {
-  width: 22%;
-  margin: 2rem 1rem;
+  width: 23%;
+  margin: 1%;
   float: left;
   position: relative;
   text-align: center;
   z-index: 99;
   transition: all 1s ease-in-out;
   transform-style: preserve-3d;
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 .members .people .memberInfo .profile-wrapper:hover {
   transform: rotateY(180deg);
@@ -717,10 +688,9 @@ a {
 }
 .members .people .memberInfo .profile-wrapper .profile-back {
   margin: 0 auto;
-  padding-top: 50px;
+  padding-top: 20px;
   width: 100%;
   height: 200px;
-  font: bold 20px/1 "Antic Slab";
   color: #111;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
   position: absolute;
@@ -731,10 +701,10 @@ a {
 }
 .members .people .memberInfo .profile-wrapper .profile-back h2 {
   margin-top: 20px;
-  font: bold 30px/2 "arial";
+  font: bold 28px/2 "Antic Slab";
 }
 .members .people .memberInfo .profile-wrapper .profile-back h3 {
-  font: bold 20px/2 "arial";
+  font: normal 18px/2 "arial";
 }
 .members .people .memberInfo .profile-wrapper .profile-back span {
   font: normal 18px/1.5 "arial";
@@ -756,16 +726,10 @@ a {
     width: 100%;
   }
   .members .people .memberInfo .profile-wrapper {
-    width: 29%;
+    width: 31%;
   }
 }
 @media screen and (max-width: 539px) {
-  .members .intro {
-    width: 100%;
-  }
-  .members .intro .about .content {
-    clear: both;
-  }
   .members .people {
     width: 100%;
   }
@@ -773,7 +737,7 @@ a {
     width: 100%;
   }
   .members .people .memberInfo .profile-wrapper {
-    width: 41%;
+    width: 48%;
   }
 }
 .youtube {
