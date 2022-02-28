@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Antic+Slab&family=Bad+Script&family=Julius+Sans+One&display=swap");
 @keyframes slide {
   from {
-    left: -150px;
+    left: -180px;
     opacity: 0;
   }
   to {
@@ -579,7 +579,7 @@ a {
   position: absolute;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
   top: 80px;
-  left: 40px;
+  left: 25px;
   width: 100%;
   height: 78%;
   background-image: linear-gradient(to top, #dbcbbe, #e2dddb);
@@ -677,20 +677,20 @@ a {
 }
 .members .people .memberInfo .profile-wrapper .profile-front {
   width: 100%;
-  height: 200px;
+  height: 220px;
+  background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
+  box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
 }
 .members .people .memberInfo .profile-wrapper .profile-front img {
   width: 100%;
-  height: 200px;
+  height: 220px;
   object-fit: contain;
-  background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
-  box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
 }
 .members .people .memberInfo .profile-wrapper .profile-back {
   margin: 0 auto;
   padding-top: 20px;
   width: 100%;
-  height: 200px;
+  height: 220px;
   color: #111;
   background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
   position: absolute;
@@ -700,7 +700,7 @@ a {
   transform: rotateY(180deg);
 }
 .members .people .memberInfo .profile-wrapper .profile-back h2 {
-  margin-top: 20px;
+  margin-top: 30px;
   font: bold 28px/2 "Antic Slab";
 }
 .members .people .memberInfo .profile-wrapper .profile-back h3 {
@@ -718,6 +718,13 @@ a {
 @media screen and (max-width: 1179px) {
   .members .intro {
     width: 100%;
+  }
+  .members .about .content {
+    clear: both;
+    width: 100%;
+    height: 70%;
+    margin: 0 auto;
+    padding-top: 700px;
   }
   .members .people {
     width: 100%;
@@ -788,7 +795,6 @@ a {
   color: black;
 }
 .youtube .inner .vidList {
-  width: 100%;
   width: 100%;
   margin-top: 200px;
   position: relative;

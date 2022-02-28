@@ -71,7 +71,7 @@
 					position: absolute;
 					box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
 					top: 80px;
-					left: 40px;
+					left: 25px;
 					width: 100%;
 					height: 78%;
 					background-image: linear-gradient(to top, #dbcbbe, #e2dddb);
@@ -181,17 +181,17 @@
 				}
 				.profile-front {
 					width: 100%;
-					height: 200px;
-					img {
-						width: 100%;
-						height: 200px;
-						object-fit: contain;
-						background-image: linear-gradient(
+					height: 220px;
+					background-image: linear-gradient(
 							90deg,
 							#f1e6e0,
 							#e4d1c5
 						);
 						box-shadow: 5px 10px 10px rgba(221, 168, 115, 0.1);
+					img {
+						width: 100%;
+						height: 220px;
+						object-fit: contain;
 					}
 				}
 
@@ -199,7 +199,7 @@
 					margin: 0 auto;
 					padding-top: 20px;
 					width: 100%;
-					height: 200px;
+					height: 220px;
 					color: #111;
 					background-image: linear-gradient(90deg, #f1e6e0, #e4d1c5);
 					position: absolute;
@@ -209,7 +209,7 @@
 					transform: rotateY(180deg);
 
 					h2 {
-						margin-top: 20px;
+						margin-top: 30px;
 						font: bold 28px/2 "Antic Slab";
 					}
 
@@ -235,6 +235,15 @@
 	.members {
 		.intro {
 			width: 100%;
+		}
+		.about {
+			.content {
+				clear: both;
+				width: 100%;
+				height: 70%;
+				margin: 0 auto;
+				padding-top: 700px;
+			}
 		}
 		.people {
 			width: 100%;
