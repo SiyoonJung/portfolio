@@ -318,8 +318,8 @@ a {
   width: 100%;
   height: 100%;
   background: #fff;
-  font: bold 14px/40px "arial";
-  color: #555;
+  font: bold 18px/40px "Julius Sans One";
+  color: #111;
   text-align: center;
 }
 .board .inner #tab dt.active a {
@@ -349,6 +349,7 @@ a {
 }
 .board .inner table tr th {
   background-color: #d1b7a1;
+  font: bold 15px "Julius Sans One";
   color: black;
   padding: 15px;
 }
@@ -428,19 +429,19 @@ a {
   border-right: none;
 }
 
-/* ---- Responsive ----- */
+/* Responsive Tablet Version */
 @media screen and (max-width: 1179px) {
-  .board .inner table tr th:nth-of-type(1) {
+  .board .inner #tab table tr th:nth-of-type(1) {
     width: 14%;
   }
-  .board .inner table tr th:nth-of-type(3) {
+  .board .inner #tab table tr th:nth-of-type(3) {
     width: 17%;
   }
-  .board .inner table tr th:nth-of-type(4) {
+  .board .inner #tab table tr th:nth-of-type(4) {
     width: 0%;
     display: none;
   }
-  .board .inner table tr td:nth-of-type(4) {
+  .board .inner #tab table tr td:nth-of-type(4) {
     display: none;
   }
   .board .inner .pagination .numbers a:nth-of-type(6) {
@@ -477,40 +478,41 @@ a {
     display: none;
   }
 }
+/* Responsive Mobile Version */
 @media screen and (max-width: 539px) {
-  .board .inner table tr th {
-    font-size: 14px;
+  .board .inner #tab table tr th {
+    font-size: 13px;
   }
-  .board .inner table tr th:nth-of-type(1) {
+  .board .inner #tab table tr th:nth-of-type(1) {
     width: 0%;
     display: none;
   }
-  .board .inner table tr th:nth-of-type(3) {
+  .board .inner #tab table tr th:nth-of-type(3) {
     width: 29%;
   }
-  .board .inner table tr td:nth-of-type(1) {
+  .board .inner #tab table tr td:nth-of-type(1) {
     display: none;
   }
   .board .inner .pagination .numbers {
     display: none;
   }
 }
-/* .w-btn-gra-anim {
-    background-size: 400% 400%;
-    animation: gradient1 5s ease infinite;
+.w-btn-gra-anim {
+  background-size: 400% 400%;
+  animation: gradient1 5s ease infinite;
 }
 
 @keyframes gradient1 {
-    0% {
-        background-position: 0% 50%;
-    }
-    50% {
-        background-position: 100% 50%;
-    }
-    100% {
-        background-position: 0% 50%;
-    }
-} */
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
 .members {
   width: 100%;
   height: 100%;
@@ -560,13 +562,13 @@ a {
 }
 .members .intro .about {
   width: 1180px;
-  height: 100%;
+  height: auto;
   padding: 10px;
   margin: 0 auto;
 }
 .members .intro .about .wrapper {
   width: 93%;
-  height: 100%;
+  height: auto;
   padding-left: 4%;
   padding-top: 5%;
   text-align: center;
@@ -594,7 +596,7 @@ a {
 .members .intro .about .wrapper span::after {
   display: block;
   content: "";
-  width: 50%;
+  width: 80%;
   height: 3px;
   background-color: #aaa;
   margin: 0 auto;
@@ -604,6 +606,7 @@ a {
   color: #000;
   margin: 20px 0px;
   padding: 30px;
+  margin-bottom: 50px;
 }
 .members .people {
   width: 100%;
@@ -875,6 +878,9 @@ a {
     height: 300px;
     margin: 10px auto;
   }
+  .youtube .inner .vidList article:last-of-type {
+    margin-bottom: 50px;
+  }
   .youtube .inner .vidList article p {
     display: none;
   }
@@ -995,21 +1001,21 @@ a {
     clear: both;
   }
   .location .inner .traffic {
-    margin: 2%;
+    margin: 3%;
     clear: both;
   }
   .location .inner .traffic li {
     clear: both;
     display: block;
-    margin: 2%;
+    margin: 3%;
   }
   .location .inner .branch {
-    margin: 2%;
+    margin: 3%;
   }
   .location .inner .branch li {
     clear: both;
     display: block;
-    margin: 2%;
+    margin: 3%;
   }
 }
 .join {
@@ -1060,7 +1066,7 @@ a {
   color: black;
 }
 .join .inner h2 {
-  font: bold 20px/1 "arial";
+  font: bold 20px/1 "Julius Sans One";
   color: #333;
   text-align: center;
   margin-bottom: 20px;
@@ -1096,7 +1102,7 @@ a {
 .join .inner table th {
   width: 22%;
   text-align: left;
-  font: bold 14px/1 "arial";
+  font: bold 14px/1 "Julius Sans One";
   color: #333;
   padding: 20px;
   border-right: 1px solid #bbb;
@@ -1115,7 +1121,7 @@ a {
   height: 40px;
   border: none;
   background: #ebded6;
-  font: bold 14px/1 "arial";
+  font: normal 14px/1 "arial";
   color: #000;
   margin: 0 10px;
 }

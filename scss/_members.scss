@@ -52,13 +52,13 @@
 
 		.about {
 			width: 1180px;
-			height: 100%;
+			height: auto;
 			padding: 10px;
 			margin: 0 auto;
 
 			.wrapper {
 				width: 93%;
-				height: 100%;
+				height: auto;
 				padding-left: 4%;
 				padding-top: 5%;
 				text-align: center;
@@ -87,7 +87,7 @@
 					&::after {
 						display: block;
 						content: "";
-						width: 50%;
+						width: 80%;
 						height: 3px;
 						background-color: #aaa;
 						margin: 0 auto;
@@ -98,6 +98,7 @@
 					color: #000;
 					margin: 20px 0px;
 					padding: 30px;
+					margin-bottom: 50px;
 				}
 			}
 		}
