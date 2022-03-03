@@ -94,7 +94,7 @@ a {
   left: 2%;
 }
 .gallery .inner #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .gallery .inner #searchBox {
@@ -288,7 +288,7 @@ a {
   left: 2%;
 }
 .board .inner #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .board .inner #tab {
@@ -768,7 +768,7 @@ a {
   left: 2%;
 }
 .youtube .inner #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .youtube .inner .vidList {
@@ -923,7 +923,7 @@ a {
   left: 2%;
 }
 .location .inner #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .location .inner #map {
@@ -1056,7 +1056,7 @@ a {
   left: 0;
 }
 .join .inner #title h1 {
-  font: bold 35px/1 "arial";
+  font: bold 40px/1 "Julius Sans One";
   color: black;
 }
 .join .inner h2 {

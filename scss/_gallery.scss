@@ -45,17 +45,17 @@
 				left: 2%;
 			}
 				h1 {
-					font: bold 35px/1 "arial";
-					color: black;
+				font: bold 40px/1 "Julius Sans One";
+				color: black;
 				}
-			}
+		}
 
 		#searchBox {
 			width: 30%;
 			height: 30px;
 			font-size: 0;
 			margin: 0 auto;
-		
+
 			input[type="text"] {
 				width: 200px;
 				height: 30px;
@@ -63,7 +63,7 @@
 				border: 1px solid #ddd;
 				padding-left: 10px;
 			}
-		
+
 			.btnSearch {
 				width: 80px;
 				height: 30px;
@@ -77,13 +77,13 @@
 				vertical-align: top;
 			}
 		}
-		
+
 		#wrap {
 			width: 100%;
 			padding: 50px;
 			overflow: hidden;
 			text-align: center;
-		
+
 			.loading {
 				width: 100px;
 				position: absolute;
@@ -91,43 +91,47 @@
 				left: 50%;
 				transform: translate(-50%, -50%);
 				transition: 1s;
-		
+
 				&.off {
 					opacity: 0;
 				}
 			}
-		
+
 			#list {
 				opacity: 0;
 				transform: translateY(100px);
 				transition: 1s;
-		
+
 				&::after {
 					content: "";
 					display: block;
 					clear: both;
 				}
-		
+
 				li {
 					width: calc(100% / 4);
 					height: 400px;
 					float: left;
 					padding: 10px;
-		
+
 					div {
 						width: 100%;
 						height: 300px;
-						background-image: linear-gradient(90deg, #f5efeb, #e4d1c5);
+						background-image: linear-gradient(
+							90deg,
+							#f5efeb,
+							#e4d1c5
+						);
 						padding: 10px;
 						border-radius: 5px;
 						box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
-		
+
 						&:hover {
 							transition: all 0.5s ease-in-out;
 							transform: scale(1.05);
 							overflow: hidden;
 						}
-						
+
 						a {
 							img {
 								width: 100%;
@@ -147,7 +151,7 @@
 							align-items: center;
 							margin-top: 20px;
 							color: black;
-		
+
 							img {
 								width: 20px;
 								height: 20px;
@@ -162,14 +166,14 @@
 						}
 					}
 				}
-		
+
 				&.on {
 					opacity: 1;
 					transform: translateY(0px);
 				}
 			}
 		}
-		
+
 		aside {
 			width: 100%;
 			height: 100vh;
@@ -181,7 +185,7 @@
 			display: flex;
 			justify-content: center;
 			align-items: center;
-		
+
 			img {
 				height: 100%;
 			}
@@ -194,8 +198,6 @@
 		}
 	}
 }
-
-
 
 @media screen and (max-width: 1399px) {
 	#wrap #list li {
