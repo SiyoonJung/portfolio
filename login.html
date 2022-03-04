@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/94d2aa96d1.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/login.js"></script>
     <script defer src="js/main.js"></script>
     <title> LOG IN </title>
 </head>
@@ -54,33 +53,19 @@
         <div class="inner">
             <form>
                 <div class="con">
-                    <header class="head-form">
+                    <header>
                         <h2>Log In</h2>
                         <p>Login here using your useremail and password</p>
                     </header>
                     <br>
-                    <div class="field-set">
-                        <span class="input-item">
-                            <i class="fa fa-user-circle"></i>
-                        </span>
-                        <input class="form-input" id="txt-input" type="text" placeholder="@UserEmail" required>
+                    <div class="origin">
+                        <i class="fa fa-user-circle fa-lg"></i>
+                        <input class="form-input" placeholder="UserEmail">
                         <br>
-                        <span class="input-item">
-                            <i class="fa fa-key"></i>
-                        </span>
-                        <input class="form-input" type="password" placeholder="Password" id="pwd" name="password"
-                            required>
-                        <span>
-                            <i class="fa fa-eye" aria-hidden="true" type="button" id="eye"></i>
-                        </span>
+                        <i class="fa fa-key fa-lg"></i>
+                        <input class="form-input" placeholder="Password">
                         <br>
-                        <button class="log-in"> Log In </button>
-                    </div>
-                    <div class="other">
-                        <button class="btn submits frgt-pass">Forgot Password</button>
-                        <button class="btn submits sign-up" onclick="location.href='join.html' ">Sign Up
-                            <i class="fas fa-user-edit" aria-hidden="true"></i>
-                        </button>
+                        <button class="log-in"> LOG IN </button>
                     </div>
                 </div>
             </form>
