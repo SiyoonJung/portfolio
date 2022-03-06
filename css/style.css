@@ -50,6 +50,12 @@ a {
   opacity: 0;
 }
 
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
 .gallery {
   width: 100%;
   height: 100%;
@@ -1474,65 +1480,83 @@ a {
   position: relative;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
-#visual .swiper {
-  width: 100%;
+#visual #slideShow {
+  width: 100vw;
   height: 100%;
+  overflow: hidden;
 }
-#visual .swiper .swiper-slide {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  transition: all 0.5s ease;
+#visual #slideShow #slides {
+  width: 100vw;
+  height: 100%;
+  float: left;
 }
-#visual .swiper .swiper-slide::after {
+#visual #slideShow #slides::after {
   display: block;
   content: "";
   clear: both;
 }
-#visual .swiper .swiper-slide .inner {
+#visual #slideShow #slides .inner {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
+  position: relative;
 }
-#visual .swiper .swiper-slide .inner .text {
+#visual #slideShow #slides .inner .text {
   width: 50%;
   height: 100%;
   margin: 0 auto;
-  transform: translateY(35%);
+  transform: translateY(20%);
   float: left;
   text-align: center;
 }
-#visual .swiper .swiper-slide .inner .text h2 {
+#visual #slideShow #slides .inner .text h2 {
   font: normal 20px/1.5 "Antic Slab";
 }
-#visual .swiper .swiper-slide .inner .text h1 {
+#visual #slideShow #slides .inner .text h1 {
   font: bold 50px/1.5 "Bad Script";
 }
-#visual .swiper .swiper-slide .inner .text p {
+#visual #slideShow #slides .inner .text p {
   margin-top: 10px;
   font: normal 18px/1.8 "arial";
 }
-#visual .swiper .swiper-slide .inner .image {
+#visual #slideShow #slides .inner .image {
   width: 50%;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
   float: left;
 }
-#visual .swiper .swiper-slide .inner .image img {
+#visual #slideShow #slides .inner .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+#visual #slideShow #slide-prev {
+  position: absolute;
+  top: 90%;
+  left: 46%;
+  border: 1px solid #111;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #fff;
+}
+#visual #slideShow #slide-prev:hover {
+  background-color: #111;
+  color: #fff;
+}
+#visual #slideShow #slide-next {
+  position: absolute;
+  top: 90%;
+  left: 54%;
+  border: 1px solid #111;
+  border-radius: 50%;
+  padding: 3px;
+  background-color: #fff;
+}
+#visual #slideShow #slide-next:hover {
+  background-color: #111;
+  color: #fff;
 }
 
 #features {
@@ -1924,16 +1948,13 @@ a {
     display: block;
   }
 
-  #visual .swiper .swiper-slide .inner .text {
-    transform: translateY(25%);
-  }
-  #visual .swiper .swiper-slide .inner .text h2 {
+  #visual #slideShow .slides .inner .text h2 {
     font: normal 20px/1.5 "Antic Slab";
   }
-  #visual .swiper .swiper-slide .inner .text h1 {
+  #visual #slideShow .slides .inner .text h1 {
     font: bold 40px/1.5 "Bad Script";
   }
-  #visual .swiper .swiper-slide .inner .text p {
+  #visual #slideShow .slides .inner .text p {
     margin-top: 10px;
     font: normal 15px/1.8 "arial";
   }
@@ -2033,16 +2054,16 @@ a {
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
-  #visual .swiper .swiper-slide .inner .text {
-    transform: translateY(25%);
+  #visual .slideShow .slides .inner .text {
+    transform: translateY(20%);
   }
-  #visual .swiper .swiper-slide .inner .text h2 {
+  #visual .slideShow .slides .inner .text h2 {
     font: normal 18px/1.5 "Antic Slab";
   }
-  #visual .swiper .swiper-slide .inner .text h1 {
+  #visual .slideShow .slides .inner .text h1 {
     font: bold 35px/1.5 "Bad Script";
   }
-  #visual .swiper .swiper-slide .inner .text p {
+  #visual .slideShow .slides .inner .text p {
     margin-top: 10px;
     font: normal 14px/1.8 "arial";
   }

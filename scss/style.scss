@@ -247,24 +247,15 @@ $mobile: 539px;
 	position: relative;
 	background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 
-	.swiper {
-		width: 100%;
+	#slideShow {
+		width: 100vw;
 		height: 100%;
+		overflow: hidden;
 
-		.swiper-slide {
-			display: -webkit-box;
-			display: -ms-flexbox;
-			display: -webkit-flex;
-			display: flex;
-			-webkit-box-pack: center;
-			-ms-flex-pack: center;
-			-webkit-justify-content: center;
-			justify-content: center;
-			-webkit-box-align: center;
-			-ms-flex-align: center;
-			-webkit-align-items: center;
-			align-items: center;
-			transition: all 0.5s ease;
+		#slides {
+			width: 100vw;
+			height: 100%;
+			float: left;
 
 			&::after {
 				display: block;
@@ -277,12 +268,13 @@ $mobile: 539px;
 				height: 100%;
 				margin: 0 auto;
 				padding: 0px;
+				position: relative;
 
 				.text {
 					width: 50%;
 					height: 100%;
 					margin: 0 auto;
-					transform: translateY(35%);
+					transform: translateY(20%);
 					float: left;
 					text-align: center;
 
@@ -311,6 +303,34 @@ $mobile: 539px;
 						object-fit: cover;
 					}
 				}
+			}
+		}
+		#slide-prev {
+			position: absolute;
+			top: 90%;
+			left: 46%;
+			border: 1px solid #111;
+			border-radius: 50%;
+			padding: 3px;
+			background-color: #fff;
+
+			&:hover {
+				background-color: #111;
+				color: #fff;
+			}
+		}
+		#slide-next {
+			position: absolute;
+			top: 90%;
+			left: 54%;
+			border: 1px solid #111;
+			border-radius: 50%;
+			padding: 3px;
+			background-color: #fff;
+
+			&:hover {
+				background-color: #111;
+				color: #fff;
 			}
 		}
 	}
@@ -749,11 +769,10 @@ $mobile: 539px;
 	}
 
 	#visual {
-		.swiper {
-			.swiper-slide {
+		#slideShow {
+			.slides {
 				.inner {
 					.text {
-						transform: translateY(25%);
 						h2 {
 							font: normal 20px/1.5 "Antic Slab";
 						}
@@ -873,11 +892,11 @@ $mobile: 539px;
 /* Responsive Mobile Verision*/
 @media screen and (max-width: $mobile) {
 	#visual {
-		.swiper {
-			.swiper-slide {
+		.slideShow {
+			.slides {
 				.inner {
 					.text {
-						transform: translateY(25%);
+						transform: translateY(20%);
 						h2 {
 							font: normal 18px/1.5 "Antic Slab";
 						}
