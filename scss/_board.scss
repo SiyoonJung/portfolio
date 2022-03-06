@@ -57,6 +57,9 @@
 			margin: 0 auto;
 			position: relative;
 			padding-top: 30px;
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
 
 			dt {
 				width: calc(100% / 3);
@@ -213,7 +216,9 @@
 @media screen and (max-width: $tablet) {
 	.board {
 		.inner {
+			width: 100%;
 			#tab {
+				width: 100%;
 				table {
 					tr {
 						th {
@@ -297,29 +302,6 @@
 					}
 				}
 			}
-
-			.pagination {
-				.numbers {
-					display: none;
-				}
-			}
 		}
-	}
-}
-
-.w-btn-gra-anim {
-	background-size: 400% 400%;
-	animation: gradient1 5s ease infinite;
-}
-
-@keyframes gradient1 {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
 	}
 }

@@ -303,6 +303,9 @@ button {
   margin: 0 auto;
   position: relative;
   padding-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .board .inner #tab dt {
   width: 33.3333333333%;
@@ -437,6 +440,12 @@ button {
 
 /* Responsive Tablet Version */
 @media screen and (max-width: 1179px) {
+  .board .inner {
+    width: 100%;
+  }
+  .board .inner #tab {
+    width: 100%;
+  }
   .board .inner #tab table tr th:nth-of-type(1) {
     width: 14%;
   }
@@ -498,25 +507,6 @@ button {
   }
   .board .inner #tab table tr td:nth-of-type(1) {
     display: none;
-  }
-  .board .inner .pagination .numbers {
-    display: none;
-  }
-}
-.w-btn-gra-anim {
-  background-size: 400% 400%;
-  animation: gradient1 5s ease infinite;
-}
-
-@keyframes gradient1 {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
   }
 }
 .members {
@@ -1535,7 +1525,7 @@ button {
 #visual #slideShow #slide-prev {
   position: absolute;
   top: 90%;
-  left: 46%;
+  left: 45%;
   border: 1px solid #111;
   border-radius: 50%;
   padding: 3px;
@@ -1548,7 +1538,7 @@ button {
 #visual #slideShow #slide-next {
   position: absolute;
   top: 90%;
-  left: 54%;
+  left: 55%;
   border: 1px solid #111;
   border-radius: 50%;
   padding: 3px;
@@ -1671,7 +1661,7 @@ button {
   filter: blur(2px);
 }
 #products .container .prodList article > div:hover .info {
-  margin-top: 60%;
+  margin-top: 50%;
   transition: all 0.7s;
 }
 #products .container .prodList article > div .info {
