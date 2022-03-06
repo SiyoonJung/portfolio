@@ -232,6 +232,7 @@ button {
   color: #fff;
 }
 
+/* Responsive Verision*/
 @media screen and (max-width: 1399px) {
   .gallery .inner {
     width: 100%;
@@ -1096,8 +1097,8 @@ button {
   height: 200px;
   background-image: linear-gradient(90deg, #e5d8d0, #e7b99c);
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 2.5%;
+  left: 2%;
 }
 .join .inner #title h1 {
   font: bold 40px/1 "Julius Sans One";
@@ -1155,13 +1156,14 @@ button {
 }
 .join .inner table th input[type=submit],
 .join .inner table th input[type=reset] {
-  width: 180px;
+  width: 160px;
   height: 40px;
   border: none;
   background: #ebded6;
   font: normal 14px/1 "arial";
   color: #000;
   margin: 0 10px;
+  cursor: pointer;
 }
 .join .inner table td {
   border-bottom: 1px solid #bbb;
@@ -1204,41 +1206,23 @@ button {
   margin-top: 10px;
 }
 
-/* ----- Responsive Settings ----- */
+/* Responsive Tablet Verision*/
 @media screen and (max-width: 1179px) {
-  .join .inner table th {
-    display: none;
-  }
-  .join .inner table th:last-child {
-    display: block;
+  .join .inner {
     width: 100%;
   }
   .join .inner table td input[type=text],
 .join .inner table td input[type=password],
 .join .inner table td select {
-    width: 50%;
-  }
-  .join .inner table td textarea#comments {
-    width: 90%;
-  }
-  .join .inner table td .hobbyTxt,
-.join .inner table td .genderTxt {
-    display: block;
+    width: 60%;
   }
 }
+/* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
-  .join .inner table th {
-    font-size: 0;
-  }
-  .join .inner table th input[type=submit],
-.join .inner table th input[type=reset] {
-    width: 40%;
-    margin: 0 5%;
-  }
   .join .inner table td input[type=text],
 .join .inner table td input[type=password],
 .join .inner table td select {
-    width: 100%;
+    width: 90%;
   }
   .join .inner table td label {
     display: block;
@@ -1257,19 +1241,17 @@ button {
   height: 100vh;
   margin: 0 auto;
   padding: 30px;
+  background-image: linear-gradient(-230deg, #f3e9d6 50%, #ebded6 50%);
 }
 .login .inner form {
-  position: relative;
-  width: 400px;
-  min-height: 500px;
+  width: 420px;
+  height: auto;
   box-sizing: border-box;
   border: 1px double #111;
-  height: auto;
   border-radius: 5px;
   margin: 5% auto;
   box-shadow: 0 9px 50px rgba(235, 204, 189, 0.31);
-  padding: 2%;
-  background-image: linear-gradient(-225deg, #f3e9d6 50%, #ebded6 50%);
+  position: relative;
 }
 .login .inner form .con {
   display: -webkit-flex;
@@ -1278,10 +1260,13 @@ button {
   justify-content: space-around;
   -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
   margin: 0 auto;
-  padding: 30px;
+  position: relative;
 }
 .login .inner form .con header {
+  padding-top: 30px;
   margin: 7% auto 10% auto;
   text-align: center;
 }
@@ -1294,23 +1279,24 @@ button {
   font: normal 16px/1.5 "Julius Sans One";
 }
 .login .inner form .con input[class=form-input] {
-  width: 230px;
+  width: 260px;
   height: 50px;
-  margin: 3% auto;
-  padding: 15px;
+  margin: 2% auto;
+  padding: 10px;
   font: normal 15px/1 "Julius Sans One";
   color: #585c64;
   outline: none;
-  border: none;
+  border: 1px solid #111;
   border-radius: 5px;
 }
 .login .inner form .con .log-in {
   width: 50%;
   height: 50px;
-  margin: 10% 20%;
+  margin: 15%;
   padding: 5px;
   text-align: center;
   font: bold 20px/1 "Antic Slab";
+  background-color: #ccc;
 }
 .login .inner form .con .log-in:hover {
   background-color: #000;
