@@ -1673,7 +1673,7 @@ button {
   text-align: center;
 }
 #products .container .prodList article {
-  width: 20%;
+  width: 22%;
   float: left;
   margin: 1rem;
   text-align: center;
@@ -1998,7 +1998,7 @@ button {
     margin: 0 auto;
   }
   #products .container .prodList article {
-    width: 25%;
+    width: 31%;
   }
 
   #banner .wrapper {
@@ -2083,7 +2083,7 @@ button {
     text-align: center;
   }
   #products .container .prodList article {
-    width: 33.3333333333%;
+    width: 44%;
   }
 }
 /* Responsive Mobile Verision*/
@@ -2125,7 +2125,7 @@ button {
     margin: 0 auto;
   }
   #products .container .prodList article > div img {
-    width: 90%;
+    width: 100%;
   }
   #products .container .prodList article > div div {
     width: 90%;
