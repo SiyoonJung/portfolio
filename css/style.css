@@ -104,23 +104,25 @@ button {
   color: black;
 }
 .gallery .inner #searchBox {
-  width: 30%;
+  width: 45%;
   height: 30px;
   font-size: 0;
   margin: 0 auto;
+  position: absolute;
+  left: 42%;
 }
 .gallery .inner #searchBox input[type=text] {
-  width: 200px;
+  width: 140px;
   height: 30px;
   background: #fff;
   border: 1px solid #ddd;
   padding-left: 10px;
 }
 .gallery .inner #searchBox .btnSearch {
-  width: 80px;
+  width: 60px;
   height: 30px;
   background: #333;
-  font: bold 12px/30px "arial";
+  font: bold 12px/30px "Julius Sans One";
   color: #fff;
   text-align: center;
   border: none;
@@ -131,6 +133,7 @@ button {
 .gallery .inner #wrap {
   width: 100%;
   padding: 50px;
+  margin-top: 100px;
   overflow: hidden;
   text-align: center;
 }
@@ -230,22 +233,61 @@ button {
 }
 
 @media screen and (max-width: 1399px) {
-  #wrap #list li {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list li {
     width: 25%;
   }
 }
 @media screen and (max-width: 999px) {
-  #wrap #list li {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list li {
     width: 33.3333333333%;
   }
 }
 @media screen and (max-width: 749px) {
-  #wrap #list li {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner #searchBox {
+    left: 33%;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list li {
     width: 50%;
   }
 }
 @media screen and (max-width: 439px) {
-  #wrap #list li {
+  .gallery .inner {
+    width: 100%;
+  }
+  .gallery .inner #wrap {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list {
+    width: 100%;
+  }
+  .gallery .inner #wrap #list li {
     width: 100%;
   }
 }
