@@ -179,6 +179,11 @@
 					select {
 						width: 60%;
 					}
+
+					.hobbyTxt,
+					.genderTxt {
+						display: block;
+					}
 				}
 			}
 		}
@@ -204,11 +209,6 @@
 
 					textarea#comments {
 						width: 100%;
-					}
-
-					.hobbyTxt,
-					.genderTxt {
-						display: block;
 					}
 				}
 			}

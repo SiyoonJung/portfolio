@@ -160,16 +160,3 @@ function isSelect(name) {
         return false;
     }
 }
-
-/*
-if(함수리턴값이 false라면) e.preventDefault(); 
-인증함수 
-조건 
-if(조건식){
-    경고문구 지우기 
-    return true; 
-}else{
-    경고문구 보이기 
-    return false; 
-}
-*/

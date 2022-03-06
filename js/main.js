@@ -19,10 +19,10 @@ prev.onclick = prevSlide;
 next.onclick = nextSlide;
 
 function showSlides(n) {
-  for (var i=0; i < slides.length; i++) {
+  for (var i = 0; i < slides.length; i++) {
     slides[i].style.display = "none";
   }
-    slides[n].style.display = "block";
+  slides[n].style.display = "block";
 }
 
 function prevSlide() {

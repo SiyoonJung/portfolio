@@ -13,10 +13,10 @@ let zoom = true; //확대,축소 가능
         level: 3 // 지도의 확대 레벨
     };
 
-// 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+// 지도를 표시할 div와  지도 옵션으로  지도를 생성
 var map = new kakao.maps.Map(mapContainer, mapOption); 
 
-//마커생성하기 
+//마커 생성하기 
 var markerOptions =[
     {
         title:"본점", 
@@ -66,11 +66,6 @@ window.onresize = ()=>{
     map.setCenter(markerOptions[active_index].latlng);
 }
 
- 
-
-
-
-
 //교통정보 보기/끄기 버튼 클릭 이벤트 
 t_on.addEventListener("click", e=>{
     e.preventDefault(); 
@@ -99,14 +94,14 @@ map.addControl(mapTypeControl, kakao.maps.ControlPosition.TOPRIGHT);
 //지도 드래그 이동 끄기/켜기 
 setDraggable(drag);
 function setDraggable(draggable) {
-    // 마우스 드래그로 지도 이동 가능여부를 설정합니다
+// 마우스 드래그로 지도 이동 가능여부를 설정
     map.setDraggable(draggable);    
 }
 
 //지도 확대/축소 켜기/끄기 
 setZoomable(zoom); 
 function setZoomable(zoomable) {
-    // 마우스 휠로 지도 확대,축소 가능여부를 설정합니다
+    // 마우스 휠로 지도 확대,축소 가능여부를 설정
     map.setZoomable(zoomable);    
 }
 

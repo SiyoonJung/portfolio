@@ -1,15 +1,3 @@
-/*
-AIzaSyD62N3ObfAdS9fO3LIOtg5NYyfqE7sWmq4
-
-url : 'https://www.googleapis.com/youtube/v3/playlistItems'
-
-호출시 옵션값 
-part : 'snippet', 
-key : AIzaSyA1fDMXcSMZ5dv0-Ri9Yo532XvYPQeV_fE
-playlistId : PLr8jYWsFcIRgGiSValZTDq9NCaQPbveOF
-maxResults : 5, 
-*/
-
 const vidList = document.querySelector(".vidList");
 const key = 'AIzaSyA1fDMXcSMZ5dv0-Ri9Yo532XvYPQeV_fE';
 const playlistId = 'PLr8jYWsFcIRgGiSValZTDq9NCaQPbveOF';

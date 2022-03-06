@@ -1216,6 +1216,10 @@ button {
 .join .inner table td select {
     width: 60%;
   }
+  .join .inner table td .hobbyTxt,
+.join .inner table td .genderTxt {
+    display: block;
+  }
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
@@ -1230,10 +1234,6 @@ button {
   }
   .join .inner table td textarea#comments {
     width: 100%;
-  }
-  .join .inner table td .hobbyTxt,
-.join .inner table td .genderTxt {
-    display: block;
   }
 }
 .login {
@@ -1673,7 +1673,7 @@ button {
   text-align: center;
 }
 #products .container .prodList article {
-  width: 22%;
+  width: 20%;
   float: left;
   margin: 1rem;
   text-align: center;
@@ -1998,7 +1998,7 @@ button {
     margin: 0 auto;
   }
   #products .container .prodList article {
-    width: 45%;
+    width: 25%;
   }
 
   #banner .wrapper {
@@ -2071,6 +2071,19 @@ button {
 #footer_sub .inner :nth-of-type(3) li,
 #footer_sub .inner :nth-of-type(4) li {
     width: 100%;
+  }
+}
+@media screen and (max-width: 999px) {
+  #products .container {
+    width: 100%;
+  }
+  #products .container .prodList {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  #products .container .prodList article {
+    width: 33.3333333333%;
   }
 }
 /* Responsive Mobile Verision*/

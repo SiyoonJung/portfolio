@@ -445,7 +445,7 @@ $mobile: 539px;
 			text-align: center;
 
 			article {
-				width: 22%;
+				width: calc(100% / 5);
 				float: left;
 				margin: 1rem;
 				text-align: center;
@@ -811,7 +811,7 @@ $mobile: 539px;
 				margin: 0 auto;
 
 				article {
-					width: 45%;
+					width: calc(100% / 4);
 				}
 			}
 		}
@@ -884,6 +884,24 @@ $mobile: 539px;
 
 				li {
 					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 999px) {
+	#products {
+		.container {
+			width: 100%;
+
+			.prodList {
+				width: 100%;
+				margin: 0 auto;
+				text-align: center;
+
+				article {
+					width: calc(100% / 3);
 				}
 			}
 		}
