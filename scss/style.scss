@@ -49,8 +49,7 @@ $mobile: 539px;
 @import "join.scss";
 @import "login.scss";
 
-#header,
-#header_sub {
+#header {
 	width: 100%;
 	border-bottom: 1px double #999;
 
@@ -688,8 +687,7 @@ $mobile: 539px;
 	}
 }
 
-#footer,
-#footer_sub {
+#footer {
 	width: 100%;
 	height: auto;
 	border-top: 1px double #999;
@@ -747,8 +745,7 @@ $mobile: 539px;
 
 /* Responsive Tablet Verision*/
 @media screen and (max-width: $tablet) {
-	#header,
-	#header_sub {
+	#header {
 		.inner {
 			width: 100%;
 			height: 100px;
@@ -862,8 +859,7 @@ $mobile: 539px;
 		}
 	}
 
-	#footer,
-	#footer_sub {
+	#footer {
 		width: 100%;
 		.inner {
 			width: 100%;
@@ -880,7 +876,7 @@ $mobile: 539px;
 			:nth-of-type(3),
 			:nth-of-type(4) {
 				float: left;
-				width: 27%;
+				width: 30%;
 
 				li {
 					width: 100%;
@@ -1013,8 +1009,7 @@ $mobile: 539px;
 		}
 	}
 
-	#footer,
-	#footer_sub {
+	#footer {
 		.inner {
 			ul {
 				h4 {
@@ -1022,6 +1017,41 @@ $mobile: 539px;
 				}
 				li {
 					font: normal 14px/1.8 "arial";
+				}
+			}
+
+			ul:nth-of-type(2),
+			:nth-of-type(3),
+			:nth-of-type(4) {
+				float: left;
+				width: 27%;
+
+				li {
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 440px) {
+	#visual {
+		#slideShow {
+			#slides {
+				.inner {
+					.text {
+						transform: translateY(10%);
+						h2 {
+							font: normal 15px/1.5 "Antic Slab";
+						}
+						h1 {
+							font: bold 28px/1.5 "Bad Script";
+						}
+						p {
+							margin-top: 10px;
+							font: normal 13px/1.2 "arial";
+						}
+					}
 				}
 			}
 		}

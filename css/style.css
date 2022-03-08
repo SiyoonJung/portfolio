@@ -1304,43 +1304,36 @@ button {
   transition: all 0.5s;
 }
 
-#header,
-#header_sub {
+#header {
   width: 100%;
   border-bottom: 1px double #999;
 }
-#header .inner,
-#header_sub .inner {
+#header .inner {
   width: 1180px;
   height: 120px;
   margin: 0 auto;
   position: relative;
 }
-#header .inner > h1,
-#header_sub .inner > h1 {
+#header .inner > h1 {
   position: absolute;
   left: 0;
   bottom: 15px;
   color: #333;
   animation: slide 1.5s ease-in-out;
 }
-#header .inner > h1 > a,
-#header_sub .inner > h1 > a {
+#header .inner > h1 > a {
   font: bold 30px/1 "Antic Slab";
   color: #333;
 }
-#header .inner .menuWeb #gnb,
-#header_sub .inner .menuWeb #gnb {
+#header .inner .menuWeb #gnb {
   position: absolute;
   right: 0;
   bottom: 0;
 }
-#header .inner .menuWeb #gnb li,
-#header_sub .inner .menuWeb #gnb li {
+#header .inner .menuWeb #gnb li {
   float: left;
 }
-#header .inner .menuWeb #gnb li a,
-#header_sub .inner .menuWeb #gnb li a {
+#header .inner .menuWeb #gnb li a {
   display: block;
   padding: 15px 20px;
   font: bold 15px/1 "Antic Slab";
@@ -1348,8 +1341,7 @@ button {
   transition: all 0.3s;
   letter-spacing: 1px;
 }
-#header .inner .menuWeb #gnb li a:after,
-#header_sub .inner .menuWeb #gnb li a:after {
+#header .inner .menuWeb #gnb li a:after {
   content: "";
   display: block;
   margin: auto;
@@ -1358,33 +1350,27 @@ button {
   background: transparent;
   transition: width 0.3s ease, background-color 0.3s ease;
 }
-#header .inner .menuWeb #gnb li a:hover:after,
-#header_sub .inner .menuWeb #gnb li a:hover:after {
+#header .inner .menuWeb #gnb li a:hover:after {
   width: 100%;
   background: #e4d1c5;
 }
-#header .inner .menuWeb #util,
-#header_sub .inner .menuWeb #util {
+#header .inner .menuWeb #util {
   position: absolute;
   top: 15px;
   right: 20px;
 }
-#header .inner .menuWeb #util li,
-#header_sub .inner .menuWeb #util li {
+#header .inner .menuWeb #util li {
   float: left;
   margin-left: 20px;
 }
-#header .inner .menuWeb #util li a,
-#header_sub .inner .menuWeb #util li a {
+#header .inner .menuWeb #util li a {
   font: normal 18px/1 "Antic Slab";
   color: #333;
 }
-#header .inner .menuWeb #util li a:hover,
-#header_sub .inner .menuWeb #util li a:hover {
+#header .inner .menuWeb #util li a:hover {
   color: #daa17e;
 }
-#header .inner .btnCall,
-#header_sub .inner .btnCall {
+#header .inner .btnCall {
   display: none;
   width: 20px;
   height: 20px;
@@ -1393,8 +1379,7 @@ button {
   top: 50%;
   transform: translateY(-50%);
 }
-#header .inner .btnCall::before,
-#header_sub .inner .btnCall::before {
+#header .inner .btnCall::before {
   content: "";
   display: block;
   width: 100%;
@@ -1405,8 +1390,7 @@ button {
   left: 0;
   transition: top 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall::after,
-#header_sub .inner .btnCall::after {
+#header .inner .btnCall::after {
   content: "";
   display: block;
   width: 100%;
@@ -1417,8 +1401,7 @@ button {
   left: 0;
   transition: bottom 0.5s 0s, transform 0.5s 0.5s;
 }
-#header .inner .btnCall span,
-#header_sub .inner .btnCall span {
+#header .inner .btnCall span {
   display: block;
   width: 100%;
   height: 2px;
@@ -1430,25 +1413,21 @@ button {
   text-indent: -9999px;
   transition: all 0.3s;
 }
-#header .inner .btnCall.on::before,
-#header_sub .inner .btnCall.on::before {
+#header .inner .btnCall.on::before {
   top: 50%;
   margin-top: -1px;
   transform: rotate(45deg);
 }
-#header .inner .btnCall.on::after,
-#header_sub .inner .btnCall.on::after {
+#header .inner .btnCall.on::after {
   bottom: 50%;
   margin-bottom: -1px;
   transform: rotate(-45deg);
 }
-#header .inner .btnCall.on span,
-#header_sub .inner .btnCall.on span {
+#header .inner .btnCall.on span {
   transform: translateX(100%);
   opacity: 0;
 }
-#header .inner .menuMo,
-#header_sub .inner .menuMo {
+#header .inner .menuMo {
   width: 270px;
   height: 100vh;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
@@ -1460,29 +1439,24 @@ button {
   left: -270px;
   display: none;
 }
-#header .inner .menuMo.on,
-#header_sub .inner .menuMo.on {
+#header .inner .menuMo.on {
   left: 0px;
 }
-#header .inner .menuMo h1,
-#header_sub .inner .menuMo h1 {
+#header .inner .menuMo h1 {
   border-bottom: 1px solid #333;
   padding-bottom: 30px;
 }
-#header .inner .menuMo h1 a,
-#header_sub .inner .menuMo h1 a {
+#header .inner .menuMo h1 a {
   display: block;
   font: bold 24px/1 "Antic Slab";
   color: #333;
   text-align: center;
 }
-#header .inner .menuMo h1 span,
-#header_sub .inner .menuMo h1 span {
+#header .inner .menuMo h1 span {
   font-size: 12px;
   color: #999;
 }
-#header .inner .menuMo #gnbMo li a,
-#header_sub .inner .menuMo #gnbMo li a {
+#header .inner .menuMo #gnbMo li a {
   display: block;
   width: 100%;
   padding: 20px 0;
@@ -1884,56 +1858,46 @@ button {
   display: none;
 }
 
-#footer,
-#footer_sub {
+#footer {
   width: 100%;
   height: auto;
   border-top: 1px double #999;
   padding: 50px 0;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
-#footer .inner,
-#footer_sub .inner {
+#footer .inner {
   width: 1180px;
   margin: 0 auto;
   text-align: center;
 }
-#footer .inner::after,
-#footer_sub .inner::after {
+#footer .inner::after {
   content: "";
   clear: both;
 }
-#footer .inner ul,
-#footer_sub .inner ul {
+#footer .inner ul {
   float: left;
   width: 23%;
   margin: 0px 10px;
   padding-bottom: 20px;
 }
-#footer .inner ul h4,
-#footer_sub .inner ul h4 {
+#footer .inner ul h4 {
   font: bold 30px/2 "Bad Script";
 }
-#footer .inner ul li,
-#footer_sub .inner ul li {
+#footer .inner ul li {
   font: normal 15px/1.8 "arial";
   color: #555;
   cursor: pointer;
 }
-#footer .inner ul li:hover,
-#footer_sub .inner ul li:hover {
+#footer .inner ul li:hover {
   color: #000;
 }
-#footer .inner ul:nth-of-type(1) li,
-#footer_sub .inner ul:nth-of-type(1) li {
+#footer .inner ul:nth-of-type(1) li {
   cursor: default;
 }
-#footer .inner ul:nth-of-type(1) li:hover,
-#footer_sub .inner ul:nth-of-type(1) li:hover {
+#footer .inner ul:nth-of-type(1) li:hover {
   color: #555;
 }
-#footer p,
-#footer_sub p {
+#footer p {
   clear: both;
   display: block;
   width: 100%;
@@ -1944,25 +1908,20 @@ button {
 
 /* Responsive Tablet Verision*/
 @media screen and (max-width: 1179px) {
-  #header .inner,
-#header_sub .inner {
+  #header .inner {
     width: 100%;
     height: 100px;
   }
-  #header .inner > h1,
-#header_sub .inner > h1 {
+  #header .inner > h1 {
     left: 20px;
   }
-  #header .inner .menuWeb,
-#header_sub .inner .menuWeb {
+  #header .inner .menuWeb {
     display: none;
   }
-  #header .inner .btnCall,
-#header_sub .inner .btnCall {
+  #header .inner .btnCall {
     display: block;
   }
-  #header .inner .menuMo,
-#header_sub .inner .menuMo {
+  #header .inner .menuMo {
     display: block;
   }
 
@@ -2038,38 +1997,28 @@ button {
     width: 30%;
   }
 
-  #footer,
-#footer_sub {
+  #footer {
     width: 100%;
   }
-  #footer .inner,
-#footer_sub .inner {
+  #footer .inner {
     width: 100%;
   }
-  #footer .inner ul:nth-of-type(1),
-#footer_sub .inner ul:nth-of-type(1) {
+  #footer .inner ul:nth-of-type(1) {
     display: block;
     width: 100%;
   }
-  #footer .inner ul:nth-of-type(1) li,
-#footer_sub .inner ul:nth-of-type(1) li {
+  #footer .inner ul:nth-of-type(1) li {
     width: 100%;
   }
   #footer .inner ul:nth-of-type(2),
 #footer .inner :nth-of-type(3),
-#footer .inner :nth-of-type(4),
-#footer_sub .inner ul:nth-of-type(2),
-#footer_sub .inner :nth-of-type(3),
-#footer_sub .inner :nth-of-type(4) {
+#footer .inner :nth-of-type(4) {
     float: left;
-    width: 27%;
+    width: 30%;
   }
   #footer .inner ul:nth-of-type(2) li,
 #footer .inner :nth-of-type(3) li,
-#footer .inner :nth-of-type(4) li,
-#footer_sub .inner ul:nth-of-type(2) li,
-#footer_sub .inner :nth-of-type(3) li,
-#footer_sub .inner :nth-of-type(4) li {
+#footer .inner :nth-of-type(4) li {
     width: 100%;
   }
 }
@@ -2161,13 +2110,37 @@ button {
     height: 55%;
   }
 
-  #footer .inner ul h4,
-#footer_sub .inner ul h4 {
+  #footer .inner ul h4 {
     font: bold 24px/2 "Bad Script";
   }
-  #footer .inner ul li,
-#footer_sub .inner ul li {
+  #footer .inner ul li {
     font: normal 14px/1.8 "arial";
+  }
+  #footer .inner ul:nth-of-type(2),
+#footer .inner :nth-of-type(3),
+#footer .inner :nth-of-type(4) {
+    float: left;
+    width: 27%;
+  }
+  #footer .inner ul:nth-of-type(2) li,
+#footer .inner :nth-of-type(3) li,
+#footer .inner :nth-of-type(4) li {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 440px) {
+  #visual #slideShow #slides .inner .text {
+    transform: translateY(10%);
+  }
+  #visual #slideShow #slides .inner .text h2 {
+    font: normal 15px/1.5 "Antic Slab";
+  }
+  #visual #slideShow #slides .inner .text h1 {
+    font: bold 28px/1.5 "Bad Script";
+  }
+  #visual #slideShow #slides .inner .text p {
+    margin-top: 10px;
+    font: normal 13px/1.2 "arial";
   }
 }
 
