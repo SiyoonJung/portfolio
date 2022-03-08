@@ -2062,7 +2062,7 @@ button {
 #footer_sub .inner :nth-of-type(3),
 #footer_sub .inner :nth-of-type(4) {
     float: left;
-    width: 29%;
+    width: 27%;
   }
   #footer .inner ul:nth-of-type(2) li,
 #footer .inner :nth-of-type(3) li,
@@ -2163,11 +2163,11 @@ button {
 
   #footer .inner ul h4,
 #footer_sub .inner ul h4 {
-    font: bold 25px/2 "Bad Script";
+    font: bold 24px/2 "Bad Script";
   }
   #footer .inner ul li,
 #footer_sub .inner ul li {
-    font: normal 15px/1.8 "arial";
+    font: normal 14px/1.8 "arial";
   }
 }
 
