@@ -2,20 +2,6 @@ const dts = document.querySelectorAll("dt");
 const dds = document.querySelectorAll("dd");
 const dts_a = document.querySelectorAll("dt>a");
 
-//dts_a의 갯수만큼 반복을 돌면서 이벤트 바인딩 
-dts_a.forEach((el, index) => {
-    //dts에 focusin이 될때 
-    el.addEventListener("focusin", () => {
-        //같은 요소에 중복이벤트가 발생하지 않으므로 isOn은 필요없음 
-        //활성화 함수 호출 
-        activation(dts, index);
-        activation(dds, index);
-    })
-})
-
-
-
-
 //dt의 갯수만큼 반복을 돌면서 dt에 이벤트를 바인딩 
 dts.forEach((dt, index) => {
 

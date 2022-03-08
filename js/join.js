@@ -12,8 +12,6 @@ btnSubmit.addEventListener("click", e => {
     if (!isTxt("comments", 20)) e.preventDefault();
 });
 
-
-
 //텍스트 인증함수 정의 
 function isTxt(name, len) {
     if (len === undefined) len = 5;
@@ -58,7 +56,6 @@ function isEmail(name) {
 }
 
 function isCheck(name) {
-
     let inputs = form.querySelectorAll(`[name=${name}]`);
     let isChecked = false;
     //input 요소의 갯수만큼 반복을 돌면서 
@@ -85,7 +82,6 @@ function isCheck(name) {
 }
 
 function isAgree(name) {
-
     let input = form.querySelector(`[name=${name}]`);
     let isChecked = false;
     //input 요소의 갯수만큼 반복을 돌면서 

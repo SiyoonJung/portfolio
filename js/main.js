@@ -1,12 +1,31 @@
+//전체페이지 공통 영역인 header, footer 불러오기
+fetch("header.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("header").innerHTML = data;
+  });
+
+fetch("footer.html")
+  .then(response => {
+    return response.text()
+  })
+  .then(data => {
+    document.querySelector("footer").innerHTML = data;
+  });
+
 //header: 모바일 버전에서의 메뉴 구현(using toggle)
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
-btnCall.onclick = function (e) {
-  e.preventDefault();
+window.onload = function () {
+  btnCall.onclick = function (e) {
+    e.preventDefault();
 
-  btnCall.classList.toggle("on");
-  menuMo.classList.toggle("on");
+    btnCall.classList.toggle("on");
+    menuMo.classList.toggle("on");
+  }
 }
 
 //visual section: slide 구현
