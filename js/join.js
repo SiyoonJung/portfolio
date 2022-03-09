@@ -12,7 +12,6 @@ btnSubmit.addEventListener("click", e => {
     if (!isTxt("comments", 20)) e.preventDefault();
 });
 
-//텍스트 인증함수 정의 
 function isTxt(name, len) {
     if (len === undefined) len = 5;
     let input = form.querySelector(`[name=${name}]`);
@@ -58,8 +57,7 @@ function isEmail(name) {
 function isCheck(name) {
     let inputs = form.querySelectorAll(`[name=${name}]`);
     let isChecked = false;
-    //input 요소의 갯수만큼 반복을 돌면서 
-    //하나라도 체크되어 있는 게 있다면 isChecked 를 true로 변경 
+
     for (let el of inputs) {
         if (el.checked) isChecked = true;
     }
@@ -83,9 +81,7 @@ function isCheck(name) {
 
 function isAgree(name) {
     let input = form.querySelector(`[name=${name}]`);
-    let isChecked = false;
-    //input 요소의 갯수만큼 반복을 돌면서 
-    //하나라도 체크되어 있는 게 있다면 isChecked 를 true로 변경 
+    let isChecked = false; 
 
     if (isChecked) {
         const errMsgs = input.closest("td").querySelectorAll("p");
@@ -103,7 +99,6 @@ function isAgree(name) {
         return false;
     }
 }
-
 
 function isPwd(name1, name2, len) {
     let pwd1 = form.querySelector(`[name=${name1}]`);
@@ -133,7 +128,6 @@ function isPwd(name1, name2, len) {
         return false;
     }
 }
-
 
 function isSelect(name) {
     let sel = form.querySelector(`[name=${name}]`);

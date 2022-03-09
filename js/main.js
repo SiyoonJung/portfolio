@@ -19,14 +19,13 @@ fetch("footer.html")
 const btnCall = document.querySelector(".btnCall");
 const menuMo = document.querySelector(".menuMo");
 
-window.onload = function () {
+window.addEventListener("load", function () {
   btnCall.onclick = function (e) {
     e.preventDefault();
-
     btnCall.classList.toggle("on");
     menuMo.classList.toggle("on");
   }
-}
+});
 
 //visual section: slide 구현
 var slides = document.querySelectorAll("#slides");
