@@ -872,6 +872,9 @@ button {
   font: bold 15px/1 "arial";
   color: #917035;
 }
+.youtube .inner .vidList:last-of-type {
+  margin-bottom: 50px;
+}
 .youtube .inner figure.pop {
   width: 100%;
   height: 100vh;
