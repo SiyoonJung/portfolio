@@ -2,6 +2,17 @@
 fetch("header.html")
   .then(response => {
     return response.text()
+    
+    const btnCall = document.querySelector(".btnCall");
+    const menuMo = document.querySelector(".menuMo");
+
+    window.addEventListener("load", function () {
+      btnCall.onclick = function (e) {
+        e.preventDefault();
+        btnCall.classList.toggle("on");
+        menuMo.classList.toggle("on");
+      }
+    });
   })
   .then(data => {
     document.querySelector("header").innerHTML = data;
