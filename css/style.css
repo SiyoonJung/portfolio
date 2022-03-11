@@ -920,9 +920,6 @@ button {
     height: 300px;
     margin: 10px auto;
   }
-  .youtube .inner .vidList article:last-of-type {
-    margin-bottom: 50px;
-  }
   .youtube .inner .vidList article p {
     display: none;
   }
