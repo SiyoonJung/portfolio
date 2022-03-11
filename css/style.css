@@ -61,12 +61,12 @@ button {
   height: 100%;
   margin: 0 auto;
 }
-.gallery .sub_visual {
+.gallery .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.gallery .sub_visual img {
+.gallery .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -297,12 +297,12 @@ button {
   height: 100%;
   margin: 0 auto;
 }
-.board .sub_visual {
+.board .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.board .sub_visual img {
+.board .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -558,12 +558,12 @@ button {
   margin: 0 auto;
   position: relative;
 }
-.members .sub_visual {
+.members .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.members .sub_visual img {
+.members .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -771,12 +771,12 @@ button {
   height: 100%;
   margin: 0 auto;
 }
-.youtube .sub_visual {
+.youtube .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.youtube .sub_visual img {
+.youtube .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -929,12 +929,12 @@ button {
   height: 100%;
   margin: 0 auto;
 }
-.location .sub_visual {
+.location .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.location .sub_visual img {
+.location .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1062,12 +1062,12 @@ button {
   height: 100%;
   margin: 0 auto;
 }
-.join .sub_visual {
+.join .sub-visual {
   width: 100%;
   height: 250px;
   opacity: 0.8;
 }
-.join .sub_visual img {
+.join .sub-visual img {
   width: 100%;
   height: 100%;
   object-fit: cover;
