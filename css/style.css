@@ -1048,6 +1048,9 @@ button {
     display: block;
     margin: 3%;
   }
+  .location .inner .traffic li:last-of-type {
+    margin-bottom: 50px;
+  }
   .location .inner .branch {
     margin: 3%;
   }

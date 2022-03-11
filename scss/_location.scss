@@ -133,6 +133,10 @@
 					clear: both;
 					display: block;
 					margin: 3%;
+
+					&:last-of-type {
+						margin-bottom: 50px;
+					}
 				}
 			}
 			.branch {
