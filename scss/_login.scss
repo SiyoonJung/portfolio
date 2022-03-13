@@ -6,8 +6,9 @@
 	background-image: linear-gradient(-230deg, #f3e9d6 50%, #ebded6 50%);
 
 	.inner {
+		width: 100%;
 		form {
-			width: 420px;
+			width: 400px;
 			height: auto;
 			box-sizing: border-box;
 			border: 1px double #111;
@@ -42,22 +43,32 @@
 						font: normal 16px/1.5 "Julius Sans One";
 					}
 				}
-				input[class="form-input"] {
-					width: 260px;
-					height: 50px;
-					margin: 2% auto;
-					padding: 10px;
-					font: normal 15px/1 "Julius Sans One";
-					color: #585c64;
-					outline: none;
-					border: 1px solid #111;
-					border-radius: 5px;
-				}
+				
+				.origin {
+					width: 100%;
+					margin: 0 auto;
 
+					input[class="form-input"] {
+						width: 240px;
+						height: 50px;
+						margin: 2% auto;
+						padding: 10px;
+						font: normal 15px/1 "Julius Sans One";
+						color: #585c64;
+						outline: none;
+						border: 1px solid #111;
+						border-radius: 5px;
+					}
+
+					.emailbox, .pwdbox {
+						margin-left: 15%;
+					}
+				}
+				
 				.log-in {
 					width: 50%;
 					height: 50px;
-					margin: 15%;
+					margin: 15% 25%;
 					padding: 5px;
 					text-align: center;
 					font: bold 20px/1 "Antic Slab";
@@ -67,6 +78,23 @@
 						background-color: #000;
 						color: #fff;
 						transition: all 0.5s;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $mobile) {
+	.login {
+		.inner {
+			form {
+				width: 80%;
+				.con {
+					.origin {
+						input[class="form-input"] {
+							width: 70%;
+						}
 					}
 				}
 			}

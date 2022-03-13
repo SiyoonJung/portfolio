@@ -1264,8 +1264,11 @@ button {
   padding: 30px;
   background-image: linear-gradient(-230deg, #f3e9d6 50%, #ebded6 50%);
 }
+.login .inner {
+  width: 100%;
+}
 .login .inner form {
-  width: 420px;
+  width: 400px;
   height: auto;
   box-sizing: border-box;
   border: 1px double #111;
@@ -1299,8 +1302,12 @@ button {
   margin-top: 10px;
   font: normal 16px/1.5 "Julius Sans One";
 }
-.login .inner form .con input[class=form-input] {
-  width: 260px;
+.login .inner form .con .origin {
+  width: 100%;
+  margin: 0 auto;
+}
+.login .inner form .con .origin input[class=form-input] {
+  width: 240px;
   height: 50px;
   margin: 2% auto;
   padding: 10px;
@@ -1310,10 +1317,13 @@ button {
   border: 1px solid #111;
   border-radius: 5px;
 }
+.login .inner form .con .origin .emailbox, .login .inner form .con .origin .pwdbox {
+  margin-left: 15%;
+}
 .login .inner form .con .log-in {
   width: 50%;
   height: 50px;
-  margin: 15%;
+  margin: 15% 25%;
   padding: 5px;
   text-align: center;
   font: bold 20px/1 "Antic Slab";
@@ -1325,6 +1335,14 @@ button {
   transition: all 0.5s;
 }
 
+@media screen and (max-width: 539px) {
+  .login .inner form {
+    width: 80%;
+  }
+  .login .inner form .con .origin input[class=form-input] {
+    width: 70%;
+  }
+}
 #header {
   width: 100%;
   border-bottom: 1px double #999;
