@@ -89,7 +89,7 @@
 			border-bottom: 1px solid #999;
 
 			th {
-				width: 22%;
+				width: 35%;
 				text-align: left;
 				font: bold 14px/1 "Julius Sans One";
 				color: #333;
@@ -107,13 +107,13 @@
 
 				input[type="submit"],
 				input[type="reset"] {
-					width: 160px;
+					width: 140px;
 					height: 40px;
 					border: none;
 					background: #ebded6;
 					font: normal 14px/1 "arial";
 					color: #000;
-					margin: 0 10px;
+					margin: 0 auto;
 					cursor: pointer;
 				}
 			}
@@ -177,12 +177,12 @@
 					input[type="text"],
 					input[type="password"],
 					select {
-						width: 60%;
+						width: 70%;
 					}
 
 					.hobbyTxt,
 					.genderTxt {
-						display: block;
+						display: none;
 					}
 				}
 			}
@@ -195,6 +195,27 @@
 	.join {
 		.inner {
 			table {
+				th {
+					display: none;
+					margin: 0 auto;
+
+					&:last-child {
+						display: block;
+					}
+
+					input[type="submit"],
+					input[type="reset"] {
+						width: 90px;
+						height: 35px;
+						border: none;
+						background: #ebded6;
+						font: normal 12px/1 "arial";
+						color: #000;
+						margin-bottom: 10px;
+						cursor: pointer;
+					}
+				}
+
 				td {
 					input[type="text"],
 					input[type="password"],

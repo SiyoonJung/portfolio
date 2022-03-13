@@ -1142,7 +1142,7 @@ button {
   border-bottom: 1px solid #999;
 }
 .join .inner table th {
-  width: 22%;
+  width: 35%;
   text-align: left;
   font: bold 14px/1 "Julius Sans One";
   color: #333;
@@ -1159,13 +1159,13 @@ button {
 }
 .join .inner table th input[type=submit],
 .join .inner table th input[type=reset] {
-  width: 160px;
+  width: 140px;
   height: 40px;
   border: none;
   background: #ebded6;
   font: normal 14px/1 "arial";
   color: #000;
-  margin: 0 10px;
+  margin: 0 auto;
   cursor: pointer;
 }
 .join .inner table td {
@@ -1217,15 +1217,33 @@ button {
   .join .inner table td input[type=text],
 .join .inner table td input[type=password],
 .join .inner table td select {
-    width: 60%;
+    width: 70%;
   }
   .join .inner table td .hobbyTxt,
 .join .inner table td .genderTxt {
-    display: block;
+    display: none;
   }
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
+  .join .inner table th {
+    display: none;
+    margin: 0 auto;
+  }
+  .join .inner table th:last-child {
+    display: block;
+  }
+  .join .inner table th input[type=submit],
+.join .inner table th input[type=reset] {
+    width: 90px;
+    height: 35px;
+    border: none;
+    background: #ebded6;
+    font: normal 12px/1 "arial";
+    color: #000;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
   .join .inner table td input[type=text],
 .join .inner table td input[type=password],
 .join .inner table td select {
