@@ -1945,6 +1945,9 @@ button {
   #header .inner .menuMo {
     display: block;
   }
+  #header .inner .menuMo #gnbMo li:nth-of-type(5) a {
+    border-bottom: 1px solid #111;
+  }
 
   #visual #slideShow #slides .inner {
     width: 100%;

@@ -761,6 +761,16 @@ $mobile: 539px;
 			}
 			.menuMo {
 				display: block;
+	
+				#gnbMo {
+					li {
+						&:nth-of-type(5) {
+							a {
+								border-bottom: 1px solid #111;
+							}
+						}
+					}
+				}
 			}
 		}
 	}
