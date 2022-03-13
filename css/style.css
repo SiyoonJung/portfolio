@@ -1175,7 +1175,7 @@ button {
 .join .inner table td input[type=text],
 .join .inner table td input[type=password],
 .join .inner table td select {
-  width: 30%;
+  width: 40%;
   height: 30px;
   border: 1px solid #a8a7a7;
   background: #f4f7f7;
@@ -1235,7 +1235,7 @@ button {
   }
   .join .inner table th input[type=submit],
 .join .inner table th input[type=reset] {
-    width: 90px;
+    width: 100px;
     height: 35px;
     border: none;
     background: #ebded6;
