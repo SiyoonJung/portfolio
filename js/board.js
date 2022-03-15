@@ -20,7 +20,6 @@ dts.forEach((dt, index) => {
     });
 });
 
-
 //활성화 함수 정의
 //반복을 돌면서 모든 dt,dd에 on을 제거하고 
 //해당순번의 dt,dd에 on 추가 

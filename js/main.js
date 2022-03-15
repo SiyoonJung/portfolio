@@ -1,4 +1,3 @@
-
 //visual section: slide 구현
 var slides = document.querySelectorAll("#slides");
 var next = document.getElementById("slide-next");
@@ -40,7 +39,6 @@ function nextSlide() {
 //   slides[current - 1].style.display = "block";
 //   setTimeout(showSlides, 2000);
 // }
-
 
 
 //produtcs section: istope 이용한 상품들 정렬
