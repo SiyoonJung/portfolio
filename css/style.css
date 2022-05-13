@@ -826,7 +826,7 @@ button {
 .youtube .inner .vidList article {
   width: 48%;
   height: 100%;
-  border: 1px solid #927c62;
+  border: 1px solid rgb(146, 124, 98);
   border-radius: 2rem;
   margin-bottom: 50px;
 }
@@ -870,7 +870,7 @@ button {
 }
 .youtube .inner .vidList article .con span {
   font: bold 15px/1 "arial";
-  color: #917035;
+  color: rgb(145, 112, 53);
 }
 .youtube .inner .vidList:last-of-type {
   margin-bottom: 50px;
@@ -1177,7 +1177,7 @@ button {
 .join .inner table td select {
   width: 40%;
   height: 30px;
-  border: 1px solid #a8a7a7;
+  border: 1px solid rgb(168, 167, 167);
   background: #f4f7f7;
   padding-left: 20px;
 }
@@ -1199,13 +1199,13 @@ button {
 .join .inner table td .hobbyTxt,
 .join .inner table td .genderTxt {
   font: 12px/1 "arial";
-  color: #f71f43;
+  color: rgb(247, 31, 67);
   margin-top: 10px;
   display: none;
 }
 .join .inner p {
   font: 12px/1 "arial";
-  color: #f71f43;
+  color: rgb(247, 31, 67);
   margin-top: 10px;
 }
 
@@ -1275,7 +1275,7 @@ button {
   border: 1px double #111;
   border-radius: 5px;
   margin: 5% auto;
-  box-shadow: 0 9px 50px rgba(235, 204, 189, 0.31);
+  box-shadow: 0 9px 50px hsla(20deg, 53%, 83%, 0.31);
   position: relative;
 }
 .login .inner form .con {
@@ -1508,7 +1508,7 @@ button {
 
 #visual {
   width: 100%;
-  height: calc(100vh - 200px);
+  height: 90vh;
   position: relative;
   background-image: linear-gradient(90deg, #e5d8d0, #e4d1c5);
 }
@@ -1741,7 +1741,7 @@ button {
 
 #banner {
   width: 100%;
-  height: 35vh;
+  height: 40vh;
   margin-top: 50px;
   position: relative;
 }
@@ -1887,7 +1887,7 @@ button {
   margin: 0 auto;
   background-color: #111;
   font: bold 20px/1 "Julius Sans One";
-  color: #ffff;
+  color: white;
   padding: 10px;
   position: absolute;
   top: 40%;
