@@ -1348,6 +1348,9 @@ button {
   width: 100%;
   border-bottom: 1px double #999;
 }
+#header #skip a {
+  display: none;
+}
 #header .inner {
   width: 1180px;
   height: 120px;

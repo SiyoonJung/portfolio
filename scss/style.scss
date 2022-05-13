@@ -53,6 +53,10 @@ $mobile: 539px;
 	width: 100%;
 	border-bottom: 1px double #999;
 
+	#skip a {
+		display: none;
+	}
+
 	.inner {
 		width: 1180px;
 		height: 120px;
