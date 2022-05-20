@@ -1279,11 +1279,8 @@ button {
   position: relative;
 }
 .login .inner form .con {
-  display: -webkit-flex;
   display: flex;
-  -webkit-justify-content: space-around;
   justify-content: space-around;
-  -webkit-flex-wrap: wrap;
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
