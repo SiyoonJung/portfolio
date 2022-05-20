@@ -255,7 +255,7 @@ $mobile: 539px;
 		height: 100%;
 		overflow: hidden;
 
-		#slides {
+		.slides {
 			width: 100%;
 			height: 100%;
 			float: left;
@@ -781,7 +781,7 @@ $mobile: 539px;
 
 	#visual {
 		#slideShow {
-			#slides {
+			.slides {
 				.inner {
 					width: 100%;
 					.text {
@@ -922,7 +922,7 @@ $mobile: 539px;
 @media screen and (max-width: $mobile) {
 	#visual {
 		#slideShow {
-			#slides {
+			.slides {
 				.inner {
 					.text {
 						transform: translateY(15%);
@@ -1051,7 +1051,7 @@ $mobile: 539px;
 @media screen and (max-width: 440px) {
 	#visual {
 		#slideShow {
-			#slides {
+			.slides {
 				.inner {
 					.text {
 						transform: translateY(10%);

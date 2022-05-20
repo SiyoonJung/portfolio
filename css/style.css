@@ -1520,24 +1520,24 @@ button {
   height: 100%;
   overflow: hidden;
 }
-#visual #slideShow #slides {
+#visual #slideShow .slides {
   width: 100%;
   height: 100%;
   float: left;
 }
-#visual #slideShow #slides::after {
+#visual #slideShow .slides::after {
   display: block;
   content: "";
   clear: both;
 }
-#visual #slideShow #slides .inner {
+#visual #slideShow .slides .inner {
   width: 1180px;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
   position: relative;
 }
-#visual #slideShow #slides .inner .text {
+#visual #slideShow .slides .inner .text {
   width: 50%;
   height: 100%;
   margin: 0 auto;
@@ -1545,24 +1545,24 @@ button {
   float: left;
   text-align: center;
 }
-#visual #slideShow #slides .inner .text h2 {
+#visual #slideShow .slides .inner .text h2 {
   font: normal 20px/1.5 "Antic Slab";
 }
-#visual #slideShow #slides .inner .text h1 {
+#visual #slideShow .slides .inner .text h1 {
   font: bold 50px/1.5 "Bad Script";
 }
-#visual #slideShow #slides .inner .text p {
+#visual #slideShow .slides .inner .text p {
   margin-top: 10px;
   font: normal 18px/1.8 "arial";
 }
-#visual #slideShow #slides .inner .image {
+#visual #slideShow .slides .inner .image {
   width: 50%;
   height: 100%;
   margin: 0 auto;
   padding: 0px;
   float: left;
 }
-#visual #slideShow #slides .inner .image img {
+#visual #slideShow .slides .inner .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1971,16 +1971,16 @@ button {
     border-bottom: 1px solid #111;
   }
 
-  #visual #slideShow #slides .inner {
+  #visual #slideShow .slides .inner {
     width: 100%;
   }
-  #visual #slideShow #slides .inner .text h2 {
+  #visual #slideShow .slides .inner .text h2 {
     font: normal 20px/1.5 "Antic Slab";
   }
-  #visual #slideShow #slides .inner .text h1 {
+  #visual #slideShow .slides .inner .text h1 {
     font: bold 40px/1.5 "Bad Script";
   }
-  #visual #slideShow #slides .inner .text p {
+  #visual #slideShow .slides .inner .text p {
     margin-top: 10px;
     font: normal 15px/1.8 "arial";
   }
@@ -2083,16 +2083,16 @@ button {
 }
 /* Responsive Mobile Verision*/
 @media screen and (max-width: 539px) {
-  #visual #slideShow #slides .inner .text {
+  #visual #slideShow .slides .inner .text {
     transform: translateY(15%);
   }
-  #visual #slideShow #slides .inner .text h2 {
+  #visual #slideShow .slides .inner .text h2 {
     font: normal 18px/1.5 "Antic Slab";
   }
-  #visual #slideShow #slides .inner .text h1 {
+  #visual #slideShow .slides .inner .text h1 {
     font: bold 35px/1.5 "Bad Script";
   }
-  #visual #slideShow #slides .inner .text p {
+  #visual #slideShow .slides .inner .text p {
     margin-top: 10px;
     font: normal 14px/1.8 "arial";
   }
@@ -2175,16 +2175,16 @@ button {
   }
 }
 @media screen and (max-width: 440px) {
-  #visual #slideShow #slides .inner .text {
+  #visual #slideShow .slides .inner .text {
     transform: translateY(10%);
   }
-  #visual #slideShow #slides .inner .text h2 {
+  #visual #slideShow .slides .inner .text h2 {
     font: normal 15px/1.5 "Antic Slab";
   }
-  #visual #slideShow #slides .inner .text h1 {
+  #visual #slideShow .slides .inner .text h1 {
     font: bold 28px/1.5 "Bad Script";
   }
-  #visual #slideShow #slides .inner .text p {
+  #visual #slideShow .slides .inner .text p {
     margin-top: 10px;
     font: normal 13px/1.2 "arial";
   }

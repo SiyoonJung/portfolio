@@ -1,5 +1,5 @@
 //visual section: slide 구현
-var slides = document.querySelectorAll("#slides");
+var slides = document.querySelectorAll(".slides");
 var next = document.getElementById("slide-next");
 var prev = document.getElementById("slide-prev");
 var current = 0;
