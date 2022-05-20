@@ -407,7 +407,7 @@ $mobile: 539px;
 	position: relative;
 	clear: both;
 
-	h1 {
+	h3 {
 		margin: 0 auto;
 		text-align: center;
 		font: bold 45px/1.5 "Bad Script";
@@ -479,7 +479,7 @@ $mobile: 539px;
 						height: 100%;
 						background: rgba(0, 0, 0, 0.3);
 
-						h2 {
+						h4 {
 							font: bold 25px/1 "Julius Sans One";
 							color: #fff;
 							letter-spacing: 1px;
@@ -608,6 +608,13 @@ $mobile: 539px;
 	position: relative;
 	background-color: #f1f1e0;
 
+	h3 {
+		margin: 0 auto;
+		text-align: center;
+		font: bold 45px/1.5 "Bad Script";
+		letter-spacing: 2px;
+	}
+
 	.inner {
 		width: 1180px;
 		height: 100%;
@@ -637,7 +644,7 @@ $mobile: 539px;
 				width: 100%;
 				margin: 0 auto;
 
-				h2 {
+				h4 {
 					font: bold 30px/1.5 "Bad Script";
 					text-align: center;
 					margin-bottom: 15px;

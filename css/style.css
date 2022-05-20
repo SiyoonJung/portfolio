@@ -1653,7 +1653,7 @@ button {
   position: relative;
   clear: both;
 }
-#products h1 {
+#products h3 {
   margin: 0 auto;
   text-align: center;
   font: bold 45px/1.5 "Bad Script";
@@ -1718,7 +1718,7 @@ button {
   height: 100%;
   background: rgba(0, 0, 0, 0.3);
 }
-#products .container .prodList article > div .info h2 {
+#products .container .prodList article > div .info h4 {
   font: bold 25px/1 "Julius Sans One";
   color: #fff;
   letter-spacing: 1px;
@@ -1828,6 +1828,12 @@ button {
   position: relative;
   background-color: #f1f1e0;
 }
+#celebrity h3 {
+  margin: 0 auto;
+  text-align: center;
+  font: bold 45px/1.5 "Bad Script";
+  letter-spacing: 2px;
+}
 #celebrity .inner {
   width: 1180px;
   height: 100%;
@@ -1855,7 +1861,7 @@ button {
   width: 100%;
   margin: 0 auto;
 }
-#celebrity .inner article .text h2 {
+#celebrity .inner article .text h4 {
   font: bold 30px/1.5 "Bad Script";
   text-align: center;
   margin-bottom: 15px;
